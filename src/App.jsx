@@ -7,22 +7,23 @@ import logo3 from './img/linkedIn.png';
 import menu from './img/menu.png';
 
 function App() {
-  const [isHovered, setIsHovered] = useState(false);
+
 
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover">
+      <div className="">
       <video
         autoPlay
         loop
         muted
-        className={`object-cover w-full h-full transition-all pointer-event-none ${
-          isHovered ? 'blur-lg' : 'blur-0'
-        }`}
+        className="object-cover w-full h-full transition-all pointer-event-none blur-lg"
+        
         id="video"
       >
+    
         <source src={background} type="video/mp4" />
       </video>
-
+      </div>
       <div className="absolute top-0 right-0 m-4 flex">
         <button className="bg-transparent font-bold text-white hidden sm:block mr-2">Home</button>
         <button className="bg-transparent font-bold text-white hidden sm:block mr-2">Experience</button>
