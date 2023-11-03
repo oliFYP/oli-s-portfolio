@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import background from './videobg/4K_10.mp4';
 import logo from './img/OS.png';
 import logo1 from './img/insta.png';
@@ -7,16 +7,13 @@ import logo3 from './img/linkedIn.png';
 import menu from './img/menu.png';
 
 function App() {
-
-
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover">
-      
       <video
         autoPlay
         loop
         muted
-        className="object-cover w-full h-full transition-all pointer-event-none blur-lg" 
+        className="object-cover w-full h-full transition-all md:pointer-events-none blur-lg"
         id="video"
       >
         <source src={background} type="video/mp4" />
@@ -28,11 +25,11 @@ function App() {
         <button className="bg-transparent font-bold text-white hidden sm:block mr-2">Projects</button>
         <button className="bg-transparent font-bold text-white hidden sm:block mr-2">Contact</button>
         <button className="bg-transparent font-bold text-white hidden sm:block mr-2">About</button>
-        <img src={menu} className="h-8 mr-2 sm:hidden" />
+        <img src={menu} className="h-8 mr-2 sm:hidden" alt="Menu" />
       </div>
 
       <div className="absolute top-0 left-0 m-4 flex">
-        <img src={logo} className="h-8 mt-1 sm:h-9 sm:mt-2" />
+        <img src={logo} className="h-8 mt-1 sm:h-9 sm:mt-2" alt="Logo" />
       </div>
 
       <div className="absolute top-1/4 right-1/2 transform">
@@ -43,16 +40,13 @@ function App() {
         <p className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md pl-4">
           I'm Olivier, a computer science graduate
         </p>
-        <button
-          className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center transition-all "
-          
-        >
+        <button className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center transition-all">
           Download CV
         </button>
         <div className="mt-3 flex">
-          <img src={logo1} className="h-8 mr-2 ml-8" />
-          <img src={logo2} className="h-8 mr-2" />
-          <img src={logo3} className="h-8" />
+          <img src={logo1} className="h-8 mr-2 ml-8" alt="Logo 1" />
+          <img src={logo2} className="h-8 mr-2" alt="Logo 2" />
+          <img src={logo3} className="h-8" alt="Logo 3" />
         </div>
       </div>
     </div>
