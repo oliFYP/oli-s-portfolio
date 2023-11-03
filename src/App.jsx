@@ -13,6 +13,7 @@ function App() {
         autoPlay
         loop
         muted
+        playsInline
         className="object-cover w-full h-full transition-all md:pointer-events-none blur-lg"
         id="video"
       >
