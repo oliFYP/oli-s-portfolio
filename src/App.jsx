@@ -15,7 +15,7 @@ function App() {
         autoPlay
         loop
         muted
-        className={`object-cover w-full h-full transition-all ${
+        className={`object-cover w-full h-full transition-all pointer-event-none ${
           isHovered ? 'blur-lg' : 'blur-0'
         }`}
         id="video"
