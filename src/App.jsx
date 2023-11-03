@@ -11,19 +11,17 @@ function App() {
 
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover">
-      <div className="">
+      
       <video
         autoPlay
         loop
         muted
-        className="object-cover w-full h-full transition-all pointer-event-none blur-lg"
-        
+        className="object-cover w-full h-full transition-all pointer-event-none blur-lg" 
         id="video"
       >
-    
         <source src={background} type="video/mp4" />
       </video>
-      </div>
+
       <div className="absolute top-0 right-0 m-4 flex">
         <button className="bg-transparent font-bold text-white hidden sm:block mr-2">Home</button>
         <button className="bg-transparent font-bold text-white hidden sm:block mr-2">Experience</button>
@@ -47,8 +45,7 @@ function App() {
         </p>
         <button
           className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center transition-all "
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          
         >
           Download CV
         </button>
