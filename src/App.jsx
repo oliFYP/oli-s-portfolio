@@ -34,11 +34,28 @@ function App() {
       </video>
 
       <div className="absolute top-0 right-0 m-4 flex">
-        <button className="bg-transparent font-bold text-white hidden sm:block mr-2">Home</button>
-        <button className="bg-transparent font-bold text-white hidden sm:block mr-2">Experience</button>
-        <button className="bg-transparent font-bold text-white hidden sm:block mr-2">Projects</button>
-        <button className="bg-transparent font-bold text-white hidden sm:block mr-2">Contact</button>
-        <button className="bg-transparent font-bold text-white hidden sm:block mr-2">About</button>
+  <button className="bg-transparent font-bold text-white group btn btn-border-underline hidden sm:block mr-2 relative">
+    Home
+    <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </button>
+  <button className="bg-transparent font-bold text-white group btn btn-border-underline hidden sm:block mr-2 relative">
+    Experience
+    <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </button>
+  <button className="bg-transparent font-bold text-white group btn btn-border-underline hidden sm:block mr-2 relative">
+    Projects
+    <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </button>
+  <button className="bg-transparent font-bold text-white group btn btn-border-underline  hidden sm:block mr-2 relative">
+    Contact
+    <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </button>
+  <button className="bg-transparent font-bold text-white group btn btn-border-underline  hidden sm:block mr-2 relative">
+    About
+    <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+  </button>
+
+
         <img
           src={menu}
           className="h-8 mr-2 sm:hidden cursor-pointer"
@@ -56,9 +73,9 @@ function App() {
     <div className="fixed top-0 right-0 h-full bg-black w-full transition-all flex flex-col items-center justify-center z-50">
       <button className="bg-transparent font-bold text-white p-4 my-2 w-full">Home</button>
       <button className="bg-transparent font-bold text-white p-4 my-2 w-full">Experience</button>
-      <button className="bg-transparent font-bold text-white p-4 my-2 w-full">Projects</button>
-      <button className="bg-transparent font-bold text-white p-4 my-2 w-full">Contact</button>
-      <button className="bg-transparent font-bold text-white p-4 my-2 w-full">About</button>
+      <button className="bg-transparent font-bold text-white p-4 my-2  w-full">Projects</button>
+      <button className="bg-transparent font-bold text-white p-4 my-2  w-full">Contact</button>
+      <button className="bg-transparent font-bold text-white p-4 my-2  w-full">About</button>
       <button
         className="bg-transparent rounded-full font-bold text-white p-4 my-2 w-auto"
         onClick={toggleSidePanel}
