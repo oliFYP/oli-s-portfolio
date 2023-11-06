@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import background from './videobg/4K_10.mp4';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import logo from './img/OS.png';
 import logo1 from './img/insta.png';
 import logo2 from './img/github.png';
@@ -12,7 +14,12 @@ function App() {
   const toggleSidePanel = () => {
     setSidePanelOpen(!isSidePanelOpen);
   };
-
+  useEffect(() => {
+    AOS.init({
+      
+      duration: 1000, 
+    });
+  }, []);
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover">
       <video
@@ -64,15 +71,15 @@ function App() {
 
 
 <div className="absolute top-1/4 right-1/2 transform">
-  <div className="bg-white h-full w-1 absolute top-0 left-0" style={{ marginLeft: '10px' }}></div>
+  <div data-aos="fade-up" className="bg-white h-full w-1 absolute top-0 left-0" style={{ marginLeft: '10px' }}></div>
   <div style={{ marginLeft: '10px' }}>
-    <h1 className="select-none text-white font-bold text-4xl md:text-4xl lg:text-6xl max-w-md pl-4">
+    <h1 data-aos="fade-right" className="select-none text-white font-bold text-4xl md:text-4xl lg:text-6xl max-w-md pl-4">
       Hi there!
     </h1>
-    <p className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md pl-4">
+    <p  data-aos="fade-up" className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md pl-4">
       I'm Olivier, a computer science graduate from Kingston University
     </p>
-    <button className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center transition-transform transform hover:scale-110">
+    <button data-aos="fade-left" className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center">
       Download CV
     </button>
     <div className="mt-3 flex">
