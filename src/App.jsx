@@ -70,9 +70,9 @@ function App() {
       Hi there!
     </h1>
     <p className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md pl-4">
-      I'm Olivier, a computer science graduate
+      I'm Olivier, a computer science graduate from Kingston University
     </p>
-    <button className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center transition-all">
+    <button className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center transition-transform transform hover:scale-110">
       Download CV
     </button>
     <div className="mt-3 flex">
