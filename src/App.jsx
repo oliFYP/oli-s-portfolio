@@ -71,8 +71,8 @@ function App() {
 
 
 <div className="absolute top-1/4 right-1/2 transform">
-  <div data-aos="fade-up" className="bg-white h-full w-1 absolute top-0 left-0" style={{ marginLeft: '10px' }}></div>
-  <div style={{ marginLeft: '10px' }}>
+  <div data-aos="fade-up" className="bg-white h-full w-1 absolute top-0 left-0" style={{ marginLeft: '30px' }}></div>
+  <div style={{ marginLeft: '30px' }}>
     <h1 data-aos="fade-right" className="select-none text-white font-bold text-4xl md:text-4xl lg:text-6xl max-w-md pl-4">
       Hi there!
     </h1>
