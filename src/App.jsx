@@ -27,7 +27,7 @@ function App() {
         loop
         muted
         playsInline
-        className="object-cover w-full h-full transition-all md:pointer-events-none blur-lg"
+        className="object-cover w-full h-full transition-all md:pointer-events-none blur-sm"
         id="video"
       >
         <source src={background} type="video/mp4" />
@@ -69,13 +69,21 @@ function App() {
       </div>
 
       <div className="absolute top-0 right-0">
-  {isSidePanelOpen && (
-    <div className="fixed top-0 right-0 h-full bg-black w-full transition-all flex flex-col items-center justify-center z-50">
-      <button className="bg-transparent font-bold text-white p-4 my-2 w-full">Home</button>
-      <button className="bg-transparent font-bold text-white p-4 my-2 w-full">Experience</button>
-      <button className="bg-transparent font-bold text-white p-4 my-2  w-full">Projects</button>
-      <button className="bg-transparent font-bold text-white p-4 my-2  w-full">Contact</button>
-      <button className="bg-transparent font-bold text-white p-4 my-2  w-full">About</button>
+ <div
+  className={`top-0 right-0 w-full bg-black  p-20  text-white fixed h-full z-40  flex flex-col items-center justify-center ease-in-out duration-300 ${
+    isSidePanelOpen ? "translate-x-0 " : "translate-x-full"
+  }`}
+>
+      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full">Home
+      <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
+      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full">Experience
+      <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
+      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">Projects
+      <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
+      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">Contact
+      <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
+      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">About
+      <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
       <button
         className="bg-transparent rounded-full font-bold text-white p-4 my-2 w-auto"
         onClick={toggleSidePanel}
@@ -83,7 +91,7 @@ function App() {
         X
       </button>
     </div>
-  )}
+
 </div>
 
 
