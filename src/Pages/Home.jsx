@@ -7,6 +7,7 @@ import logo1 from '../img/insta.png';
 import logo2 from '../img/github.png';
 import logo3 from '../img/linkedIn.png';
 import menu from '../img/menu.png';
+import SidePanel from "../components/SidePanel"
 import { PacmanLoader } from "react-spinners";
 
 function Home() {
@@ -78,47 +79,28 @@ function Home() {
           onClick={toggleSidePanel}
         />
       </div>
-
+      <SidePanel isSidePanelOpen={isSidePanelOpen} toggleSidePanel={toggleSidePanel} />
       <div className="absolute top-0 left-0 m-4 flex">
         <img src={logo} className="h-8 mt-1 sm:h-9 sm:mt-2" alt="Logo" />
       </div>
 
       <div className="absolute top-0 right-0">
- <div
-  className={`top-0 right-0 w-full bg-black  p-20  text-white fixed h-full z-40  flex flex-col items-center justify-center ease-in-out duration-300 ${
-    isSidePanelOpen ? "translate-x-0 " : "translate-x-full"
-  }`}
->
-      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full">Home
-      <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
-      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full">Experience
-      <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
-      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">Projects
-      <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
-      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">Contact
-      <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
-      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">About
-      <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
-      <button
-        className="bg-transparent rounded-full font-bold text-white p-4 my-2 w-auto"
-        onClick={toggleSidePanel}
-      >
-        X
-      </button>
-    </div>
+
 
 </div>
 
 
 <div className="absolute top-1/4 sm:right-1/2 transform">
   <div data-aos="fade-up" className="bg-white h-full w-1 absolute top-0 left-0" style={{ marginLeft: '10px' }}></div>
-  <div style={{ marginLeft: '10px' }}>
+  <div style={{ marginLeft: '10px', marginRight:'15px' }}>
     <h1 data-aos="fade-right" className="select-none text-white font-bold text-4xl md:text-4xl lg:text-6xl max-w-md pl-4">
       Hi there!
     </h1>
-    <p  data-aos="fade-up" className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md pl-4">
+    <div data-aos="fade-up" className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md pl-4  ">
+    <p>
       I'm Olivier, a computer science graduate from Kingston University
     </p>
+    </div>
     <button data-aos="fade-left" className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center">
       Download CV
     </button>
