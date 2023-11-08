@@ -1,16 +1,22 @@
 import React, { useState, useEffect } from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 function Education() {
  
-
+    useEffect(() => {
+        AOS.init({
+          
+          duration: 1000, 
+        });
+      }, []);
 
   return (
     
   <div  className="bg-black h-auto p-6">
-      <div  className="max-w-3xl mx-auto">
+      <div  data-aos="fade-up" className="max-w-3xl mx-auto">
         <h2 className="text-2xl font-bold mb-4">Education History</h2>
 
         <div className="mb-6">
