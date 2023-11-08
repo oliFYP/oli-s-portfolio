@@ -8,6 +8,8 @@ import logo2 from '../img/github.png';
 import logo3 from '../img/linkedIn.png';
 import menu from '../img/menu.png';
 import SidePanel from "../components/SidePanel"
+import Education from "../components/Education"
+import TopBar from "../components/TopBar"
 import { PacmanLoader } from "react-spinners";
 
 function Home() {
@@ -49,45 +51,13 @@ function Home() {
           <source src={background} type="video/mp4" />
         </video>
      
-      <div className="absolute top-0 right-0 m-4 flex">
-  <button className="bg-transparent font-bold text-white group btn btn-border-underline hidden sm:block mr-2 relative">
-    Home
-    <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-  </button>
-  <button className="bg-transparent font-bold text-white group btn btn-border-underline hidden sm:block mr-2 relative">
-    Experience
-    <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-  </button>
-  <button className="bg-transparent font-bold text-white group btn btn-border-underline hidden sm:block mr-2 relative">
-    Projects
-    <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-  </button>
-  <button className="bg-transparent font-bold text-white group btn btn-border-underline  hidden sm:block mr-2 relative">
-    Contact
-    <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-  </button>
-  <button className="bg-transparent font-bold text-white group btn btn-border-underline  hidden sm:block mr-2 relative">
-    About
-    <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-  </button>
-
-
-        <img
-          src={menu}
-          className="h-8 mr-2 sm:hidden cursor-pointer"
-          alt="Menu"
-          onClick={toggleSidePanel}
-        />
-      </div>
+    <TopBar isSidePanelOpen={isSidePanelOpen} toggleSidePanel={toggleSidePanel} />
       <SidePanel isSidePanelOpen={isSidePanelOpen} toggleSidePanel={toggleSidePanel} />
       <div className="absolute top-0 left-0 m-4 flex">
         <img src={logo} className="h-8 mt-1 sm:h-9 sm:mt-2" alt="Logo" />
       </div>
 
-      <div className="absolute top-0 right-0">
-
-
-</div>
+      
 
 
 <div className="absolute top-1/4 sm:right-1/2 transform">
@@ -110,7 +80,9 @@ function Home() {
       <img src={logo3} className="h-8" alt="Logo 3" />
     </div>
   </div>
+ 
   </div>
+  <Education/>
   </>
       )}
 </div>
