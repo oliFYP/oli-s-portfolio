@@ -7,9 +7,10 @@ import logo1 from '../img/insta.png';
 import logo2 from '../img/github.png';
 import logo3 from '../img/linkedIn.png';
 import menu from '../img/menu.png';
-import SidePanel from "../components/SidePanel"
-import Education from "../components/Education"
-import TopBar from "../components/TopBar"
+import SidePanel from "../components/SidePanel";
+import Education from "../components/Education";
+import Experience from "../components/Experience";
+import TopBar from "../components/TopBar";
 import { PacmanLoader } from "react-spinners";
 
 function Home() {
@@ -82,7 +83,9 @@ function Home() {
   </div>
  
   </div>
+  <Experience/>
   <Education/>
+
   </>
       )}
 </div>
