@@ -28,9 +28,9 @@ function Experience() {
         <h1 data-aos="fade-down" className="text-2xl font-bold mb-4">
           Experience
         </h1>
-        <div className="flex flex-wrap align-center justify-center">
+        <div className="flex flex-wrap  justify-center">
           {iconSources.map((icon, index) => (
-            <div key={index} className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 p-2">
+            <div key={index} className="  md:w-1/4 lg:w-1/5 p-2">
               <div className="w-24 h-24 bg-gray-800 flex flex-col items-center justify-center rounded-lg">
                 <img src={icon} alt={`Icon ${index + 1}`} className="w-16 h-16 object-contain" data-aos={`fade-up-${index * 2}`}/>
                 <div className="text-white font-bold text-center mt-1 mb-1">{titles[index]}</div>
