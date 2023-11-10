@@ -46,6 +46,7 @@ function Home() {
             loop
             muted
             playsInline
+            data-aos="fade-up"
             className="object-cover w-full h-full transition-all md:pointer-events-none blur-sm"
             id="video"
           >
