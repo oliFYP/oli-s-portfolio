@@ -10,8 +10,10 @@ import menu from '../img/menu.png';
 import SidePanel from "../components/SidePanel";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
+import Git from "../components/Git";
 import TopBar from "../components/TopBar";
 import { PacmanLoader } from "react-spinners";
+import Design from "../components/Design";
 
 function Home() {
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);
@@ -85,6 +87,8 @@ function Home() {
           </div>
 
           <Experience />
+          <Design />
+          <Git />
           <Education />
         </>
       )}

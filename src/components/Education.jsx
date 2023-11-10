@@ -54,7 +54,7 @@ function Education() {
         <div className="mb-6 flex flex-col-reverse sm:flex-row items-center">
           <div
             className="w-full sm:hidden sm:w-1/3 h-auto ml-4"
-            data-aos="fade-bottom"
+            data-aos="fade-right"
             
           >
             <img
@@ -64,13 +64,13 @@ function Education() {
               style={{ opacity: 0.8 }}
             />
           </div>
-          <div className="w-full sm:w-2/3" data-aos="fade-right" style={{ overflow: 'hidden' }}>
-            <h3 className="text-xl font-bold" style={{ maxWidth: '100%' }}>
+          <div className="w-full sm:w-2/3"  style={{ overflow: 'hidden' }}>
+            <h3 data-aos="fade-left" className="text-xl font-bold" style={{ maxWidth: '100%' }}>
               Baccalaureat Technologique in Business Management
             </h3>
-            <p className="text-xl font-semibold" style={{ maxWidth: '100%' }}>Lycee d'Altitude Briancon (2017 - 2020)</p>
+            <p data-aos="fade-right" className="text-xl font-semibold" style={{ maxWidth: '100%' }}>Lycee d'Altitude Briancon (2017 - 2020)</p>
 
-            <ul className="list-disc pl-6 mt-2 mb-10">
+            <ul data-aos="fade-left" className="list-disc pl-6 mt-2 mb-10">
               <li>
                 Modules: Law, Economics, Finances, Math, Italian, Management, History and Geography, English, Italian.
               </li>

@@ -1,32 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import icon1 from '../img/icon1.png';
-import icon2 from '../img/icon2.png';
-import icon3 from '../img/icon3.png';
-import icon4 from '../img/icon4.png';
-import icon5 from '../img/icon5.png';
-import icon6 from '../img/icon6.png';
-import icon7 from '../img/icon7.png';
-import icon8 from '../img/icon8.png';
-import icon9 from '../img/icon9.png';
-import icon10 from '../img/icon10.png';
 
-function Experience() {
+import icon13 from '../img/icon13.png';
+import icon14 from '../img/icon14.png';
+
+function Git() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
 
-  const iconSources = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, icon10];
-  const titles = ['CSS', 'Dart', 'React', 'Tailwind', 'Java', 'Python', 'HTML', 'JavaScript', 'Firebase', 'MATLAB'];
+  const iconSources = [icon13, icon14];
+  const titles = ['Github', 'GitLab'];
 
   return (
     <div className="bg-black h-auto p-6" style={{ overflow: 'hidden' }}>
       <div className="max-w-5xl mx-auto">
         <h1 data-aos="fade-down" className="text-3xl font-bold mb-4 text-white text-center">
-          Software Development tools
+          Version Control
         </h1>
         <div className="flex flex-wrap justify-center">
           {iconSources.map((icon, index) => (
@@ -43,4 +36,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Git;
