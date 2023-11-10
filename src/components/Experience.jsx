@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import icon1 from '../img/icon1.png';
-import icon2 from '../img/icon2.png';
-import icon3 from '../img/icon3.png';
-import icon4 from '../img/icon4.png';
-import icon5 from '../img/icon5.png';
-import icon6 from '../img/icon6.png';
-import icon7 from '../img/icon7.png';
-import icon8 from '../img/icon8.png';
-import icon9 from '../img/icon9.png';
-import icon10 from '../img/icon10.png';
+import icon1 from '../icons/icon1.png';
+import icon2 from '../icons/icon2.png';
+import icon3 from '../icons/icon3.png';
+import icon4 from '../icons/icon4.png';
+import icon5 from '../icons/icon5.png';
+import icon6 from '../icons/icon6.png';
+import icon7 from '../icons/icon7.png';
+import icon8 from '../icons/icon8.png';
+import icon9 from '../icons/icon9.png';
+import icon10 from '../icons/icon10.png';
 
 function Experience() {
   useEffect(() => {
@@ -25,7 +25,7 @@ function Experience() {
   return (
     <div className="bg-black h-auto p-6" style={{ overflow: 'hidden' }}>
       <div className="max-w-5xl mx-auto">
-        <h1 data-aos="fade-down" className="text-3xl font-bold mb-4 text-white text-center">
+        <h1 data-aos="fade-right" className="text-3xl font-bold mb-4 text-white text-center">
           Software Development tools
         </h1>
         <div className="flex flex-wrap justify-center">

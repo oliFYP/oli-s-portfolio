@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import icon11 from '../img/icon11.png';
-import icon12 from '../img/icon12.png';
+import icon11 from '../icons/icon11.png';
+import icon12 from '../icons/icon12.png';
 
 
 function Design() {
@@ -18,7 +18,7 @@ function Design() {
   return (
     <div className="bg-black h-auto p-6" style={{ overflow: 'hidden' }}>
       <div className="max-w-5xl mx-auto">
-        <h1 data-aos="fade-down" className="text-3xl font-bold mb-4 text-white text-center">
+        <h1 data-aos="fade-left" className="text-3xl font-bold mb-4 text-white text-center">
           Design & Prototyping tools
         </h1>
         <div className="flex flex-wrap justify-center">
