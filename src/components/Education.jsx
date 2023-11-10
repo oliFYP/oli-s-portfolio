@@ -32,10 +32,10 @@ function Education() {
             />
           </div>
           <div className="w-full sm:w-1/2 h-auto">
-            <h3 data-aos="fade-left" className="text-xl font-semibold" style={{ maxWidth: '100%' }}>
+            <h3 data-aos="fade-left" className="text-xl font-bold" style={{ maxWidth: '100%' }}>
               BSc Computer Science with Honours
             </h3>
-            <p data-aos="fade-right" style={{ maxWidth: '100%' }}>Kingston University (2020 - 2023)</p>
+            <p className="text-xl font-semibold" data-aos="fade-right" style={{ maxWidth: '100%' }}>Kingston University (2020 - 2023)</p>
 
             <ul className="list-disc pl-6 mt-2">
               <li data-aos="fade-left">
@@ -65,10 +65,10 @@ function Education() {
             />
           </div>
           <div className="w-full sm:w-2/3" data-aos="fade-right" style={{ overflow: 'hidden' }}>
-            <h3 className="text-xl font-semibold" style={{ maxWidth: '100%' }}>
+            <h3 className="text-xl font-bold" style={{ maxWidth: '100%' }}>
               Baccalaureat Technologique in Business Management
             </h3>
-            <p style={{ maxWidth: '100%' }}>Lycee d'Altitude Briancon (2017 - 2020)</p>
+            <p className="text-xl font-semibold" style={{ maxWidth: '100%' }}>Lycee d'Altitude Briancon (2017 - 2020)</p>
 
             <ul className="list-disc pl-6 mt-2 mb-10">
               <li>
