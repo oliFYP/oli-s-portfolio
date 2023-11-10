@@ -20,12 +20,12 @@ function Experience() {
   }, []);
 
   const iconSources = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, icon10];
-  const titles = ['CSS', 'Dart', 'React', 'Tailwind', 'Python', 'Java', 'HTML', 'JavaScript', 'Firebase', 'MATLAB'];
+  const titles = ['CSS', 'Dart', 'React', 'Tailwind', 'Java', 'Python', 'HTML', 'JavaScript', 'Firebase', 'MATLAB'];
 
   return (
     <div className="bg-black h-auto p-6" style={{ overflow: 'hidden' }}>
       <div className="max-w-5xl mx-auto">
-        <h1 data-aos="fade-down" className="text-2xl font-bold mb-4 text-white text-center">
+        <h1 data-aos="fade-down" className="text-3xl font-bold mb-4 text-white text-center">
           Experience
         </h1>
         <div className="flex flex-wrap justify-center">

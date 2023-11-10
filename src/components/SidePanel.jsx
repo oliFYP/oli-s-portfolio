@@ -10,7 +10,7 @@ function SidePanel({ isSidePanelOpen, toggleSidePanel }) {
   return (
     
     <div
-    className={`top-0 right-0 w-full bg-black p-20 text-white fixed h-full z-40 flex flex-col items-center justify-center ease-in-out duration-300 ${
+    className={`top-0 right-0 w-full h-full bg-black p-20 absolute text-white h-auto z-40 flex flex-col items-center justify-center ease-in-out duration-300  ${
       isSidePanelOpen ? "translate-x-0" : "translate-x-full"
     }`}
   >
