@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 
 import menu from '../img/menu.png';
 
-function Home({ isSidePanelOpen, toggleSidePanel }) {
-  
+function Topbar({ isSidePanelOpen, toggleSidePanel,  scrollToExperience}) {
+
   return (
     
    
@@ -15,7 +15,7 @@ function Home({ isSidePanelOpen, toggleSidePanel }) {
     Home
     <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
   </button>
-  <button className="bg-transparent font-bold text-white group btn btn-border-underline hidden sm:block mr-2 relative">
+  <button className="bg-transparent font-bold text-white group btn btn-border-underline hidden sm:block mr-2 relative" onClick={scrollToExperience}>
     Experience
     <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
   </button>
@@ -45,4 +45,4 @@ function Home({ isSidePanelOpen, toggleSidePanel }) {
   );
 }
 
-export default Home;
+export default Topbar;

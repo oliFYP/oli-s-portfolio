@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import background from '../videobg/4K_10.mp4';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -41,6 +41,13 @@ function Home() {
     // Open the Instagram profile in a new tab or window
     window.open(instagramProfileURL, "_blank");
   };
+  const openLinkedInProfile = () => {
+    // Replace 'username' with the actual Instagram username you want to link to
+    const instagramProfileURL = "https://www.linkedin.com/in/olivier-smith-2378b8205/";
+
+    // Open the Instagram profile in a new tab or window
+    window.open(instagramProfileURL, "_blank");
+  };
   const openGithubProfile = () => {
     // Replace 'username' with the actual Instagram username you want to link to
     const githubProfileURL = "https://github.com/oliFYP";
@@ -48,7 +55,12 @@ function Home() {
     // Open the Instagram profile in a new tab or window
     window.open(githubProfileURL, "_blank");
   };
+  const experienceRef = useRef(null);
 
+  // Function to scroll to the Experience section
+  const scrollToExperience = () => {
+    experienceRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover">
       {isLoading ? (
@@ -98,12 +110,12 @@ function Home() {
               <div className="mt-3 flex">
                 <img src={logo1} className="h-8 mr-2 ml-8 cursor-pointer" alt="Logo 1" onClick={openInstagramProfile} />
                 <img src={logo2} className="h-8 mr-2 cursor-pointer" alt= "Logo 2" onClick={openGithubProfile}/>
-                <img src={logo3} className="h-8 cursor-pointer" alt="Logo 3" />
+                <img src={logo3} className="h-8 cursor-pointer" alt="Logo 3"  onClick={openLinkedInProfile} />
               </div>
             </div>
           </div>
 
-          <Experience />
+          <Experience ref={experienceRef} />
           <Ide />
           <Design />
           <Git />
