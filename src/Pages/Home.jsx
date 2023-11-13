@@ -10,6 +10,7 @@ import menu from '../img/menu.png';
 import SidePanel from "../components/SidePanel";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
+import Ide from "../components/Ide";
 import Git from "../components/Git";
 import TopBar from "../components/TopBar";
 import { PacmanLoader } from "react-spinners";
@@ -32,6 +33,21 @@ function Home() {
       duration: 1000,
     });
   }, []);
+
+  const openInstagramProfile = () => {
+    // Replace 'username' with the actual Instagram username you want to link to
+    const instagramProfileURL = "https://www.instagram.com/olismth/";
+
+    // Open the Instagram profile in a new tab or window
+    window.open(instagramProfileURL, "_blank");
+  };
+  const openGithubProfile = () => {
+    // Replace 'username' with the actual Instagram username you want to link to
+    const githubProfileURL = "https://github.com/oliFYP";
+
+    // Open the Instagram profile in a new tab or window
+    window.open(githubProfileURL, "_blank");
+  };
 
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover">
@@ -80,17 +96,20 @@ function Home() {
                 Download CV
               </button>
               <div className="mt-3 flex">
-                <img src={logo1} className="h-8 mr-2 ml-8" alt="Logo 1" />
-                <img src={logo2} className="h-8 mr-2" alt= "Logo 2" />
-                <img src={logo3} className="h-8" alt="Logo 3" />
+                <img src={logo1} className="h-8 mr-2 ml-8 cursor-pointer" alt="Logo 1" onClick={openInstagramProfile} />
+                <img src={logo2} className="h-8 mr-2 cursor-pointer" alt= "Logo 2" onClick={openGithubProfile}/>
+                <img src={logo3} className="h-8 cursor-pointer" alt="Logo 3" />
               </div>
             </div>
           </div>
 
           <Experience />
+          <Ide />
           <Design />
           <Git />
           <Education />
+         
+
         </>
       )}
     </div>
