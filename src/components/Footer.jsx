@@ -17,7 +17,7 @@ const Footer = () => {
           </li>
           <li>
             <a className="hover:text-gray-500 hover:cursor-pointer text-white text-sm md:text-base" >
-              About
+              About Me
             </a>
           </li>
          
