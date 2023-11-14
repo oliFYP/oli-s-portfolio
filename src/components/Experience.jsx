@@ -26,7 +26,7 @@ const Experience = React.forwardRef((props, ref) => {
   return (
     <div ref={ref} className="bg-black h-auto p-0 lg:p-6" style={{ overflow: 'hidden' }}>
       <div className="max-w-5xl mx-auto">
-        <h1 data-aos="fade-right" className="text-3xl font-bold mb-4 text-white text-center">
+        <h1 data-aos="fade-right" className="text-3xl mt-10 font-bold mb-4 text-white text-center">
           Software Development tools
         </h1>
         <div className="flex flex-wrap justify-center">
