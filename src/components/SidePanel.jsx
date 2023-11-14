@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 
 
-function SidePanel({ isSidePanelOpen, toggleSidePanel }) {
+function SidePanel({ isSidePanelOpen, toggleSidePanel, scrollToExperience, scrollToEducation }) {
  
 
 
@@ -16,9 +16,9 @@ function SidePanel({ isSidePanelOpen, toggleSidePanel }) {
       Home
       <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
     </button>
-<button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full">Experience
+<button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full" onClick={scrollToExperience}>Experience & Projects
 <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
-<button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">Projects
+<button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full" onClick={scrollToEducation}>Education 
 <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
 <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">Contact
 <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>

@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import icon15 from '../icons/icon15.png';
 import icon16 from '../icons/icon16.png';
 import icon17 from '../icons/icon17.png';
+import icon18 from '../icons/icon18.png';
 
 function Ide(){
     useEffect(() => {
@@ -12,8 +13,8 @@ function Ide(){
         });
       }, []);
     
-      const iconSources = [icon15, icon16, icon17];
-      const titles = ['VS Code', 'VS', 'Netbeans'];
+      const iconSources = [icon15, icon16, icon17, icon18];
+      const titles = ['VS Code', 'VS', 'Netbeans', 'Android Studio'];
     return(
         <div className="bg-black h-auto p-6" style={{ overflow: 'hidden' }}>
         <div className="max-w-5xl mx-auto">

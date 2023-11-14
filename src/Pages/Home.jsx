@@ -19,6 +19,8 @@ import Design from "../components/Design";
 function Home() {
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);
   const [isLoading, setLoading] = useState(true);
+  const experienceRef = useRef(null);
+  const educationRef = useRef(null);
 
   setTimeout(() => {
     setLoading(false);
@@ -55,12 +57,15 @@ function Home() {
     // Open the Instagram profile in a new tab or window
     window.open(githubProfileURL, "_blank");
   };
-  const experienceRef = useRef(null);
-
+  
   // Function to scroll to the Experience section
   const scrollToExperience = () => {
     experienceRef.current.scrollIntoView({ behavior: 'smooth' });
   };
+  const scrollToEducation = () => {
+    educationRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover">
       {isLoading ? (
@@ -82,10 +87,18 @@ function Home() {
           </video>
 
           <div>
-            <TopBar isSidePanelOpen={isSidePanelOpen} toggleSidePanel={toggleSidePanel} />
+            <TopBar 
+            isSidePanelOpen={isSidePanelOpen} 
+            toggleSidePanel={toggleSidePanel} 
+            scrollToExperience={scrollToExperience} 
+            scrollToEducation={scrollToEducation}/>
 
             {isSidePanelOpen && (
-               <SidePanel isSidePanelOpen={isSidePanelOpen} toggleSidePanel={toggleSidePanel} />
+               <SidePanel 
+               isSidePanelOpen={isSidePanelOpen} 
+               toggleSidePanel={toggleSidePanel} 
+               scrollToExperience={scrollToExperience}
+               scrollToEducation={scrollToEducation} />
             )}
 
             <div className="absolute top-0 left-0 m-4 flex">
@@ -96,7 +109,7 @@ function Home() {
           <div className="absolute top-1/4 sm:right-1/2 transform">
             <div data-aos="fade-up" className="bg-white h-full w-1 absolute top-0 left-0" style={{ marginLeft: '10px' }}></div>
             <div style={{ marginLeft: '10px', marginRight:'15px' }}>
-              <h1 data-aos="fade-right" className="select-none text-white font-bold text-4xl md:text-4xl lg:text-6xl max-w-md pl-4">
+              <h1 data-aos="fade-right" className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md pl-4">
                 Hi there!
               </h1>
               <div data-aos="fade-up" className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md pl-4">
@@ -119,7 +132,7 @@ function Home() {
           <Ide />
           <Design />
           <Git />
-          <Education />
+          <Education ref={educationRef} />
          
 
         </>
