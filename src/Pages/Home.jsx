@@ -15,6 +15,7 @@ import Git from "../components/Git";
 import TopBar from "../components/TopBar";
 import { PacmanLoader } from "react-spinners";
 import Design from "../components/Design";
+import Footer from "../components/Footer";
 
 function Home() {
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);
@@ -133,7 +134,7 @@ function Home() {
           <Design />
           <Git />
           <Education ref={educationRef} />
-         
+          <Footer />
 
         </>
       )}
