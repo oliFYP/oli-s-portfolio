@@ -6,6 +6,7 @@ import logo from '../img/OS.png';
 import logo1 from '../img/insta.png';
 import logo2 from '../img/github.png';
 import logo3 from '../img/linkedIn.png';
+import CV from '../CV/Olivier-Smith-CV-2023.pdf';
 import menu from '../img/menu.png';
 import SidePanel from "../components/SidePanel";
 import Education from "../components/Education";
@@ -38,33 +39,44 @@ function Home() {
   }, []);
 
   const openInstagramProfile = () => {
-    // Replace 'username' with the actual Instagram username you want to link to
+    
     const instagramProfileURL = "https://www.instagram.com/olismth/";
 
-    // Open the Instagram profile in a new tab or window
     window.open(instagramProfileURL, "_blank");
   };
   const openLinkedInProfile = () => {
-    // Replace 'username' with the actual Instagram username you want to link to
+    
     const instagramProfileURL = "https://www.linkedin.com/in/olivier-smith-2378b8205/";
 
-    // Open the Instagram profile in a new tab or window
+    
     window.open(instagramProfileURL, "_blank");
   };
   const openGithubProfile = () => {
-    // Replace 'username' with the actual Instagram username you want to link to
+    
     const githubProfileURL = "https://github.com/oliFYP";
 
-    // Open the Instagram profile in a new tab or window
+
     window.open(githubProfileURL, "_blank");
   };
   
-  // Function to scroll to the Experience section
+
   const scrollToExperience = () => {
     experienceRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   const scrollToEducation = () => {
     educationRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const downloadCV = () => {
+    
+    const cvFileName = 'Olivier-Smith-CV-2023.pdf';
+
+  const cvFilePath = CV;
+
+  const anchor = document.createElement('a');
+  anchor.download = cvFileName;
+  anchor.href = cvFilePath;
+  anchor.click();
   };
 
   return (
@@ -118,7 +130,7 @@ function Home() {
                   I'm Olivier, a computer science graduate from Kingston University
                 </p>
               </div>
-              <button data-aos="fade-left" className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center">
+              <button data-aos="fade-left" className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center"onClick={downloadCV}>
                 Download CV
               </button>
               <div className="mt-3 flex">
