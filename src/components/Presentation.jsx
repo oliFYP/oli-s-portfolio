@@ -1,6 +1,7 @@
 import React, {  useEffect } from 'react';
 import logo1 from '../img/insta.png';
 import logo2 from '../img/github.png';
+import CV from '../CV/Olivier-Smith-CV-2023.pdf';
 import logo3 from '../img/linkedIn.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
