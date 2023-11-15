@@ -37,7 +37,7 @@ function Topbar({ isSidePanelOpen, toggleSidePanel,  scrollToExperience, scrollT
           src={menu}
           className="h-8 mr-2 sm:hidden cursor-pointer"
           alt="Menu"
-          onClick={toggleSidePanel}
+          onClick={() => toggleSidePanel()}
         />
       </nav>
      

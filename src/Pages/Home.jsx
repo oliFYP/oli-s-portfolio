@@ -17,6 +17,7 @@ import TopBar from "../components/TopBar";
 import { PacmanLoader } from "react-spinners";
 import Design from "../components/Design";
 import Footer from "../components/Footer";
+import { motion } from 'framer-motion';
 
 function Home() {
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);
