@@ -18,9 +18,12 @@ function Git() {
   return (
     <div className="bg-black h-auto p-0 lg:p-6" style={{ overflow: 'hidden' }}>
       <div className="max-w-5xl mx-auto">
-        <h1 data-aos="fade-right" className="text-3xl font-bold mt-10 mb-4 text-white text-center">
+        <h1 data-aos="fade-left" className="text-3xl font-bold mt-10 mb-4 text-white text-center">
           Version Control
         </h1>
+        <div data-aos="fade-left" class="flex items-center justify-center">
+  <div class="bg-white h-1 w-20 mb-6 mt-2"></div>
+</div>
         <div className="flex flex-wrap justify-center">
           {iconSources.map((icon, index) => (
             <div key={index} className="w-1/2 md:w-1/4 lg:w-1/5 p-2 ">

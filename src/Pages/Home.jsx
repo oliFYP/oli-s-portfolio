@@ -17,6 +17,7 @@ import TopBar from "../components/TopBar";
 import { PacmanLoader } from "react-spinners";
 import Design from "../components/Design";
 import Footer from "../components/Footer";
+
 import { motion } from 'framer-motion';
 
 function Home() {
@@ -82,6 +83,7 @@ function Home() {
 
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover">
+      
       {isLoading ? (
         <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black">
           <PacmanLoader color="#ffffff" />
@@ -151,6 +153,7 @@ function Home() {
 
         </>
       )}
+     
     </div>
   );
 }

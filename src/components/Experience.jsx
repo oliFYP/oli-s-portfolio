@@ -29,6 +29,10 @@ const Experience = React.forwardRef((props, ref) => {
         <h1 data-aos="fade-right" className="text-3xl mt-10 font-bold mb-4 text-white text-center">
           Software Development tools
         </h1>
+        <div data-aos="fade-right" class="flex items-center justify-center">
+  <div class="bg-white h-1 w-20 mb-6 mt-2"></div>
+</div>
+
         <div className="flex flex-wrap justify-center">
           {iconSources.map((icon, index) => (
             <div key={index} className="w-1/2 md:w-1/4 lg:w-1/5 p-2 ">
