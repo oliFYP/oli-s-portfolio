@@ -30,7 +30,7 @@ const Experience = React.forwardRef((props, ref) => {
           Software Development tools
         </h1>
         <div data-aos="fade-right" class="flex items-center justify-center">
-  <div class="bg-white h-1 w-20 mb-6 mt-2"></div>
+  <div className="bg-white h-1 w-20 mb-6 mt-2"></div>
 </div>
 
         <div className="flex flex-wrap justify-center">

@@ -9,11 +9,11 @@ function SidePanel({ isSidePanelOpen, toggleSidePanel, scrollToExperience, scrol
 
   return (
     <motion.div
-      className={`top-0 right-0 w-full h-full bg-black p-20 absolute text-white h-auto z-40 flex flex-col items-center justify-center ease-in-out duration-300 translate-x-0`}
-      initial={{ y: '-100%' }}
-      animate={isSidePanelOpen ? { y: 0 } : { y: '-100%' }}
-      exit={{ y: '-100%' }} 
-    >
+    className={`top-0 right-0 w-full h-full bg-black p-20 absolute text-white h-auto z-40 flex flex-col items-center justify-center ease-in-out duration-300 translate-x-0`}
+    initial={{ y: '-100%' }}
+    animate={isSidePanelOpen ? { y: 0 } : { y: '-100%' }}
+    exit={{ y: '-100%' }}
+  >
     
     <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full">
       Home

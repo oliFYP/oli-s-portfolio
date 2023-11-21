@@ -14,7 +14,7 @@ const Education = React.forwardRef((props, ref) => {
   return (
     <div ref={ref} className="bg-black h-auto p-6" style={{ overflow: 'hidden' }}>
       <div className="max-w-5xl mx-auto">
-        <h1 data-aos="fade-down" className="text-3xl font-bold mb-4">
+        <h1 data-aos="fade-down" className="text-3xl font-bold mb-4 text-white">
           Education History
         </h1>
 
@@ -32,12 +32,12 @@ const Education = React.forwardRef((props, ref) => {
             />
           </div>
           <div className="w-full sm:w-1/2 h-auto">
-            <h3 data-aos="fade-left" className="text-xl font-bold" style={{ maxWidth: '100%' }}>
+            <h3 data-aos="fade-left" className="text-xl font-bold text-white" style={{ maxWidth: '100%' }}>
               BSc Computer Science with Honours
             </h3>
             <p className="text-xl font-semibold" data-aos="fade-right" style={{ maxWidth: '100%' }}>Kingston University (2020 - 2023)</p>
 
-            <ul className="list-disc pl-6 mt-2">
+            <ul className="list-disc pl-6 mt-2 text-white">
               <li data-aos="fade-left">
                 2020-2021: Computer Fundamentals, Programming, Requirements Analysis and Design, Professional Environments.
               </li>
@@ -65,12 +65,12 @@ const Education = React.forwardRef((props, ref) => {
             />
           </div>
           <div className="w-full sm:w-2/3"  style={{ overflow: 'hidden' }}>
-            <h3 data-aos="fade-left" className="text-xl font-bold" style={{ maxWidth: '100%' }}>
+            <h3 data-aos="fade-left" className="text-xl font-bold text-white" style={{ maxWidth: '100%' }}>
               Baccalaureat Technologique in Business Management
             </h3>
             <p data-aos="fade-right" className="text-xl font-semibold" style={{ maxWidth: '100%' }}>Lycee d'Altitude Briancon (2017 - 2020)</p>
 
-            <ul data-aos="fade-left" className="list-disc pl-6 mt-2 mb-10">
+            <ul data-aos="fade-left" className="list-disc pl-6 mt-2 mb-10 text-white">
               <li>
                 Modules: Law, Economics, Finances, Math, Italian, Management, History and Geography, English, Italian.
               </li>

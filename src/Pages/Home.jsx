@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import background from '../videobg/4K_10.mp4';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 import logo from '../img/OS.png';
 import Presentation from '../components/Presentation';
 import CV from '../CV/Olivier-Smith-CV-2023.pdf';
@@ -15,7 +14,7 @@ import TopBar from "../components/TopBar";
 import { PacmanLoader } from "react-spinners";
 import Design from "../components/Design";
 import Footer from "../components/Footer";
-
+import "./Home.css"
 import { motion } from 'framer-motion';
 
 function Home() {
@@ -32,11 +31,7 @@ function Home() {
     setSidePanelOpen(!isSidePanelOpen);
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+ 
 
   
 
@@ -50,25 +45,27 @@ function Home() {
  
 
   return (
-    <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover">
+    <div>
+    <div className="relative" style={{ overflow: 'hidden' }}>
+    {isLoading ? (
       
-      {isLoading ? (
         <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black">
           <PacmanLoader color="#ffffff" />
         </div>
       ) : (
         <>
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            data-aos="fade-up"
-            className="object-cover w-full h-full transition-all md:pointer-events-none blur-sm"
-            id="video"
-          >
-            <source src={background} type="video/mp4" />
-          </video>
+        <video
+  autoPlay
+  loop
+  muted
+  playsInline
+ 
+  className="object-cover w-full h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] transition-all md:pointer-events-none blur-sm"
+  id="video"
+>
+  <source src={background} type="video/mp4" />
+</video>
+
 
           <div>
             <TopBar 
@@ -92,16 +89,18 @@ function Home() {
 
           <Presentation/>
 
-          <Experience ref={experienceRef} />
+          
+
+        </>
+      )}
+     
+    </div>
+    <Experience ref={experienceRef} />
           <Ide />
           <Design />
           <Git />
           <Education ref={educationRef} />
           <Footer />
-
-        </>
-      )}
-     
     </div>
   );
 }
