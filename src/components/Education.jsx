@@ -35,7 +35,7 @@ const Education = React.forwardRef((props, ref) => {
             <h3 data-aos="fade-left" className="text-xl font-bold text-white" style={{ maxWidth: '100%' }}>
               BSc Computer Science with Honours
             </h3>
-            <p className="text-xl font-semibold" data-aos="fade-right" style={{ maxWidth: '100%' }}>Kingston University (2020 - 2023)</p>
+            <p className="text-xl font-semibold text-white" data-aos="fade-right" style={{ maxWidth: '100%' }}>Kingston University (2020 - 2023)</p>
 
             <ul className="list-disc pl-6 mt-2 text-white">
               <li data-aos="fade-left">
@@ -68,7 +68,7 @@ const Education = React.forwardRef((props, ref) => {
             <h3 data-aos="fade-left" className="text-xl font-bold text-white" style={{ maxWidth: '100%' }}>
               Baccalaureat Technologique in Business Management
             </h3>
-            <p data-aos="fade-right" className="text-xl font-semibold" style={{ maxWidth: '100%' }}>Lycee d'Altitude Briancon (2017 - 2020)</p>
+            <p data-aos="fade-right" className="text-xl font-semibold text-white" style={{ maxWidth: '100%' }}>Lycee d'Altitude Briancon (2017 - 2020)</p>
 
             <ul data-aos="fade-left" className="list-disc pl-6 mt-2 mb-10 text-white">
               <li>
