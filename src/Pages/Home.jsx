@@ -62,7 +62,10 @@ function Home() {
 >
   <source src={background} type="video/mp4" />
 </video>
-
+<div className="absolute bottom-0 w-full h-22">
+          <div className="relative h-50 bg-gradient-to-b from-transparent via-black to-black p-9">
+          </div>
+        </div>
 
           <div>
             <TopBar 
