@@ -45,7 +45,7 @@ function Home() {
 
   return (
     <div>
-    <div className="relative" style={{ overflow: 'hidden' }}>
+    
     {isLoading ? (
       
         <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black">
@@ -53,6 +53,7 @@ function Home() {
         </div>
       ) : (
         <>
+         <div className="relative" style={{ overflow: 'hidden' }}>
         <video
   autoPlay
   loop
@@ -87,19 +88,19 @@ function Home() {
           </div>
 
           <Presentation/>
-
-          
-
-        </>
-      )}
-     
-    </div>
-    <Experience ref={experienceRef} />
+          </div>
+          <Experience ref={experienceRef} />
           <Ide />
           <Design />
           <Git />
           <Education ref={educationRef} />
           <Footer />
+
+        </>
+      )}
+     
+   
+    
     </div>
   );
 }
