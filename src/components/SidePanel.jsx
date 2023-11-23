@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import exit from '../icons/exit.png'
 import { motion } from 'framer-motion';
+import React from 'react';
+import exit from '../icons/exit.png';
 
 
 function SidePanel({ isSidePanelOpen, toggleSidePanel, scrollToExperience, scrollToEducation }) {

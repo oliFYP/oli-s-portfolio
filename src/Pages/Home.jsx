@@ -1,20 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import background from '../videobg/4K_10.mp4';
 
-import logo from '../img/OS.png';
-import Presentation from '../components/Presentation';
-import CV from '../CV/Olivier-Smith-CV-2023.pdf';
-import menu from '../img/menu.png';
-import SidePanel from "../components/SidePanel";
-import Education from "../components/Education";
-import Experience from "../components/Experience";
-import Ide from "../components/Ide";
-import Git from "../components/Git";
-import TopBar from "../components/TopBar";
 import { PacmanLoader } from "react-spinners";
 import Design from "../components/Design";
+import Education from "../components/Education";
+import Experience from "../components/Experience";
 import Footer from "../components/Footer";
-import { motion } from 'framer-motion';
+import Git from "../components/Git";
+import Ide from "../components/Ide";
+import Presentation from '../components/Presentation';
+import SidePanel from "../components/SidePanel";
+import TopBar from "../components/TopBar";
+import logo from '../img/OS.png';
 
 function Home() {
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);

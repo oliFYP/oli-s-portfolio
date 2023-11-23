@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import React, { useEffect } from 'react';
 import icon15 from '../icons/icon15.png';
 import icon16 from '../icons/icon16.png';
 import icon17 from '../icons/icon17.png';
