@@ -21,8 +21,8 @@ function Git() {
         <h1 data-aos="fade-left" className="text-3xl font-bold mt-10 mb-4 text-white text-center">
           Version Control
         </h1>
-        <div data-aos="fade-left" class="flex items-center justify-center">
-  <div class="bg-white h-1 w-20 mb-6 mt-2"></div>
+        <div data-aos="fade-left" className="flex items-center justify-center">
+  <div className="bg-white h-1 w-20 mb-6 mt-2"></div>
 </div>
         <div className="flex flex-wrap justify-center">
           {iconSources.map((icon, index) => (
