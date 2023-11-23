@@ -60,7 +60,7 @@ function Home() {
   muted
   playsInline
  
-  className="object-cover w-full h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] transition-all md:pointer-events-none blur-sm"
+  className="object-cover w-full h-[600px] lg:h-[700px] xl:h-[800px] transition-all md:pointer-events-none blur-sm"
   id="video"
 >
   <source src={background} type="video/mp4" />
