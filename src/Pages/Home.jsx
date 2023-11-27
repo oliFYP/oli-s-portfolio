@@ -1,6 +1,4 @@
 import React, { useRef, useState } from 'react';
-import background from '../videobg/4K_10.mp4';
-
 import { PacmanLoader } from "react-spinners";
 import Design from "../components/Design";
 import Education from "../components/Education";
@@ -11,6 +9,7 @@ import Ide from "../components/Ide";
 import Presentation from '../components/Presentation';
 import SidePanel from "../components/SidePanel";
 import TopBar from "../components/TopBar";
+import Background from '../components/Videobg';
 import logo from '../img/OS.png';
 
 function Home() {
@@ -51,17 +50,7 @@ function Home() {
       ) : (
         <>
          <div className="relative" style={{ overflow: 'hidden' }}>
-        <video
-  autoPlay
-  loop
-  muted
-  playsInline
- 
-  className="object-cover w-full h-[600px] lg:h-[700px] xl:h-[800px] transition-all md:pointer-events-none blur-sm"
-  id="video"
->
-  <source src={background} type="video/mp4" />
-</video>
+        <Background/>
 <div className="absolute bottom-0 w-full h-22">
           <div className="relative h-50 bg-gradient-to-b from-transparent via-black to-black p-9">
           </div>
