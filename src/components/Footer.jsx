@@ -7,7 +7,7 @@ import Tailwind from '../icons/icon4.png'
 const Footer = () => {
   
   return (
-    <footer className="bg-gray-900  py-4 md:py-8">
+    <footer className="bg-gradient-to-r from-slate-900 to-slate-700  py-4 md:py-8">
       
       
     <div className="container mx-auto">

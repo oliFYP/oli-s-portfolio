@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { PacmanLoader } from "react-spinners";
+
 import Design from "../components/Design";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
@@ -10,6 +11,7 @@ import Presentation from '../components/Presentation';
 import SidePanel from "../components/SidePanel";
 import TopBar from "../components/TopBar";
 import Background from '../components/Videobg';
+
 import logo from '../img/OS.png';
 
 function Home() {
@@ -78,13 +80,12 @@ function Home() {
 
           <Presentation/>
           </div>
-          <Experience ref={experienceRef} />
-          <Ide />
-          <Design />
-          <Git />
-          <Education ref={educationRef} />
-          <Footer />
-
+            <Experience ref={experienceRef} />
+            <Ide />
+            <Design />
+            <Git />
+            <Education ref={educationRef} />
+          <Footer/>
         </>
       )}
      

@@ -37,7 +37,7 @@ const Education = React.forwardRef((props, ref) => {
             </h3>
             <p className="text-xl font-semibold text-white" data-aos="fade-right" style={{ maxWidth: '100%' }}>Kingston University (2020 - 2023)</p>
 
-            <ul className="list-disc pl-6 mt-2 text-white">
+            <ul className="list-disc pl-6 mt-2 list-none text-white">
               <li data-aos="fade-left">
                 2020-2021: Computer Fundamentals, Programming, Requirements Analysis and Design, Professional Environments.
               </li>
@@ -70,7 +70,7 @@ const Education = React.forwardRef((props, ref) => {
             </h3>
             <p data-aos="fade-right" className="text-xl font-semibold text-white" style={{ maxWidth: '100%' }}>Lycee d'Altitude Briancon (2017 - 2020)</p>
 
-            <ul data-aos="fade-left" className="list-disc pl-6 mt-2 mb-10 text-white">
+            <ul data-aos="fade-left" className="list-none list-disc pl-6 mt-2 mb-10 text-white">
               <li>
                 Modules: Law, Economics, Finances, Math, Italian, Management, History and Geography, English, Italian.
               </li>

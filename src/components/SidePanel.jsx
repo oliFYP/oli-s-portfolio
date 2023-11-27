@@ -23,9 +23,9 @@ function SidePanel({ isSidePanelOpen, toggleSidePanel, scrollToExperience, scrol
 <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
 <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full" onClick={scrollToEducation}>Education 
 <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
-<button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">Contact
-<span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
 <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">About Me
+<span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
+<button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">Contact
 <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span></button>
 <img
         src={exit}
