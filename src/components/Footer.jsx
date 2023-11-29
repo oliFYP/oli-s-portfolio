@@ -10,6 +10,9 @@ const Footer = () => {
   const navigateToHome = () => {
     navigate("/");
   };
+  const navigateToContact = () => {
+    navigate("/contact");
+  };
   return (
     <footer className=" relative bg-gradient-to-r from-slate-900 to-slate-700  py-4 md:py-8">
       <div className="container mx-auto">
@@ -48,7 +51,10 @@ const Footer = () => {
           </li>
 
           <li>
-            <a className="hover:text-gray-500 hover:cursor-pointer text-white  font-bold text-sm md:text-base mr-0 lg:mr-5">
+            <a
+              className="hover:text-gray-500 hover:cursor-pointer text-white  font-bold text-sm md:text-base mr-0 lg:mr-5"
+              onClick={navigateToContact}
+            >
               Contact
             </a>
           </li>
