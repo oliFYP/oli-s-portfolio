@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import background from "../videobg/4K_10.mp4";
-import { PacmanLoader } from "react-spinners";
+import { BeatLoader } from "react-spinners";
 import emailjs from "@emailjs/browser";
 import Footer from "../components/Footer";
 import AOS from "aos";
@@ -56,8 +56,8 @@ function Contact() {
   return (
     <div>
       {isLoading ? (
-        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black">
-          <PacmanLoader color="#ffffff" />
+        <div className="absolute top-0 left-0 w-full h-full flex align-center justify-center items-center bg-black">
+          <BeatLoader color="#ffffff" />
         </div>
       ) : (
         <>
@@ -75,7 +75,7 @@ function Contact() {
 
             <div className="absolute sm:top-1/2 sm:left-1/2 transform sm:-translate-x-1/2 sm:-translate-y-1/2 w-full sm:h-auto h-full sm:max-w-md bg-black p-8 rounded shadow-md">
               {isFormSubmitted ? (
-                <div className="sm:mt-0 text-white font-bold text-center">
+                <div className="sm:mt-0 mt-[50%] text-white font-bold text-center">
                   <p>Message sent!</p>
                   <button
                     onClick={navigateToHome}
@@ -147,7 +147,7 @@ function Contact() {
                   <button
                     type="submit"
                     value="send"
-                    className="bg-white font-bold text-black px-4 py-2 rounded-md"
+                    className="bg-white font-bold  text-black px-4 py-2 rounded-md"
                   >
                     Submit
                   </button>
@@ -155,7 +155,9 @@ function Contact() {
               )}
             </div>
           </div>
-          <Footer />
+          <div className="object-cover relative">
+            <Footer />
+          </div>
         </>
       )}
     </div>

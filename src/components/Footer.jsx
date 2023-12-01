@@ -12,6 +12,7 @@ const Footer = () => {
   };
   const navigateToContact = () => {
     navigate("/contact");
+    window.scrollTo(0, 0);
   };
   return (
     <footer className=" relative bg-gradient-to-r from-slate-900 to-slate-700  py-4 md:py-8">
