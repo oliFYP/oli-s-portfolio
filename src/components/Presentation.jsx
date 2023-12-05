@@ -42,20 +42,20 @@ function Presentation() {
         <img
           src={oli}
           alt="Oli"
-          className="rounded-full sm:ml-[40px] lg:ml-[150px] w-full sm:w-auto w-[200px] h-auto sm:h-[300px]"
+          className="rounded-full sm:ml-[40px] lg:ml-[150px] w-full sm:w-auto w-[150px] h-auto sm:h-[300px]"
         />
       </div>
-      <div className="sm:w-1/2">
+      <div className="sm:w-1/2 text-center sm:text-left ">
         <div style={{ marginLeft: "10px", marginRight: "15px" }}>
           <h1
             data-aos="fade-right"
-            className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md pl-4"
+            className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md sm:pl-4"
           >
             Hi there!
           </h1>
           <div
             data-aos="fade-up"
-            className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md pl-4"
+            className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md sm:pl-4"
           >
             <p>
               I'm Olivier, a computer science graduate from Kingston University
