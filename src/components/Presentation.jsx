@@ -42,7 +42,7 @@ function Presentation() {
         <img
           src={oli}
           alt="Oli"
-          className="rounded-full sm:ml-[40px] lg:ml-[150px] w-full sm:w-auto w-[150px] h-auto sm:h-[300px]"
+          className="rounded-full sm:ml-[40px] lg:ml-[150px]  h-auto sm:w-auto w-[150px] sm:h-[300px]"
         />
       </div>
       <div className="sm:w-1/2 text-center sm:text-left ">
