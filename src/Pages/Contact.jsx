@@ -135,6 +135,7 @@ function Contact() {
                     </label>
                     <textarea
                       data-aos="flip-right"
+                      data-aos-offset="0"
                       id="message"
                       name="message"
                       rows="4"
