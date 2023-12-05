@@ -64,6 +64,7 @@ function Presentation() {
           <div className="flex items-center sm:justify-start justify-center">
             <button
               data-aos="fade-left"
+              data-aos-offset="0"
               className="rounded-2xl ml-0 sm:ml-5 bg-white mt-5 sm:mt-10 w-40 h-10 font-bold text-black flex items-center justify-center"
               onClick={downloadCV}
               style={{ zIndex: 699 }}
