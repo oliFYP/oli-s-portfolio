@@ -64,7 +64,7 @@ function Presentation() {
           <div className="flex items-center sm:justify-start justify-center">
             <button
               data-aos="fade-left"
-              className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center"
+              className="rounded-2xl ml-0 sm:ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center"
               onClick={downloadCV}
             >
               Download CV
@@ -73,7 +73,7 @@ function Presentation() {
           <div className="mt-3 flex items-center justify-center  sm:justify-start">
             <img
               src={logo1}
-              className="h-8 mr-2 sm:ml-8 ml-5 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white"
+              className="h-8 mr-2 sm:ml-8 ml-0 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white"
               alt="Logo 1"
               onClick={openInstagramProfile}
             />
