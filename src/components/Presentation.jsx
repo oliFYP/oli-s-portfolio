@@ -42,7 +42,7 @@ function Presentation() {
         <img
           src={oli}
           alt="Oli"
-          className="rounded-full sm:ml-[40px] lg:ml-[150px]  h-auto sm:w-auto w-[150px] sm:h-[300px]"
+          className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto sm:w-auto  sm:h-[300px]"
         />
       </div>
       <div className="sm:w-1/2 text-center sm:text-left ">
@@ -61,17 +61,19 @@ function Presentation() {
               I'm Olivier, a computer science graduate from Kingston University
             </p>
           </div>
-          <button
-            data-aos="fade-left"
-            className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center"
-            onClick={downloadCV}
-          >
-            Download CV
-          </button>
-          <div className="mt-3 flex">
+          <div className="flex items-center sm:justify-start justify-center">
+            <button
+              data-aos="fade-left"
+              className="rounded-2xl ml-5 bg-white mt-10 w-40 h-10 font-bold text-black flex items-center justify-center"
+              onClick={downloadCV}
+            >
+              Download CV
+            </button>
+          </div>
+          <div className="mt-3 flex items-center justify-center  sm:justify-start">
             <img
               src={logo1}
-              className="h-8 mr-2 ml-8 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white"
+              className="h-8 mr-2 sm:ml-8 ml-5 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white"
               alt="Logo 1"
               onClick={openInstagramProfile}
             />
