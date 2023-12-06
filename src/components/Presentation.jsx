@@ -38,22 +38,23 @@ function Presentation() {
 
   return (
     <div className="absolute top-0 left-0 w-full h-full flex sm:flex-row flex-col items-center justify-center text-white">
-      <div className="sm:w-1/2 sm:hidden block ml-0 sm:ml-[20px]">
+      <div className="sm:w-1/2 sm:hidden  block ml-0 sm:ml-[20px]">
         <img
           src={oli}
           alt="Oli"
+          data-aos="fade-down-left"
           className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto mb-4 ml-0 sm:w-auto  sm:h-[300px]"
         />
       </div>
       <div className="sm:w-1/2 text-center ml-0 md-[70px] lg:ml-[100px] sm:text-left ">
         <h1
-          data-aos="fade-right"
+          data-aos="fade-down-right"
           className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md sm:pl-4"
         >
           Hi there!
         </h1>
         <div
-          data-aos="fade-up"
+          data-aos="fade-left"
           className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md sm:pl-4"
         >
           <p>
@@ -62,7 +63,7 @@ function Presentation() {
         </div>
         <div className="flex items-center sm:justify-start justify-center">
           <button
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-offset="0"
             className="rounded-2xl ml-0 sm:ml-5 bg-white mt-5 sm:mt-10 w-40 h-10 font-bold text-black flex items-center justify-center"
             onClick={downloadCV}

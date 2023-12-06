@@ -118,6 +118,7 @@ function Contact() {
                     </label>
                     <input
                       data-aos="flip-left"
+                      data-aos-offset="0"
                       type="email"
                       id="email"
                       name="user_email"
