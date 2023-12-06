@@ -42,13 +42,13 @@ function Presentation() {
         <img
           src={oli}
           alt="Oli"
-          data-aos="fade-down-left"
+          data-aos="fade-down"
           className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto mb-4 ml-0 sm:w-auto  sm:h-[300px]"
         />
       </div>
       <div className="sm:w-1/2 text-center ml-0 md-[70px] lg:ml-[100px] sm:text-left ">
         <h1
-          data-aos="fade-down-right"
+          data-aos="fade-right"
           className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md sm:pl-4"
         >
           Hi there!

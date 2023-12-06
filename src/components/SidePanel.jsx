@@ -21,7 +21,7 @@ function SidePanel({
       initial={{ y: "-100%" }}
       animate={isSidePanelOpen ? { y: 0 } : { y: "-100%" }}
       exit={{ y: "-100%" }}
-      style={{ zIndex: 999 }}
+      style={{ zIndex: 800 }}
     >
       <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full">
         Home

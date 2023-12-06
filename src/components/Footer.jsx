@@ -8,11 +8,24 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const navigateToHome = () => {
-    navigate("/");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    setTimeout(() => {
+      navigate("/");
+    }, 500);
   };
   const navigateToContact = () => {
-    navigate("/contact");
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    setTimeout(() => {
+      navigate("/contact");
+    }, 500);
   };
   return (
     <footer className=" relative bg-gradient-to-r from-slate-900 to-slate-700  py-4 md:py-8">

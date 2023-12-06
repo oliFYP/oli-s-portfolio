@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import menu from "../img/menu.png";
+import { Squash as Hamburger } from "hamburger-react";
 
 function Topbar({
   isSidePanelOpen,
@@ -47,12 +47,15 @@ function Topbar({
           <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
         </button>
 
-        <img
-          src={menu}
-          className="h-8 mr-2 md:hidden cursor-pointer"
-          alt="Menu"
-          onClick={() => toggleSidePanel()}
-        />
+        <div className="md:hidden">
+          <Hamburger
+            size={30}
+            color="white"
+            toggled={isSidePanelOpen}
+            toggle={toggleSidePanel}
+            style={{ zIndex: 999 }}
+          />
+        </div>
       </nav>
     </div>
   );
