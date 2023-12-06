@@ -38,66 +38,64 @@ function Presentation() {
 
   return (
     <div className="absolute top-0 left-0 w-full h-full flex sm:flex-row flex-col items-center justify-center text-white">
-      <div className="sm:w-1/2 sm:hidden block ml-[20px]">
+      <div className="sm:w-1/2 sm:hidden block ml-0 sm:ml-[20px]">
         <img
           src={oli}
           alt="Oli"
-          className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto ml-[0px] sm:w-auto  sm:h-[300px]"
+          className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto mb-4 ml-0 sm:w-auto  sm:h-[300px]"
         />
       </div>
       <div className="sm:w-1/2 text-center ml-0 md-[70px] lg:ml-[100px] sm:text-left ">
-        <div style={{ marginLeft: "10px", marginRight: "15px" }}>
-          <h1
-            data-aos="fade-right"
-            className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md sm:pl-4"
+        <h1
+          data-aos="fade-right"
+          className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md sm:pl-4"
+        >
+          Hi there!
+        </h1>
+        <div
+          data-aos="fade-up"
+          className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md sm:pl-4"
+        >
+          <p>
+            I'm Olivier, a computer science graduate from Kingston University
+          </p>
+        </div>
+        <div className="flex items-center sm:justify-start justify-center">
+          <button
+            data-aos="fade-left"
+            data-aos-offset="0"
+            className="rounded-2xl ml-0 sm:ml-5 bg-white mt-5 sm:mt-10 w-40 h-10 font-bold text-black flex items-center justify-center"
+            onClick={downloadCV}
+            style={{ zIndex: 699 }}
           >
-            Hi there!
-          </h1>
-          <div
-            data-aos="fade-up"
-            className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md sm:pl-4"
-          >
-            <p>
-              I'm Olivier, a computer science graduate from Kingston University
-            </p>
-          </div>
-          <div className="flex items-center sm:justify-start justify-center">
-            <button
-              data-aos="fade-left"
-              data-aos-offset="0"
-              className="rounded-2xl ml-0 sm:ml-5 bg-white mt-5 sm:mt-10 w-40 h-10 font-bold text-black flex items-center justify-center"
-              onClick={downloadCV}
-              style={{ zIndex: 699 }}
-            >
-              Download CV
-            </button>
-          </div>
-          <div className="mt-3 flex items-center justify-center  sm:justify-start">
-            <img
-              src={logo1}
-              className="h-8 mr-2 sm:ml-8 ml-0 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white"
-              alt="Logo 1"
-              onClick={openInstagramProfile}
-              style={{ zIndex: 698 }}
-            />
-            <img
-              src={logo2}
-              className="h-8 mr-2 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white"
-              alt="Logo 2"
-              onClick={openGithubProfile}
-              style={{ zIndex: 697 }}
-            />
-            <img
-              src={logo3}
-              className="h-8 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white-xl"
-              alt="Logo 3"
-              onClick={openLinkedInProfile}
-              style={{ zIndex: 696 }}
-            />
-          </div>
+            Download CV
+          </button>
+        </div>
+        <div className="mt-3 flex items-center justify-center  sm:justify-start">
+          <img
+            src={logo1}
+            className="h-8 mr-2 sm:ml-8 ml-0 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white"
+            alt="Logo 1"
+            onClick={openInstagramProfile}
+            style={{ zIndex: 698 }}
+          />
+          <img
+            src={logo2}
+            className="h-8 mr-2 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white"
+            alt="Logo 2"
+            onClick={openGithubProfile}
+            style={{ zIndex: 697 }}
+          />
+          <img
+            src={logo3}
+            className="h-8 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white-xl"
+            alt="Logo 3"
+            onClick={openLinkedInProfile}
+            style={{ zIndex: 696 }}
+          />
         </div>
       </div>
-      <div className="sm:w-1/2 ml-[20px] sm:block hidden">
+      <div className="sm:w-1/2 sm:ml-[20px] ml-0 sm:block hidden">
         <img
           src={oli}
           alt="Oli"
