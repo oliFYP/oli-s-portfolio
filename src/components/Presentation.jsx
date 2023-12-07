@@ -42,8 +42,7 @@ function Presentation() {
         <img
           src={oli}
           alt="Oli"
-          data-aos="fade-down"
-          className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto mb-4 ml-0 sm:w-auto  sm:h-[300px]"
+          className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto mb-4 ml-0 sm:w-auto  sm:h-[300px] transition-transform duration-500 ease-in-out transform hover:scale-110"
         />
       </div>
       <div className="sm:w-1/2 text-center ml-0 md-[70px] lg:ml-[100px] sm:text-left ">
@@ -96,11 +95,11 @@ function Presentation() {
           />
         </div>
       </div>
-      <div className="sm:w-1/2 sm:ml-[20px] ml-0 sm:block hidden">
+      <div className="sm:w-1/2 sm:ml-[20px] ml-0 sm:block hidden z-899">
         <img
           src={oli}
           alt="Oli"
-          className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto ml-[0px] sm:w-auto  sm:h-[300px]"
+          className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto ml-[0px] sm:w-auto  sm:h-[300px] transition-transform duration-500 ease-in-out transform hover:scale-110"
         />
       </div>
     </div>

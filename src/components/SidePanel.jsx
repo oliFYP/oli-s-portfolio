@@ -19,7 +19,7 @@ function SidePanel({
       className={`top-0 right-0 w-full h-full bg-black p-20 absolute text-white h-auto flex flex-col items-center justify-center ease-in-out duration-300`}
       initial={{ x: "100%" }}
       animate={isSidePanelOpen ? { x: 0 } : { x: "100%" }}
-      exit={isSidePanelOpen ? { x: "100%" } : { x: 0 }}
+      exit={{ x: "100%", transition: { ease: "ease-in-out", duration: 300 } }}
       style={{ zIndex: 700 }}
     >
       <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full">
