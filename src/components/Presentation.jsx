@@ -48,13 +48,13 @@ function Presentation() {
       <div className="sm:w-1/2 text-center ml-0 md-[70px] lg:ml-[100px] sm:text-left ">
         <h1
           data-aos="fade-right"
-          className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md sm:pl-4"
+          className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md pr-4 pl-4"
         >
           Hi there!
         </h1>
         <div
           data-aos="fade-left"
-          className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md sm:pl-4"
+          className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md pr-4 pl-4"
         >
           <p>
             I'm Olivier, a computer science graduate from Kingston University
