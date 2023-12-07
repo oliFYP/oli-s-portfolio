@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import {
+  FaHome,
+  FaBriefcase,
+  FaGraduationCap,
+  FaUser,
+  FaEnvelope,
+} from "react-icons/fa";
 
 function SidePanel({
   isSidePanelOpen,
@@ -16,40 +23,35 @@ function SidePanel({
 
   return (
     <motion.div
-      className={`top-0 right-0 w-full h-full bg-black p-20 absolute text-white h-auto flex flex-col items-center justify-center ease-in-out duration-300`}
+      className={`top-0 right-0 w-full h-full bg-black pl-10 pr-10 absolute text-white h-auto flex flex-col items-start justify-center ease-in-out duration-300`}
       initial={{ x: "100%" }}
       animate={isSidePanelOpen ? { x: 0 } : { x: "100%" }}
       exit={{ x: "100%", transition: { ease: "ease-in-out", duration: 300 } }}
       style={{ zIndex: 700 }}
     >
-      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full">
-        Home
-        <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+      <button className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none my-2  w-full">
+        <FaHome className="mr-5 mt-[5px]" /> Home
       </button>
       <button
-        className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2 w-full"
+        className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none  my-2 w-full"
         onClick={scrollToExperience}
       >
-        Experience & Projects
-        <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+        <FaBriefcase className="mr-5 mt-[5px]" /> Experience & Projects
       </button>
       <button
-        className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full"
+        className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none border-b my-2  w-full "
         onClick={scrollToEducation}
       >
-        Education
-        <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+        <FaGraduationCap className="mr-5 mt-[5px]" /> Education
       </button>
-      <button className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full">
-        About Me
-        <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+      <button className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none my-2  w-full">
+        <FaUser className="mr-5 mt-[5px]" /> About Me
       </button>
       <button
-        className="bg-transparent font-bold text-white p-4 group btn btn-border-underline relative my-2  w-full"
+        className="bg-transparent font-bold flex flex-row text-white border-b-white rounded-none p-4 my-2 w-full"
         onClick={navigateToContact}
       >
-        Contact
-        <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+        <FaEnvelope className="mr-5 mt-[5px]" /> Contact
       </button>
     </motion.div>
   );
