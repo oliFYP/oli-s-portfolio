@@ -34,6 +34,14 @@ function Home() {
   const scrollToEducation = () => {
     educationRef.current.scrollIntoView({ behavior: "smooth" });
   };
+  const handleVideoLoad = () => {
+    setLoading(false);
+  };
+
+  // Set the video load callback to be passed to the Background component
+  const backgroundProps = {
+    onVideoLoad: handleVideoLoad,
+  };
 
   return (
     <div>
@@ -44,7 +52,7 @@ function Home() {
       ) : (
         <>
           <div className="relative" style={{ overflow: "hidden" }}>
-            <Background />
+            <Background {...backgroundProps} />
             <Presentation />
             <div className="absolute bottom-0 w-full h-22">
               <div className="relative h-50 bg-gradient-to-b from-transparent via-black to-black p-9"></div>

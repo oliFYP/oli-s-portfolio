@@ -85,7 +85,8 @@ const Education = React.forwardRef((props, ref) => {
               className="text-xl font-bold text-white"
               style={{ maxWidth: "100%" }}
             >
-              Baccalaureat Technologique in Business Management
+              Baccalaureat Technologique in Business Management (With
+              Distinction)
             </h3>
             <p
               data-aos="fade-right"
@@ -101,7 +102,7 @@ const Education = React.forwardRef((props, ref) => {
             >
               <li>
                 Modules: Law, Economics, Finances, Math, Italian, Management,
-                History and Geography, English, Italian.
+                History and Geography, English, French.
               </li>
             </ul>
           </div>
