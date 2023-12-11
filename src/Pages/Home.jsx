@@ -3,6 +3,7 @@ import { PacmanLoader } from "react-spinners";
 
 import Design from "../components/Design";
 import Education from "../components/Education";
+import AboutMe from "../components/AboutMe";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";
 import Git from "../components/Git";
@@ -84,6 +85,7 @@ function Home() {
               </div>
             </div>
           </div>
+          <AboutMe />
           <Experience ref={experienceRef} />
           <Ide />
           <Design />

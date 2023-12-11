@@ -19,12 +19,14 @@ const Education = React.forwardRef((props, ref) => {
     >
       <div className="max-w-5xl mx-auto">
         <h1
-          data-aos="fade-down"
-          className="text-3xl font-bold mb-4 mt-10 text-white"
+          data-aos="fade-right"
+          className="text-3xl font-bold mb-4 mt-10 mb-15 text-white "
         >
           Education History
         </h1>
-
+        <div data-aos="fade-right" className="flex">
+          <div className="bg-white h-1 w-full mb-6 mt-2"></div>
+        </div>
         <div className="mb-6 flex flex-col-reverse sm:flex-row items-center">
           <div className="w-full sm:w-1/2 h-auto mr-4" data-aos="fade-right">
             <img

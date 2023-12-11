@@ -42,6 +42,7 @@ function Presentation() {
         <img
           src={oli}
           alt="Oli"
+          loading="lazy"
           className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto mb-4 ml-0 sm:w-auto  sm:h-[300px] transition-transform duration-500 ease-in-out transform hover:scale-110"
         />
       </div>
@@ -99,6 +100,7 @@ function Presentation() {
         <img
           src={oli}
           alt="Oli"
+          loading="lazy"
           className="rounded-full sm:ml-[40px] lg:ml-[150px] w-[150px] h-auto ml-[0px] sm:w-auto  sm:h-[300px] transition-transform duration-500 ease-in-out transform hover:scale-110"
         />
       </div>

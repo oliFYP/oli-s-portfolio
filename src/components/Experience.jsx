@@ -50,18 +50,21 @@ const Experience = React.forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="bg-black h-auto p-0 lg:p-6"
+      className="bg-black h-auto p-6"
       style={{ overflow: "hidden" }}
     >
       <div className="max-w-5xl mx-auto">
         <h1
           data-aos="fade-right"
-          className="text-3xl mt-5 font-bold mb-4 text-white text-center"
+          className="text-3xl mt-5 font-bold mb-4 text-white sm:text-left text-center"
         >
           Software Development tools
         </h1>
-        <div data-aos="fade-right" className="flex items-center justify-center">
-          <div className="bg-white h-1 w-20 mb-6 mt-2"></div>
+        <div
+          data-aos="fade-right"
+          className="flex justify-center sm:justify-start"
+        >
+          <div className="bg-white h-1 sm:w-full w-20 mb-6 mt-2"></div>
         </div>
 
         <div className="flex flex-wrap justify-center">

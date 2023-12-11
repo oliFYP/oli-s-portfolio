@@ -16,16 +16,19 @@ function Ide() {
   const iconSources = [icon15, icon16, icon17, icon18];
   const titles = ["VS Code", "VS", "Netbeans", "Android Studio"];
   return (
-    <div className="bg-black h-auto p-0 lg:p-6" style={{ overflow: "hidden" }}>
+    <div className="bg-black h-auto p-6" style={{ overflow: "hidden" }}>
       <div className="max-w-5xl mx-auto">
         <h1
           data-aos="fade-left"
-          className="text-3xl mt-10 font-bold mb-4 text-white text-center"
+          className="text-3xl mt-10 font-bold mb-4 text-white sm:text-left text-center"
         >
           IDE's
         </h1>
-        <div data-aos="fade-left" className="flex items-center justify-center">
-          <div className="bg-white h-1 w-20 mb-6 mt-2"></div>
+        <div
+          data-aos="fade-left"
+          className="flex justify-center sm:justify-start"
+        >
+          <div className="bg-white h-1 w-20 sm:w-full mb-6 mt-2"></div>
         </div>
         <div className="flex flex-wrap justify-center">
           {iconSources.map((icon, index) => (

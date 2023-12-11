@@ -5,7 +5,6 @@ const Videobg = ({ onVideoLoad }) => {
   const videoRef = useRef(null);
 
   const handleVideoLoad = () => {
-    // Notify the parent component that the video has loaded
     onVideoLoad();
   };
 
