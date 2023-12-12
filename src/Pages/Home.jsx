@@ -20,6 +20,7 @@ function Home() {
   const [isLoading, setLoading] = useState(true);
   const experienceRef = useRef(null);
   const educationRef = useRef(null);
+  const aboutRef = useRef(null);
 
   setTimeout(() => {
     setLoading(false);
@@ -28,7 +29,9 @@ function Home() {
   const toggleSidePanel = () => {
     setSidePanelOpen(!isSidePanelOpen);
   };
-
+  const scrollToAboutMe = () => {
+    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   const scrollToExperience = () => {
     experienceRef.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -65,6 +68,7 @@ function Home() {
                 toggleSidePanel={toggleSidePanel}
                 scrollToExperience={scrollToExperience}
                 scrollToEducation={scrollToEducation}
+                scrollToAboutMe={scrollToAboutMe}
               />
 
               {isSidePanelOpen && (
@@ -73,6 +77,7 @@ function Home() {
                   toggleSidePanel={toggleSidePanel}
                   scrollToExperience={scrollToExperience}
                   scrollToEducation={scrollToEducation}
+                  scrollToAboutMe={scrollToAboutMe}
                 />
               )}
 
@@ -85,7 +90,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <AboutMe />
+          <AboutMe ref={aboutRef} />
           <Experience ref={experienceRef} />
           <Ide />
           <Design />

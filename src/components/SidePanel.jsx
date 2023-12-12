@@ -14,6 +14,7 @@ function SidePanel({
   toggleSidePanel,
   scrollToExperience,
   scrollToEducation,
+  scrollToAboutMe,
 }) {
   const navigate = useNavigate();
 
@@ -33,6 +34,12 @@ function SidePanel({
         <FaHome className="mr-5 mt-[5px]" /> Home
       </button>
       <button
+        className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none my-2  w-full"
+        onClick={scrollToAboutMe}
+      >
+        <FaUser className="mr-5 mt-[5px]" /> About Me
+      </button>
+      <button
         className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none  my-2 w-full"
         onClick={scrollToExperience}
       >
@@ -44,9 +51,7 @@ function SidePanel({
       >
         <FaGraduationCap className="mr-5 mt-[5px]" /> Education
       </button>
-      <button className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none my-2  w-full">
-        <FaUser className="mr-5 mt-[5px]" /> About Me
-      </button>
+
       <button
         className="bg-transparent font-bold flex flex-row text-white border-b-white rounded-none p-4 my-2 w-full"
         onClick={navigateToContact}

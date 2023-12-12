@@ -30,7 +30,7 @@ const Footer = () => {
   return (
     <footer className=" relative bg-gradient-to-r from-slate-900 to-slate-700  py-4 md:py-8">
       <div className="container mx-auto">
-        <div className="flex items-center flex-col justify-center">
+        <div className="flex items-center flex-col justify-center text-white">
           <p className="font-bold">This website is made with:</p>
           <div className="flex items-center flex-row justify-center">
             <img src={ReactL} className="h-10 m-10 mt-5" alt="ReactL" />
