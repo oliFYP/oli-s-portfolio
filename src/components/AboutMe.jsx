@@ -32,7 +32,7 @@ const AboutMe = React.forwardRef((props, ref) => {
       className="bg-black text-white p-8 sm:pr-4 sm:pl-4 pr-0 pl-0 relative"
       style={{ overflow: "hidden" }}
     >
-      <div className="bg-gradient-to-r from-slate-900 to-slate-700 m-8 p-8 rounded-xl relative">
+      <div className="bg-gradient-to-r from-slate-900 to-slate-700 m-5 sm:m-8 p-5 sm:p-8 rounded-xl relative">
         <h1
           data-aos="fade-right"
           className="text-3xl font-bold mb-5 text-white text-center md:text-left "
@@ -53,20 +53,20 @@ const AboutMe = React.forwardRef((props, ref) => {
             />
           ))}
           <div className="flex flex-col md:ml-[250px] mt-[330px] md:mt-auto">
-            <p data-aos="fade-right" className="text-lg font-bold">
+            <p data-aos="fade" className="text-lg font-bold">
               Hey there! I'm Olivier Smith, a Computer Science enthusiast from
               Briançon, France, with three years of UK-based academic experience
               in the tech realm. My passion lies in software development,
               particularly Front-end development, where I channel my creativity
               into crafting seamless digital experiences.
             </p>
-            <p data-aos="fade-left" className="text-lg font-bold mt-5">
+            <p data-aos="fade" className="text-lg font-bold mt-5">
               Driven by a genuine desire to contribute to innovative projects,
               collaborate with like-minded individuals, and bring a unique
               perspective to the tech landscape, I am ready to dive into the
               world of Front-end development.
             </p>
-            <p data-aos="fade-right" className="text-lg font-bold mt-5">
+            <p data-aos="fade" className="text-lg font-bold mt-5">
               On a personal note, I've also spent five years honing my skills in
               boxing, participating in several bouts, and embracing the thrill
               of competition. Additionally, skiing has been a lifelong passion,
