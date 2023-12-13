@@ -37,7 +37,7 @@ function Project() {
 
   return (
     <div className="relative">
-      <div className="flex flex-wrap justify-center bg-grey">
+      <div className="flex flex-wrap justify-center bg-gradient-to-r from-slate-900 to-slate-900">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -45,12 +45,12 @@ function Project() {
           >
             <div className="w-full">
               <img
-                className="w-auto h-full"
+                className="w-full h-auto"
                 src={project.image}
                 alt={project.title}
               />
             </div>
-            <div className="w-full bg-gradient-to-r from-slate-900 to-slate-700 p-4">
+            <div className="w-full bg-gradient-to-r from-slate-500 to-slate-800 p-4">
               <h2 className="text-white font-bold">{project.title}</h2>
             </div>
           </div>
