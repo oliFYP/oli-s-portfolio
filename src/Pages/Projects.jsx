@@ -2,6 +2,7 @@ import React from "react";
 import aofitness from "../Projects/ao-fitness.png";
 import kdevs from "../Projects/k-devs.png";
 import khf from "../Projects/khf.png";
+import vm from "../Projects/vm.png";
 import Footer from "../components/Footer";
 
 function Project() {
@@ -9,38 +10,38 @@ function Project() {
     {
       id: 1,
       title: "AO-fitness (on going project)",
-      image: aofitness, // Replace this URL with your actual image URL
+      image: aofitness,
     },
     {
       id: 2,
       title: "K-devs CKD project",
-      image: kdevs, // Replace this URL with your actual image URL
+      image: kdevs,
     },
     {
       id: 3,
       title: "Kings Health and Fitness mobile app",
-      image: khf, // Replace this URL with your actual image URL
+      image: khf,
     },
     {
       id: 4,
-      title: "Project 1",
-      image: aofitness, // Replace this URL with your actual image URL
+      title: "Victor Mellet's Portfolio",
+      image: vm,
     },
     {
       id: 5,
       title: "Project 1",
-      image: aofitness, // Replace this URL with your actual image URL
+      image: aofitness,
     },
     // Add more projects as needed
   ];
 
   return (
     <div className="relative">
-      <div className="flex flex-wrap justify-center  bg-grey">
+      <div className="flex flex-wrap justify-center bg-grey">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="max-w-xs m-2 rounded-lg overflow-hidden shadow-lg bg-black text-white"
+            className="max-w-xs sm:max-w-sm m-2 rounded-lg overflow-hidden shadow-lg bg-black text-white"
           >
             <div className="w-full">
               <img
