@@ -19,7 +19,7 @@ const AboutMe = React.forwardRef((props, ref) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 9000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
@@ -34,7 +34,7 @@ const AboutMe = React.forwardRef((props, ref) => {
     >
       <div className="bg-gradient-to-r from-slate-900 to-slate-700 m-5 sm:m-8 p-5 sm:p-8 rounded-xl relative">
         <h1
-          data-aos="fade-right"
+          data-aos="fade"
           className="text-3xl font-bold mb-5 text-white text-center md:text-left "
         >
           About Me
@@ -52,7 +52,7 @@ const AboutMe = React.forwardRef((props, ref) => {
               style={{ transition: "opacity 0.5s ease-in-out" }}
             />
           ))}
-          <div className="flex flex-col md:ml-[250px] mt-[330px] md:mt-auto">
+          <div className="flex flex-col md:ml-[250px] sm:mt-[320px] mt-[290px] md:mt-auto">
             <p data-aos="fade" className="text-lg font-bold">
               Hey there! I'm Olivier Smith, a Computer Science enthusiast from
               Briançon, France, with three years of UK-based academic experience

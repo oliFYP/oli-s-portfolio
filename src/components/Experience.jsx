@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 import icon1 from "../icons/icon1.png";
 import icon2 from "../icons/icon2.png";
 import icon3 from "../icons/icon3.png";
@@ -14,6 +15,11 @@ import icon10 from "../icons/icon10.png";
 import icon19 from "../icons/icon19.png";
 
 const Experience = React.forwardRef((props, ref) => {
+  const navigate = useNavigate();
+
+  const navigateToProject = () => {
+    navigate("/project");
+  };
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -70,7 +76,10 @@ const Experience = React.forwardRef((props, ref) => {
         <div className="flex flex-wrap justify-center">
           {iconSources.map((icon, index) => (
             <div key={index} className="w-1/2 md:w-1/4 lg:w-1/5 p-2 ">
-              <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-gradient-to-r from-slate-900 to-slate-700 flex flex-col items-center justify-center cursor-pointer rounded-xl mx-auto">
+              <div
+                className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-gradient-to-r from-slate-900 to-slate-700 flex flex-col items-center justify-center cursor-pointer rounded-xl mx-auto"
+                onClick={navigateToProject}
+              >
                 <img
                   src={icon}
                   alt={`Icon ${index + 1}`}
