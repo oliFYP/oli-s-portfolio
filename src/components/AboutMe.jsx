@@ -52,7 +52,7 @@ const AboutMe = React.forwardRef((props, ref) => {
               style={{ transition: "opacity 0.5s ease-in-out" }}
             />
           ))}
-          <div className="flex flex-col md:ml-[250px] sm:mt-[320px] mt-[290px] md:mt-auto">
+          <div className="flex flex-col md:ml-[250px] sm:mt-[320px] mt-[290px] md:mt-auto text-center sm:text-left">
             <p data-aos="fade" className="text-lg font-bold">
               Hey there! I'm Olivier Smith, a Computer Science enthusiast from
               Briançon, France, with three years of UK-based academic experience
