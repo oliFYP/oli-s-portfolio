@@ -19,7 +19,7 @@ function Project() {
       id: 1,
       title: "AO-fitness (on going project)",
       image: aofitness,
-      technologies: ["React", "Tailwind CSS", "Firestore"],
+      technologies: ["React", "Tailwind CSS", "Firestore", "VS Code"],
     },
     {
       id: 2,
@@ -31,55 +31,55 @@ function Project() {
       id: 3,
       title: "Kings Health and Fitness mobile app",
       image: khf,
-      technologies: ["Figma", "Flutter", "Dart", "Android Studio", "Firestore"],
+      technologies: ["Figma", "Flutter", "Dart", "Firestore", "Android Studio"],
     },
     {
       id: 4,
       title: "Victor Mellet's Portfolio",
       image: vm,
-      technologies: ["React", "CSS"],
+      technologies: ["React", "CSS", "VS Code"],
     },
     {
       id: 5,
       title: "Francisco's Portfolio",
       image: Fran,
-      technologies: ["HTML", "CSS"],
+      technologies: ["HTML", "CSS", "VS Code"],
     },
     {
       id: 6,
       title: "Bank account Object Oriented Model",
       image: java,
-      technologies: ["Java"],
+      technologies: ["Java", "NetBeans"],
     },
     {
       id: 7,
       title: "Citizen Monitoring Object Oriented Model",
       image: java,
-      technologies: ["Java"],
+      technologies: ["Java", "NetBeans"],
     },
     {
       id: 8,
       title: "Customer Relationship Object Oriented Model",
       image: java,
-      technologies: ["Java"],
+      technologies: ["Java", "NetBeans"],
     },
     {
       id: 9,
       title: "Simple Object Oriented Modeling",
       image: java,
-      technologies: ["Java"],
+      technologies: ["Java", "NetBeans"],
     },
     {
       id: 10,
       title: "University Object Oriented Model",
       image: java,
-      technologies: ["Java"],
+      technologies: ["Java", "NetBeans"],
     },
     {
       id: 11,
       title: "Bank account",
       image: java,
-      technologies: ["Java"],
+      technologies: ["Java", "NetBeans"],
     },
   ];
 
@@ -96,7 +96,7 @@ function Project() {
               {projects.map((project) => (
                 <div
                   key={project.id}
-                  className="max-w-xs sm:max-w-sm m-2 rounded-lg transition-transform transform overflow-hidden shadow-lg bg-black text-white hover:scale-110 m-[40px]"
+                  className="max-w-xs sm:max-w-sm m-2 rounded-lg transition-transform transform overflow-hidden shadow-lg bg-gradient-to-r from-slate-800 to-slate-500 text-white hover:scale-110 m-[40px]"
                 >
                   <div className="w-full">
                     <img
