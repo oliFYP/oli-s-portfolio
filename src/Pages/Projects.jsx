@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import aofitness from "../Projects/ao-fitness.png";
+import java from "../Projects/java-BankOO.png";
 import kdevs from "../Projects/k-devs.png";
 import khf from "../Projects/khf.png";
 import vm from "../Projects/vm.png";
@@ -34,8 +35,33 @@ function Project() {
     },
     {
       id: 5,
-      title: "Project 1",
-      image: aofitness,
+      title: "Bank account Object Oriented Model",
+      image: java,
+    },
+    {
+      id: 6,
+      title: "Citizen Monitoring Object Oriented Model",
+      image: java,
+    },
+    {
+      id: 7,
+      title: "Customer Relationship Object Oriented Model",
+      image: java,
+    },
+    {
+      id: 8,
+      title: "Simple Object Oriented Modeling",
+      image: java,
+    },
+    {
+      id: 9,
+      title: "University Object Oriented Model",
+      image: java,
+    },
+    {
+      id: 10,
+      title: "Bank account",
+      image: java,
     },
     // Add more projects as needed
   ];
@@ -62,7 +88,7 @@ function Project() {
                       alt={project.title}
                     />
                   </div>
-                  <div className="w-full bg-gradient-to-r from-slate-500 to-slate-800 p-4">
+                  <div className="w-full bg-gradient-to-r from-slate-800 to-slate-500 p-4">
                     <h2 className="text-white font-bold">{project.title}</h2>
                   </div>
                 </div>
