@@ -6,6 +6,8 @@ import khf from "../Projects/khf.png";
 import vm from "../Projects/vm.png";
 import Fran from "../Projects/Fran.png";
 import Footer from "../components/Footer";
+import Matlab from "../Projects/matlab.png";
+import Fit4U from "../Projects/Fit4U.png";
 import { PacmanLoader } from "react-spinners";
 
 function Project() {
@@ -47,36 +49,54 @@ function Project() {
     },
     {
       id: 6,
+      title: "Fit4U",
+      image: Fit4U,
+      technologies: ["Adobe XD"],
+    },
+    {
+      id: 7,
+      title: "5G vs 4G",
+      image: Matlab,
+      technologies: ["MATLAB"],
+    },
+    {
+      id: 8,
+      title: "Event Manager",
+      image: java,
+      technologies: ["Java Swing", "Java", "NetBeans"],
+    },
+    {
+      id: 9,
       title: "Bank account Object Oriented Model",
       image: java,
       technologies: ["Java", "NetBeans"],
     },
     {
-      id: 7,
+      id: 10,
       title: "Citizen Monitoring Object Oriented Model",
       image: java,
       technologies: ["Java", "NetBeans"],
     },
     {
-      id: 8,
+      id: 11,
       title: "Customer Relationship Object Oriented Model",
       image: java,
       technologies: ["Java", "NetBeans"],
     },
     {
-      id: 9,
+      id: 12,
       title: "Simple Object Oriented Modeling",
       image: java,
       technologies: ["Java", "NetBeans"],
     },
     {
-      id: 10,
+      id: 13,
       title: "University Object Oriented Model",
       image: java,
       technologies: ["Java", "NetBeans"],
     },
     {
-      id: 11,
+      id: 14,
       title: "Bank account",
       image: java,
       technologies: ["Java", "NetBeans"],
