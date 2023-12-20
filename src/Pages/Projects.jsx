@@ -4,6 +4,7 @@ import java from "../Projects/java-BankOO.png";
 import kdevs from "../Projects/k-devs.png";
 import khf from "../Projects/khf.png";
 import vm from "../Projects/vm.png";
+import Fran from "../Projects/Fran.png";
 import Footer from "../components/Footer";
 import { PacmanLoader } from "react-spinners";
 
@@ -12,58 +13,74 @@ function Project() {
   setTimeout(() => {
     setLoading(false);
   }, 3000);
+
   const projects = [
     {
       id: 1,
       title: "AO-fitness (on going project)",
       image: aofitness,
+      technologies: ["React", "Tailwind CSS", "Firestore"],
     },
     {
       id: 2,
       title: "K-devs CKD project",
       image: kdevs,
+      technologies: ["Figma"],
     },
     {
       id: 3,
       title: "Kings Health and Fitness mobile app",
       image: khf,
+      technologies: ["Figma", "Flutter", "Dart", "Android Studio", "Firestore"],
     },
     {
       id: 4,
       title: "Victor Mellet's Portfolio",
       image: vm,
+      technologies: ["React", "CSS"],
     },
     {
       id: 5,
-      title: "Bank account Object Oriented Model",
-      image: java,
+      title: "Francisco's Portfolio",
+      image: Fran,
+      technologies: ["HTML", "CSS"],
     },
     {
       id: 6,
-      title: "Citizen Monitoring Object Oriented Model",
+      title: "Bank account Object Oriented Model",
       image: java,
+      technologies: ["Java"],
     },
     {
       id: 7,
-      title: "Customer Relationship Object Oriented Model",
+      title: "Citizen Monitoring Object Oriented Model",
       image: java,
+      technologies: ["Java"],
     },
     {
       id: 8,
-      title: "Simple Object Oriented Modeling",
+      title: "Customer Relationship Object Oriented Model",
       image: java,
+      technologies: ["Java"],
     },
     {
       id: 9,
-      title: "University Object Oriented Model",
+      title: "Simple Object Oriented Modeling",
       image: java,
+      technologies: ["Java"],
     },
     {
       id: 10,
+      title: "University Object Oriented Model",
+      image: java,
+      technologies: ["Java"],
+    },
+    {
+      id: 11,
       title: "Bank account",
       image: java,
+      technologies: ["Java"],
     },
-    // Add more projects as needed
   ];
 
   return (
@@ -90,6 +107,18 @@ function Project() {
                   </div>
                   <div className="w-full bg-gradient-to-r from-slate-800 to-slate-500 p-4">
                     <h2 className="text-white font-bold">{project.title}</h2>
+                    {project.technologies && (
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        {project.technologies.map((tech, index) => (
+                          <button
+                            key={index}
+                            className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
+                          >
+                            {tech}
+                          </button>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
