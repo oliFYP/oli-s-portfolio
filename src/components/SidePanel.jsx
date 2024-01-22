@@ -21,6 +21,9 @@ function SidePanel({
   const navigateToContact = () => {
     navigate("/contact");
   };
+  const navigateToProjects = () => {
+    navigate("/project");
+  };
 
   return (
     <motion.div
@@ -43,7 +46,14 @@ function SidePanel({
         className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none  my-2 w-full"
         onClick={scrollToExperience}
       >
-        <FaBriefcase className="mr-5 mt-[5px]" /> Experience & Projects
+        <FaBriefcase className="mr-5 mt-[5px]" /> Experience
+      </button>
+      <button
+        className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none  my-2 w-full"
+        onClick={navigateToProjects}
+      >
+        <FaBriefcase className="mr-5 mt-[5px]" />
+        Projects
       </button>
       <button
         className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none border-b my-2  w-full "

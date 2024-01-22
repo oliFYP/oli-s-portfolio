@@ -1,20 +1,21 @@
 import React, { useState } from "react";
+import { PacmanLoader } from "react-spinners";
+import ProjectCardSkeleton from "../components/ProjectCardSkeleton";
+import Footer from "../components/Footer";
 import aofitness from "../Projects/ao-fitness.png";
-import java from "../Projects/java-BankOO.png";
 import kdevs from "../Projects/k-devs.png";
 import khf from "../Projects/khf.png";
 import vm from "../Projects/vm.png";
 import Fran from "../Projects/Fran.png";
-import Footer from "../components/Footer";
 import Matlab from "../Projects/matlab.png";
 import Fit4U from "../Projects/Fit4U.png";
-import { PacmanLoader } from "react-spinners";
+import java from "../Projects/java-BankOO.png";
 
 function Project() {
   const [isLoading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
-  }, 3000);
+  }, 10000);
 
   const projects = [
     {
@@ -105,48 +106,44 @@ function Project() {
 
   return (
     <div>
-      {isLoading ? (
-        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black">
-          <PacmanLoader color="#ffffff" />
-        </div>
-      ) : (
-        <>
-          <div className="relative">
-            <div className="flex flex-wrap justify-center bg-gradient-to-r from-slate-900 to-slate-900">
-              {projects.map((project) => (
-                <div
-                  key={project.id}
-                  className="max-w-xs sm:max-w-sm m-2 rounded-lg transition-transform transform overflow-hidden shadow-lg bg-gradient-to-r from-slate-800 to-slate-500 text-white hover:scale-110 hover:cursor-pointer m-[30px]"
-                >
-                  <div className="w-full">
-                    <img
-                      className="w-full h-auto"
-                      src={project.image}
-                      alt={project.title}
-                    />
-                  </div>
-                  <div className="w-full bg-gradient-to-r from-slate-800 to-slate-500 p-4">
-                    <h2 className="text-white font-bold">{project.title}</h2>
-                    {project.technologies && (
-                      <div className="flex flex-wrap gap-2 mt-2">
-                        {project.technologies.map((tech, index) => (
-                          <button
-                            key={index}
-                            className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
-                          >
-                            {tech}
-                          </button>
-                        ))}
-                      </div>
-                    )}
-                  </div>
+      <div className="relative">
+        <div className="flex flex-wrap justify-center bg-gradient-to-r from-slate-900 to-slate-900">
+          {projects.map((project) =>
+            isLoading ? (
+              <ProjectCardSkeleton key={project.id} />
+            ) : (
+              <div
+                key={project.id}
+                className="max-w-xs sm:max-w-sm m-2 rounded-lg transition-transform transform overflow-hidden shadow-lg bg-gradient-to-r from-slate-800 to-slate-500 text-white  hover:cursor-pointer m-[30px]"
+              >
+                <div className="w-full">
+                  <img
+                    className="w-full h-auto"
+                    src={project.image}
+                    alt={project.title}
+                  />
                 </div>
-              ))}
-            </div>
-            <Footer />
-          </div>
-        </>
-      )}
+                <div className="w-full bg-gradient-to-r from-slate-800 to-slate-500 p-4">
+                  <h2 className="text-white font-bold">{project.title}</h2>
+                  {project.technologies && (
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {project.technologies.map((tech, index) => (
+                        <button
+                          key={index}
+                          className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
+                        >
+                          {tech}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            )
+          )}
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }
