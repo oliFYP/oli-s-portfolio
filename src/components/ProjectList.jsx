@@ -13,7 +13,7 @@ function ProjectList() {
   const [isLoading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
-  }, 10000);
+  }, 5000);
 
   const projects = [
     {
