@@ -6,6 +6,7 @@ import khf from "../Projects/khf.png";
 import vm from "../Projects/vm.png";
 import Fran from "../Projects/Fran.png";
 import Matlab from "../Projects/matlab.png";
+import Weather from "../Projects/weather.png";
 import Fit4U from "../Projects/Fit4U.png";
 import java from "../Projects/java-BankOO.png";
 
@@ -60,42 +61,48 @@ function ProjectList() {
     },
     {
       id: 8,
+      title: "Weather App",
+      image: Weather,
+      technologies: ["Python"],
+    },
+    {
+      id: 9,
       title: "Event Manager",
       image: java,
       technologies: ["Java Swing", "Java", "NetBeans"],
     },
     {
-      id: 9,
+      id: 10,
       title: "Bank account Object Oriented Model",
       image: java,
       technologies: ["Java", "NetBeans"],
     },
     {
-      id: 10,
+      id: 11,
       title: "Citizen Monitoring Object Oriented Model",
       image: java,
       technologies: ["Java", "NetBeans"],
     },
     {
-      id: 11,
+      id: 12,
       title: "Customer Relationship Object Oriented Model",
       image: java,
       technologies: ["Java", "NetBeans"],
     },
     {
-      id: 12,
+      id: 13,
       title: "Simple Object Oriented Modeling",
       image: java,
       technologies: ["Java", "NetBeans"],
     },
     {
-      id: 13,
+      id: 14,
       title: "University Object Oriented Model",
       image: java,
       technologies: ["Java", "NetBeans"],
     },
     {
-      id: 14,
+      id: 15,
       title: "Bank account",
       image: java,
       technologies: ["Java", "NetBeans"],

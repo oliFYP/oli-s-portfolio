@@ -42,11 +42,6 @@ function Home() {
     setLoading(false);
   };
 
-  // Set the video load callback to be passed to the Background component
-  const backgroundProps = {
-    onVideoLoad: handleVideoLoad,
-  };
-
   return (
     <div>
       {isLoading ? (
@@ -56,7 +51,7 @@ function Home() {
       ) : (
         <>
           <div className="relative" style={{ overflow: "hidden" }}>
-            <Background {...backgroundProps} />
+            <Background onVideoLoad={handleVideoLoad} />
             <Presentation />
             <div className="absolute bottom-0 w-full h-22">
               <div className="relative h-50 bg-gradient-to-b from-transparent via-black to-black p-9"></div>
@@ -90,12 +85,18 @@ function Home() {
               </div>
             </div>
           </div>
-          <AboutMe ref={aboutRef} />
-          <Experience ref={experienceRef} />
+          <div id="aboutMe">
+            <AboutMe ref={aboutRef} />
+          </div>
+          <div id="experience">
+            <Experience ref={experienceRef} />
+          </div>
           <Ide />
           <Design />
           <Git />
-          <Education ref={educationRef} />
+          <div id="education">
+            <Education ref={educationRef} />
+          </div>
           <Footer />
         </>
       )}

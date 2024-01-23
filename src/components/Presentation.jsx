@@ -14,10 +14,6 @@ function Presentation() {
     });
   }, []);
 
-  const openInstagramProfile = () => {
-    const instagramProfileURL = "https://www.instagram.com/olismth/";
-    window.open(instagramProfileURL, "_blank");
-  };
   const openLinkedInProfile = () => {
     const linkedInProfileURL =
       "https://www.linkedin.com/in/olivier-smith-2378b8205/";
@@ -72,14 +68,7 @@ function Presentation() {
             Download CV
           </button>
         </div>
-        <div className="mt-3 flex items-center justify-center  sm:justify-start">
-          <img
-            src={logo1}
-            className="h-8 mr-2 sm:ml-8 ml-0 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white"
-            alt="Logo 1"
-            onClick={openInstagramProfile}
-            style={{ zIndex: 698 }}
-          />
+        <div className="mt-3 flex items-center justify-center  sm:justify-start sm:ml-[60px]">
           <img
             src={logo2}
             className="h-8 mr-2 cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-white"
