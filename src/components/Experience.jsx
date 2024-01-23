@@ -19,6 +19,10 @@ const Experience = React.forwardRef((props, ref) => {
 
   const navigateToProject = () => {
     navigate("/project");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
   useEffect(() => {
     AOS.init({
