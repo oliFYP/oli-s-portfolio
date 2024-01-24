@@ -2,17 +2,17 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
-import icon1 from "../icons/icon1.png";
-import icon2 from "../icons/icon2.png";
-import icon3 from "../icons/icon3.png";
-import icon4 from "../icons/icon4.png";
-import icon5 from "../icons/icon5.png";
-import icon6 from "../icons/icon6.png";
-import icon7 from "../icons/icon7.png";
-import icon8 from "../icons/icon8.png";
-import icon9 from "../icons/icon9.png";
-import icon10 from "../icons/icon10.png";
-import icon19 from "../icons/icon19.png";
+import icon1 from "../icons/icon1_.png";
+import icon2 from "../icons/icon2_.png";
+import icon3 from "../icons/icon3_.png";
+import icon4 from "../icons/icon4_.png";
+import icon5 from "../icons/icon5_.png";
+import icon6 from "../icons/icon6_.png";
+import icon7 from "../icons/icon7_.png";
+import icon8 from "../icons/icon8_.png";
+import icon9 from "../icons/icon9_.png";
+import icon10 from "../icons/icon10_.png";
+import icon19 from "../icons/icon19_.png";
 
 const Experience = React.forwardRef((props, ref) => {
   const navigate = useNavigate();
@@ -44,14 +44,14 @@ const Experience = React.forwardRef((props, ref) => {
     icon19,
   ];
   const titles = [
+    "HTML",
     "CSS",
-    "Dart",
+    "JavaScript",
     "React",
+    "Python",
     "Tailwind",
     "Java",
-    "Python",
-    "HTML",
-    "JavaScript",
+    "Dart",
     "Firebase",
     "MATLAB",
     "Flutter",
@@ -87,7 +87,7 @@ const Experience = React.forwardRef((props, ref) => {
                 <img
                   src={icon}
                   alt={`Icon ${index + 1}`}
-                  className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain"
+                  className="w-24 h-24 sm:p-4 p-2 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain"
                   data-aos={`fade-up-${index * 2}`}
                 />
                 <div className="text-white font-bold text-center mt-1 mb-1">
