@@ -36,10 +36,10 @@ function Design() {
                 <img
                   src={icon}
                   alt={`Icon ${index + 1}`}
-                  className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain"
+                  className="w-24 h-24 lg:p-4 lg:pb-0 p-2 sm:pb-0 pb-0 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain"
                   data-aos={`fade-up-${index * 2}`}
                 />
-                <div className="text-white font-bold text-center mt-1 mb-1">
+                <div className="text-white font-bold text-center  mb-3">
                   {titles[index]}
                 </div>
               </div>
