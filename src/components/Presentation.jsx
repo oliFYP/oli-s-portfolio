@@ -16,7 +16,7 @@ function Presentation() {
 
   const openLinkedInProfile = () => {
     const linkedInProfileURL =
-      "https://www.linkedin.com/in/olivier-smith-2378b8205/";
+      "https://www.linkedin.com/in/olivier-smith-92a825300/";
     window.open(linkedInProfileURL, "_blank");
   };
   const openGithubProfile = () => {
