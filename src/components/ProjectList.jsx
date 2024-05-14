@@ -11,13 +11,16 @@ import Fit4U from "../Projects/Fit4U.png";
 import java from "../Projects/java-BankOO.png";
 
 function ProjectList() {
+  // State to manage loading state and selected technology for filtering
   const [isLoading, setLoading] = useState(true);
   const [selectedTech, setSelectedTech] = useState("All");
 
+  // Simulating loading delay
   setTimeout(() => {
     setLoading(false);
   }, 5000);
 
+  // Array of project data
   const projects = [
     {
       id: 1,
@@ -111,6 +114,7 @@ function ProjectList() {
     },
   ];
 
+  // Filtered projects based on selected technology
   const filteredProjects =
     selectedTech === "All"
       ? projects
@@ -120,8 +124,12 @@ function ProjectList() {
 
   return (
     <div>
+      {/* Technology filter dropdown */}
       <div className="relative">
-        <div className="flex sm:justify-end justify-center bg-gradient-to-r from-slate-900 to-slate-900">
+        <div
+          style={{ backgroundColor: "#1B1C1E" }}
+          className="flex sm:justify-end justify-center "
+        >
           <div className="sm:mr-5 mr-0">
             <select
               value={selectedTech}
@@ -129,6 +137,7 @@ function ProjectList() {
               className="bg-black p-2 rounded-md shadow-md"
             >
               <option value="All">All Technologies</option>
+              {/* Dynamically render technology options */}
               {[
                 ...new Set(projects.flatMap((project) => project.technologies)),
               ].map((tech, index) => (
@@ -139,25 +148,37 @@ function ProjectList() {
             </select>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center bg-gradient-to-r from-slate-900 to-slate-900">
+        {/* Project cards */}
+        <div
+          style={{ backgroundColor: "#1B1C1E" }}
+          className="flex flex-wrap justify-center"
+        >
           {isLoading
-            ? projects.map((project) => (
+            ? // Render skeleton loading placeholders while loading
+              projects.map((project) => (
                 <ProjectCardSkeleton key={project.id} />
               ))
-            : filteredProjects.map((project) => (
+            : // Render filtered projects
+              filteredProjects.map((project) => (
                 <div
                   key={project.id}
-                  className="max-w-xs sm:max-w-sm m-2 rounded-lg transition-transform transform overflow-hidden shadow-lg bg-gradient-to-r from-slate-800 to-slate-500 text-white  hover:cursor-pointer m-[30px]"
+                  className="max-w-xs sm:max-w-sm m-2 rounded-lg transition-transform transform overflow-hidden shadow-lg bg-gradient-to-r from-slate-800 to-slate-500 text-white hover:cursor-pointer m-[30px]"
                 >
                   <div className="w-full">
+                    {/* Project image */}
                     <img
                       className="w-full h-auto"
                       src={project.image}
                       alt={project.title}
                     />
                   </div>
-                  <div className="w-full bg-gradient-to-r from-slate-800 to-slate-500 p-4">
+                  <div
+                    style={{ backgroundColor: "#27292B" }}
+                    className="w-full  p-4"
+                  >
+                    {/* Project title */}
                     <h2 className="text-white font-bold">{project.title}</h2>
+                    {/* Technology buttons */}
                     {project.technologies && (
                       <div className="flex flex-wrap gap-2 mt-2">
                         {project.technologies.map((tech, index) => (

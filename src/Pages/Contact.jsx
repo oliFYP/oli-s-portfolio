@@ -61,18 +61,10 @@ function Contact() {
         </div>
       ) : (
         <>
-          <div className="relative h-screen" style={{ overflow: "hidden" }}>
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="object-cover w-full h-full hidden sm:block transition-all md:pointer-events-none blur-sm"
-              id="video"
-            >
-              <source src={background} type="video/mp4" />
-            </video>
-
+          <div
+            className="relative h-screen bg-black"
+            style={{ overflow: "hidden" }}
+          >
             <div className="absolute sm:top-1/2 sm:left-1/2 transform sm:-translate-x-1/2 sm:-translate-y-1/2 w-full sm:h-auto h-full sm:max-w-md bg-black p-8 rounded shadow-md">
               {isFormSubmitted ? (
                 <div className="sm:mt-0 mt-[50%] text-white font-bold text-center">
@@ -85,7 +77,11 @@ function Contact() {
                   </button>
                 </div>
               ) : (
-                <form ref={form} onSubmit={sendEmail} className="w-full">
+                <form
+                  ref={form}
+                  onSubmit={sendEmail}
+                  className="w-full border-white"
+                >
                   <h1
                     data-aos="flip-right"
                     className="text-4xl font-bold text-white mb-8"
@@ -141,7 +137,7 @@ function Contact() {
                       name="message"
                       rows="4"
                       className="mt-1 p-2 w-full border rounded-md"
-                      placeholder="How can we help you?"
+                      placeholder="How can I help you?"
                       required
                     ></textarea>
                   </div>
@@ -149,7 +145,7 @@ function Contact() {
                   <button
                     type="submit"
                     value="send"
-                    className="bg-white font-bold  text-black px-4 py-2 rounded-md"
+                    className="bg-white font-bold text-black px-4 py-2 rounded-md"
                   >
                     Submit
                   </button>

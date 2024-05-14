@@ -11,13 +11,13 @@ function Topbar2({ isSidePanelOpen, toggleSidePanel }) {
     navigate("/");
   };
   const navigateToAboutMe = () => {
-    navigate("/");
+    navigate("/#aboutMe");
   };
   const navigateToExperience = () => {
-    navigate("/");
+    navigate("/#experience");
   };
   const navigateToEducation = () => {
-    navigate("/");
+    navigate("/#education");
   };
   const navigateToContact = () => {
     navigate("/contact");
@@ -26,7 +26,10 @@ function Topbar2({ isSidePanelOpen, toggleSidePanel }) {
     navigate("/project");
   };
   return (
-    <div className="relative bg-gradient-to-b from-black to-slate-900 w-full h-100 z-999 flex justify-between items-center ">
+    <div
+      style={{ backgroundColor: "#1B1C1E" }}
+      className="relative  w-full h-100 z-999 flex justify-between items-center "
+    >
       <div className="relative m-4 flex">
         <img src={logo} className="h-8 mt-1 sm:h-9 sm:mt-2" alt="Logo" />
       </div>
