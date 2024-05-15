@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import background from "../videobg/4K_10.mp4";
+import Topbar2 from "../components/TopBar2";
 import { BeatLoader } from "react-spinners";
 import emailjs from "@emailjs/browser";
 import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Topbar from "../components/TopBar";
 
 function Contact() {
   const [isLoading, setLoading] = useState(false);
@@ -54,7 +55,8 @@ function Contact() {
   };
 
   return (
-    <div>
+    <section>
+      <Topbar />
       {isLoading ? (
         <div className="absolute top-0 left-0 w-full h-full flex align-center justify-center items-center bg-black">
           <BeatLoader color="#ffffff" />
@@ -158,7 +160,7 @@ function Contact() {
           </div>
         </>
       )}
-    </div>
+    </section>
   );
 }
 
