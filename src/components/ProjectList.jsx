@@ -126,10 +126,7 @@ function ProjectList() {
     <div>
       {/* Technology filter dropdown */}
       <div className="relative">
-        <div
-          style={{ backgroundColor: "#1B1C1E" }}
-          className="flex sm:justify-end justify-center "
-        >
+        <div className="flex sm:justify-end justify-center bg-black ">
           <div className="sm:mr-5 mr-0">
             <select
               value={selectedTech}
@@ -149,10 +146,7 @@ function ProjectList() {
           </div>
         </div>
         {/* Project cards */}
-        <div
-          style={{ backgroundColor: "#1B1C1E" }}
-          className="flex flex-wrap justify-center"
-        >
+        <div className="flex bg-black flex-wrap justify-center">
           {isLoading
             ? // Render skeleton loading placeholders while loading
               projects.map((project) => (

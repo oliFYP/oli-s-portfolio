@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import Topbar2 from "../components/TopBar2";
+import Topbar from "../components/TopBar2";
 import { BeatLoader } from "react-spinners";
 import emailjs from "@emailjs/browser";
 import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Topbar from "../components/TopBar";
 
 function Contact() {
   const [isLoading, setLoading] = useState(false);
@@ -56,7 +55,6 @@ function Contact() {
 
   return (
     <section>
-      <Topbar />
       {isLoading ? (
         <div className="absolute top-0 left-0 w-full h-full flex align-center justify-center items-center bg-black">
           <BeatLoader color="#ffffff" />
@@ -67,6 +65,7 @@ function Contact() {
             className="relative h-screen bg-black"
             style={{ overflow: "hidden" }}
           >
+            <Topbar />
             <div className="absolute sm:top-1/2 sm:left-1/2 transform sm:-translate-x-1/2 sm:-translate-y-1/2 w-full sm:h-auto h-full sm:max-w-md bg-black p-8 rounded shadow-md">
               {isFormSubmitted ? (
                 <div className="sm:mt-0 mt-[50%] text-white font-bold text-center">

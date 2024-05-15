@@ -28,8 +28,8 @@ function Topbar2({ isSidePanelOpen, toggleSidePanel }) {
 
   return (
     <div
-      style={{ backgroundColor: "#1B1C1E" }} // Styling the background color of the top bar
-      className="relative w-full h-100 z-999 flex justify-between items-center" // Applying utility classes for layout and positioning
+      // Styling the background color of the top bar
+      className="relative w-full h-100 z-999 flex bg-black justify-between items-center" // Applying utility classes for layout and positioning
     >
       <div className="relative m-4 flex">
         {" "}
