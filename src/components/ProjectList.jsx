@@ -156,7 +156,8 @@ function ProjectList() {
               filteredProjects.map((project) => (
                 <div
                   key={project.id}
-                  className="max-w-xs sm:max-w-sm m-2 rounded-lg transition-transform transform overflow-hidden shadow-lg bg-gradient-to-r from-slate-800 to-slate-500 text-white hover:cursor-pointer m-[30px]"
+                  style={{ backgroundColor: "#27292B" }}
+                  className="max-w-xs sm:max-w-sm m-2 rounded-lg transition-transform transform overflow-hidden shadow-lg text-white hover:cursor-pointer m-[30px]"
                 >
                   <div className="w-full">
                     {/* Project image */}
