@@ -10,15 +10,7 @@ function Topbar2({ isSidePanelOpen, toggleSidePanel }) {
   const navigateToHome = () => {
     navigate("/"); // Navigate to the Home page
   };
-  const navigateToAboutMe = () => {
-    navigate("/#aboutMe"); // Navigate to the About Me section
-  };
-  const navigateToExperience = () => {
-    navigate("/#experience"); // Navigate to the Experience section
-  };
-  const navigateToEducation = () => {
-    navigate("/#education"); // Navigate to the Education section
-  };
+
   const navigateToContact = () => {
     navigate("/contact"); // Navigate to the Contact page
   };

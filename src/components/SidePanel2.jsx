@@ -17,21 +17,6 @@ function SidePanel({ isSidePanelOpen, toggleSidePanel }) {
     navigate("/");
   };
 
-  // Navigation function to the About Me section
-  const navigateToAboutMe = () => {
-    navigate("/#about");
-  };
-
-  // Navigation function to the Experience section
-  const navigateToExperience = () => {
-    navigate("/#experience");
-  };
-
-  // Navigation function to the Education section
-  const navigateToEducation = () => {
-    navigate("/#education");
-  };
-
   // Navigation function to the Contact page
   const navigateToContact = () => {
     navigate("/contact");
@@ -58,36 +43,12 @@ function SidePanel({ isSidePanelOpen, toggleSidePanel }) {
         <FaHome className="mr-5 mt-[5px]" /> Home
       </button>
 
-      {/* Button for About Me section navigation */}
-      <button
-        className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none my-2 w-full"
-        onClick={navigateToAboutMe}
-      >
-        <FaUser className="mr-5 mt-[5px]" /> About Me
-      </button>
-
-      {/* Button for Experience section navigation */}
-      <button
-        className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none my-2 w-full"
-        onClick={navigateToExperience}
-      >
-        <FaBriefcase className="mr-5 mt-[5px]" /> Experience
-      </button>
-
       {/* Button for Projects page navigation */}
       <button
         className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none my-2 w-full"
         onClick={navigateToProjects}
       >
         <FaBriefcase className="mr-5 mt-[5px]" /> Projects
-      </button>
-
-      {/* Button for Education section navigation */}
-      <button
-        className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none border-b my-2 w-full"
-        onClick={navigateToEducation}
-      >
-        <FaGraduationCap className="mr-5 mt-[5px]" /> Education
       </button>
 
       {/* Button for Contact page navigation */}

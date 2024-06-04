@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Topbar from "../components/TopBar2";
+import SidePanel from "../components/SidePanel2";
 import { BeatLoader } from "react-spinners";
 import emailjs from "@emailjs/browser";
 import Footer from "../components/Footer";
@@ -12,6 +13,11 @@ function Contact() {
   const [isFormSubmitted, setFormSubmitted] = useState(false);
   const form = useRef();
   const navigate = useNavigate();
+  const [isSidePanelOpen, setSidePanelOpen] = useState(false);
+
+  const toggleSidePanel = () => {
+    setSidePanelOpen(!isSidePanelOpen);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -63,9 +69,18 @@ function Contact() {
         <>
           <div
             className="relative h-screen bg-black"
-            style={{ overflow: "hidden" }}
+            style={{ overflow: "hidden", zIndex: 200 }}
           >
-            <Topbar />
+            <Topbar
+              isSidePanelOpen={isSidePanelOpen}
+              toggleSidePanel={toggleSidePanel}
+            />{" "}
+            {isSidePanelOpen && (
+              <SidePanel
+                isSidePanelOpen={isSidePanelOpen}
+                toggleSidePanel={toggleSidePanel}
+              />
+            )}
             <div className="absolute sm:top-1/2 sm:left-1/2 transform sm:-translate-x-1/2 sm:-translate-y-1/2 w-full sm:h-auto h-full sm:max-w-md bg-black p-8 rounded shadow-md">
               {isFormSubmitted ? (
                 <div className="sm:mt-0 mt-[50%] text-white font-bold text-center">
