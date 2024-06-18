@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Topbar from "../components/TopBar2";
 import Footer from "../components/Footer";
 import worker from "../icons/worker.png";
@@ -9,7 +9,9 @@ function Fit4U() {
   const toggleSidePanel = () => {
     setSidePanelOpen(!isSidePanelOpen);
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section
       className="relative min-h-screen bg-black"

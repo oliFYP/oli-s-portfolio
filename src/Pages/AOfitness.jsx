@@ -20,7 +20,9 @@ function Aofitness() {
   const toggleSidePanel = () => {
     setSidePanelOpen(!isSidePanelOpen);
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section
       className="relative h-auto bg-black"
