@@ -3,9 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/profile/",
   plugins: [react()],
-  base: "/",
-  server: {
-    host: "0.0.0.0",
-  },
 });
