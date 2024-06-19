@@ -15,7 +15,7 @@ import BankAccount from "./Pages/BankAccount";
 import CitizenMonitoring from "./Pages/CitizenMonitoring";
 import CustomerRelationship from "./Pages/CustomerRelationship";
 import OOM from "./Pages/OOM";
-import UOOM from "./Pages/UOOM";
+import UOOM from "./Pages/University";
 import BA from "./Pages/BA";
 
 function App() {
