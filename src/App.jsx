@@ -32,7 +32,7 @@ function App() {
           <Route path="/vm" element={<VM />} />
           <Route path="/Fran" element={<Fran />} />
           <Route path="/Fit4U" element={<Fit4U />} />
-          <Route path="/Matlab" element={<Matlab />} />
+          <Route path="/5g-vs-4g" element={<Matlab />} />
           <Route path="/Weather" element={<Weather />} />
           <Route path="/Event-Manager" element={<EventManager />} />
           <Route path="/Bank-account-oo" element={<BankAccount />} />
