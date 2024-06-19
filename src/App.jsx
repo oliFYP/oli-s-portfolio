@@ -27,7 +27,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/project" element={<Project />} />
           <Route path="/aofitness" element={<AOFitness />} />
-          <Route path="/kdevs" element={<KDevs />} />
+          <Route path="/Kdevs" element={<KDevs />} />
           <Route path="/khf" element={<KHF />} />
           <Route path="/vm" element={<VM />} />
           <Route path="/fran" element={<Fran />} />
