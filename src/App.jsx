@@ -30,20 +30,20 @@ function App() {
           <Route path="/kdevs" element={<KDevs />} />
           <Route path="/khf" element={<KHF />} />
           <Route path="/vm" element={<VM />} />
-          <Route path="/Fran" element={<Fran />} />
-          <Route path="/Fit4U" element={<Fit4U />} />
+          <Route path="/fran" element={<Fran />} />
+          <Route path="/fit4u" element={<Fit4U />} />
           <Route path="/5g-vs-4g" element={<Matlab />} />
-          <Route path="/Weather" element={<Weather />} />
-          <Route path="/Event-Manager" element={<EventManager />} />
-          <Route path="/Bank-account-oo" element={<BankAccount />} />
-          <Route path="/Citizen-Monitoring" element={<CitizenMonitoring />} />
+          <Route path="/weather" element={<Weather />} />
+          <Route path="/event-manager" element={<EventManager />} />
+          <Route path="/bank-account-oo" element={<BankAccount />} />
+          <Route path="/citizen-monitoring" element={<CitizenMonitoring />} />
           <Route
-            path="/Customer-Relationship"
+            path="/customer-relationship"
             element={<CustomerRelationship />}
           />
-          <Route path="/Object-Oriented-Modeling" element={<OOM />} />
-          <Route path="/University-Object-Oriented-Model" element={<UOOM />} />
-          <Route path="/Bank-account" element={<BA />} />
+          <Route path="/object-oriented-modeling" element={<OOM />} />
+          <Route path="/university-object-oriented-model" element={<UOOM />} />
+          <Route path="/bank-account" element={<BA />} />
         </Routes>
       </Router>
     </div>
