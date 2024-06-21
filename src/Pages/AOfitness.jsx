@@ -59,10 +59,7 @@ function Aofitness() {
       )}
       <div className="bg-black">
         <div className="flex flex-wrap items-center justify-center h-full">
-          <div
-            className="max-w-md p-8 bg-black mb-4 md:mr-4 rounded-lg flex justify-center items-center"
-            style={{ height: containerHeight }}
-          >
+          <div className="max-w-md p-8 bg-black mb-4 md:mr-4 rounded-lg flex justify-center items-center">
             <img
               src={aofitness}
               className="w-auto"
