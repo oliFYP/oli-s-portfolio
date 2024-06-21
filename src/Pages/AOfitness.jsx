@@ -1,14 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import Topbar from "../components/TopBar2";
+import Topbar from "../components/TopBar3";
 import SidePanel from "../components/SidePanel2";
 import aofitness from "../icons/aofitness-icon.png";
 import preview from "../img/preview.png";
 import preview1 from "../img/preview1.png";
 import preview2 from "../img/preview2.png";
 import dev from "../img/dev.png";
-import Footer from "../components/Footer";
-import prevImage from "../icons/previmg.png";
-import nextImage from "../icons/nextimg.png";
+import Footer from "../components/Footer1";
 import "../fonts/fonts.css";
 
 function Aofitness() {
@@ -57,9 +55,9 @@ function Aofitness() {
           toggleSidePanel={toggleSidePanel}
         />
       )}
-      <div className="bg-black">
+      <div className="bg-[#1B1C1E]">
         <div className="flex flex-wrap items-center justify-center h-full">
-          <div className="max-w-md p-8 bg-black mb-4 md:mr-4 rounded-lg flex justify-center items-center">
+          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center">
             <img
               src={aofitness}
               className="w-auto"
@@ -73,7 +71,7 @@ function Aofitness() {
             style={{ marginBottom: "20px" }}
           >
             <h1
-              className="text-3xl font-bold mb-4"
+              className="text-3xl text-[#C4AE78] mb-4"
               style={{ fontFamily: "Tactic" }}
             >
               About This Project
@@ -97,7 +95,7 @@ function Aofitness() {
             style={{ marginBottom: "20px" }}
           >
             <h1
-              className="text-3xl font-bold mb-4"
+              className="text-3xl font-bold text-[#C4AE78] mb-4"
               style={{ fontFamily: "Tactic" }}
             >
               Current Design
@@ -115,10 +113,10 @@ function Aofitness() {
               to high-quality service.
             </p>
           </div>
-          <div className="max-w-md p-8 bg-black mb-4 md:mr-4 rounded-lg flex justify-center items-center relative">
+          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center relative">
             <button
               onClick={prevImage}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] p-2 rounded-full"
             >
               &lt;
             </button>
@@ -130,14 +128,14 @@ function Aofitness() {
             />
             <button
               onClick={nextImage}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] p-2 rounded-full"
             >
               &gt;
             </button>
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-center h-full">
-          <div className="max-w-md p-8 bg-black mb-4 md:mr-4 rounded-lg flex justify-center items-center">
+          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center">
             <img
               src={dev}
               className="w-auto"
@@ -151,7 +149,7 @@ function Aofitness() {
             style={{ marginBottom: "20px" }}
           >
             <h1
-              className="text-3xl font-bold mb-4"
+              className="text-3xl font-bold text-[#C4AE78] mb-4"
               style={{ fontFamily: "Tactic" }}
             >
               Project Technology Stack Overview
