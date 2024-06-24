@@ -44,7 +44,7 @@ function Design() {
         <div className="flex flex-wrap justify-center">
           {/* Map through icon sources */}
           {iconSources.map((icon, index) => (
-            <div key={index} className="w-1/2 md:w-1/4 lg:w-1/5 p-2 ">
+            <div key={index} className=" sm:w-1/4 lg:w-1/5 p-2 ">
               {/* Icon container */}
               <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-gradient-to-r from-slate-900 to-slate-700 flex flex-col items-center justify-center cursor-pointer rounded-xl mx-auto">
                 {/* Icon */}

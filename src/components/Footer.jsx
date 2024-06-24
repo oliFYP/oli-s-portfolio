@@ -64,7 +64,10 @@ const Footer = () => {
         <p className="text-sm text-white md:text-base ml-0 lg:ml-5">
           &copy; 2023 Olivier Smith. All rights reserved.
         </p>
-        <ul className="flex space-x-4 md:space-x-6">
+        <ul
+          className="flex space-x-4 md:space-x-6"
+          style={{ fontFamily: "Titillium" }}
+        >
           {/* Home link */}
           <li>
             <a
