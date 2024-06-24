@@ -32,7 +32,16 @@ function Aofitness() {
   };
 
   const images = [preview, preview1, preview2, preview3, preview4, preview5];
+  const imageTitles = [
+    "Home",
+    "Client Login",
+    "Client Register",
+    "Email Verification",
+    "Client Details",
+    "Client Home",
+  ];
   const prototype = [v1, v2];
+  const prototypeTitles = ["Prototype 1", "Prototype 2"];
 
   const prevPrototype = () => {
     setCurrentIndexV((prevIndex) =>
@@ -132,7 +141,7 @@ function Aofitness() {
               to high-quality service.
             </p>
           </div>
-          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center relative">
+          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex flex-col justify-center items-center relative">
             <button
               onClick={prevImage}
               className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] p-2 rounded-full"
@@ -151,6 +160,9 @@ function Aofitness() {
             >
               &gt;
             </button>
+            <p className="text-[#C4AE78] mt-4" style={{ fontFamily: "Tactic" }}>
+              {imageTitles[currentIndex]}
+            </p>
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-center h-full">
@@ -210,7 +222,7 @@ function Aofitness() {
               platform more intuitive and engaging for our users.
             </p>
           </div>
-          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center relative">
+          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex flex-col justify-center items-center relative">
             <button
               onClick={prevPrototype}
               className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] p-2 rounded-full"
@@ -229,6 +241,9 @@ function Aofitness() {
             >
               &gt;
             </button>
+            <p className="text-[#C4AE78] mt-4" style={{ fontFamily: "Tactic" }}>
+              {prototypeTitles[currentIndexV]}
+            </p>
           </div>
         </div>
       </div>
