@@ -176,14 +176,16 @@ function Aofitness() {
             <p style={{ fontFamily: "Tactic-bold" }}>
               This project was developed using React for building a dynamic and
               responsive user interface, ensuring a seamless and engaging user
-              experience. Tailwind CSS was employed to streamline the styling
-              process, allowing for efficient and customisable design
-              implementation that aligns with our modern aesthetic. Firebase was
-              integrated to handle backend functionalities, providing a robust
-              and scalable database solution, as well as authentication and
-              hosting services. This technology stack ensures that the AO
-              Fitness platform is not only visually appealing but also highly
-              functional, secure, and capable of scaling with user growth.
+              experience. Figma was utilized for design collaboration, enabling
+              precise and interactive prototypes. Tailwind CSS was employed to
+              streamline the styling process, allowing for efficient and
+              customizable design implementation that aligns with our modern
+              aesthetic. Firebase was integrated to handle backend
+              functionalities, providing a robust and scalable database
+              solution, as well as authentication and hosting services. This
+              technology stack ensures that the AO Fitness platform is not only
+              visually appealing but also highly functional, secure, and capable
+              of scaling with user growth.
             </p>
           </div>
         </div>
