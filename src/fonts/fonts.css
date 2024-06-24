@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "Tactic-bold";
+  src: url("./TacticRound-Bld.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Titillium";
   src: url("./TitilliumWeb-Black.ttf") format("truetype");
 }
