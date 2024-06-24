@@ -5,6 +5,9 @@ import aofitness from "../icons/aofitness-icon.png";
 import preview from "../img/preview.png";
 import preview1 from "../img/preview1.png";
 import preview2 from "../img/preview2.png";
+import preview3 from "../img/preview3.png";
+import preview4 from "../img/preview4.png";
+import preview5 from "../img/preview5.png";
 import v1 from "../img/v1.png";
 import v2 from "../img/v2.png";
 import dev from "../img/dev.png";
@@ -16,6 +19,7 @@ function Aofitness() {
   const [containerHeight, setContainerHeight] = useState("auto");
   const textContainerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndexV, setCurrentIndexV] = useState(0);
 
   useEffect(() => {
     if (textContainerRef.current) {
@@ -27,17 +31,17 @@ function Aofitness() {
     setSidePanelOpen(!isSidePanelOpen);
   };
 
-  const images = [preview, preview1, preview2];
+  const images = [preview, preview1, preview2, preview3, preview4, preview5];
   const prototype = [v1, v2];
 
   const prevPrototype = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndexV((prevIndex) =>
       prevIndex === 0 ? prototype.length - 1 : prevIndex - 1
     );
   };
 
   const nextPrototype = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndexV((prevIndex) =>
       prevIndex === prototype.length - 1 ? 0 : prevIndex + 1
     );
   };
@@ -212,7 +216,7 @@ function Aofitness() {
               &lt;
             </button>
             <img
-              src={prototype[currentIndex]}
+              src={prototype[currentIndexV]}
               className="w-auto"
               alt="Preview img"
               style={{ maxHeight: "100%", maxWidth: "100%" }}

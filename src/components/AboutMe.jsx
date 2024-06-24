@@ -44,7 +44,7 @@ const AboutMe = React.forwardRef((props, ref) => {
         {/* Title */}
         <h1
           data-aos="fade"
-          className="text-3xl font-bold mb-5 text-white text-center md:text-left "
+          className="text-3xl font-bold mb-10 text-white text-center md:text-left "
           style={{ fontFamily: "Titillium" }}
         >
           About Me
@@ -59,7 +59,7 @@ const AboutMe = React.forwardRef((props, ref) => {
               src={image}
               alt="oli"
               // Conditional styling to show current image
-              className={`rounded-xl w-[200px] mb-5 h-auto md:mr-7 sm:w-auto shadow-xl sm:h-[300px] md:mt-[60px] absolute transition-opacity duration-500 ease-in-out ${
+              className={`rounded-xl w-[200px] mb-10 h-auto md:mr-7 sm:w-auto shadow-xl sm:h-[300px] md:mt-[60px] absolute transition-opacity duration-500 ease-in-out ${
                 index === currentImageIndex ? "opacity-100" : "opacity-0"
               }`}
               style={{ transition: "opacity 0.5s ease-in-out" }}
