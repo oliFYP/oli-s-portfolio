@@ -5,6 +5,8 @@ import aofitness from "../icons/aofitness-icon.png";
 import preview from "../img/preview.png";
 import preview1 from "../img/preview1.png";
 import preview2 from "../img/preview2.png";
+import v1 from "../img/v1.png";
+import v2 from "../img/v2.png";
 import dev from "../img/dev.png";
 import Footer from "../components/Footer1";
 import "../fonts/fonts.css";
@@ -26,6 +28,19 @@ function Aofitness() {
   };
 
   const images = [preview, preview1, preview2];
+  const prototype = [v1, v2];
+
+  const prevPrototype = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? prototype.length - 1 : prevIndex - 1
+    );
+  };
+
+  const nextPrototype = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === prototype.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
   const prevImage = () => {
     setCurrentIndex((prevIndex) =>
@@ -166,6 +181,48 @@ function Aofitness() {
               Fitness platform is not only visually appealing but also highly
               functional, secure, and capable of scaling with user growth.
             </p>
+          </div>
+        </div>
+        <div className="flex flex-wrap-reverse items-center justify-center h-full">
+          <div
+            className="max-w-md p-8 bg-[#27292B] mb-4 rounded-xl m-2"
+            style={{ marginBottom: "20px" }}
+          >
+            <h1
+              className="text-3xl font-bold text-[#C4AE78] mb-4"
+              style={{ fontFamily: "Tactic" }}
+            >
+              Previous Prototypes
+            </h1>
+            <p>
+              The previous prototype of AO Fitness focused on matching users
+              with coaches for specific fitness goals like boxing, strength
+              training, and weight loss, emphasizing personalization and
+              dedication. However, we are transitioning to a new design to
+              enhance the overall user experience, improve navigation, and
+              create a more visually appealing and modern interface, making the
+              platform more intuitive and engaging for our users.
+            </p>
+          </div>
+          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center relative">
+            <button
+              onClick={prevPrototype}
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] p-2 rounded-full"
+            >
+              &lt;
+            </button>
+            <img
+              src={prototype[currentIndex]}
+              className="w-auto"
+              alt="Preview img"
+              style={{ maxHeight: "100%", maxWidth: "100%" }}
+            />
+            <button
+              onClick={nextPrototype}
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] p-2 rounded-full"
+            >
+              &gt;
+            </button>
           </div>
         </div>
       </div>
