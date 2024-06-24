@@ -144,7 +144,7 @@ function Aofitness() {
           <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex flex-col justify-center items-center relative">
             <button
               onClick={prevImage}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] p-2 rounded-full"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] select-none ml-2 p-2 rounded-full"
             >
               &lt;
             </button>
@@ -156,7 +156,7 @@ function Aofitness() {
             />
             <button
               onClick={nextImage}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] p-2 rounded-full"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] select-none mr-2 p-2 rounded-full"
             >
               &gt;
             </button>
@@ -225,7 +225,7 @@ function Aofitness() {
           <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex flex-col justify-center items-center relative">
             <button
               onClick={prevPrototype}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] p-2 rounded-full"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] select-none ml-2 p-2 rounded-full"
             >
               &lt;
             </button>
@@ -237,7 +237,7 @@ function Aofitness() {
             />
             <button
               onClick={nextPrototype}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] p-2 rounded-full"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] select-none p-2 mr-2 rounded-full"
             >
               &gt;
             </button>
