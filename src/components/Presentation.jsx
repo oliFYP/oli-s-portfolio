@@ -60,7 +60,7 @@ function Presentation() {
           className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md pr-4 pl-4"
           style={{ fontFamily: "Titillium" }}
         >
-          HI THERE!
+          Hi there!
         </h1>
         {/* Subtitle */}
         <div
@@ -79,7 +79,7 @@ function Presentation() {
             data-aos-offset="0"
             className="rounded-2xl ml-0 sm:ml-5 bg-white mt-5 sm:mt-10 w-40 h-10 font-bold text-black flex items-center justify-center"
             onClick={downloadCV}
-            style={{ zIndex: 699 }}
+            style={{ zIndex: 699, fontFamily: "Titillium-bold" }}
           >
             Download CV
           </button>

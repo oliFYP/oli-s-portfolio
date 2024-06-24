@@ -23,7 +23,10 @@ function Topbar({
 
   return (
     <div className="absolute top-0 left-0 w-full h-full z-999">
-      <nav className="absolute top-0 right-0 m-4 flex">
+      <nav
+        className="absolute top-0 right-0 m-4 flex"
+        style={{ fontFamily: "Titillium" }}
+      >
         {/* Button for Home navigation */}
         <button className="focus:outline-none bg-transparent font-bold text-white group btn btn-border-underline hidden md:block mr-2 relative">
           Home

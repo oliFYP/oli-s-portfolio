@@ -24,13 +24,11 @@ function Topbar2({ isSidePanelOpen, toggleSidePanel }) {
       className="relative w-full h-100 z-999 flex bg-black justify-between items-center" // Applying utility classes for layout and positioning
     >
       <div className="relative m-4 flex">
-        {" "}
         {/* Container for the logo */}
-        <img src={logo} className="h-8 mt-1 sm:h-9 sm:mt-2" alt="Logo" />{" "}
+        <img src={logo} className="h-8 mt-1 sm:h-9 sm:mt-2" alt="Logo" />
         {/* Logo image */}
       </div>
-      <nav className="top-0 right-0 flex">
-        {" "}
+      <nav className="top-0 right-0 flex" style={{ fontFamily: "Titillium" }}>
         {/* Navigation container */}
         {/* Button for Home navigation */}
         <button

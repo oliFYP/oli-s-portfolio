@@ -33,7 +33,7 @@ function SidePanel({
       initial={{ x: "100%" }} // Initial animation state (off-screen to the right)
       animate={isSidePanelOpen ? { x: 0 } : { x: "100%" }} // Animation state based on whether the side panel is open or closed
       exit={{ x: "100%", transition: { ease: "ease-in-out", duration: 300 } }} // Exit animation state
-      style={{ zIndex: 700 }} // Ensuring the side panel appears on top
+      style={{ zIndex: 700, fontFamily: "Titillium" }} // Ensuring the side panel appears on top
     >
       {/* Button for Home navigation */}
       <button className="bg-transparent font-bold flex flex-row text-white p-4 border-b-white rounded-none my-2 w-full">

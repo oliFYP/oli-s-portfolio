@@ -71,6 +71,7 @@ function Contact() {
             className="relative h-screen bg-black"
             style={{ overflow: "hidden", zIndex: 200 }}
           >
+            ,
             <Topbar
               isSidePanelOpen={isSidePanelOpen}
               toggleSidePanel={toggleSidePanel}
@@ -101,10 +102,14 @@ function Contact() {
                   <h1
                     data-aos="flip-right"
                     className="text-4xl font-bold text-white mb-8"
+                    style={{ fontFamily: "Titillium" }}
                   >
                     Contact Me!
                   </h1>
-                  <div className="mb-4">
+                  <div
+                    className="mb-4"
+                    style={{ fontFamily: "Titillium-bold" }}
+                  >
                     <label
                       htmlFor="name"
                       className="block text-sm font-medium text-white"
@@ -162,6 +167,7 @@ function Contact() {
                     type="submit"
                     value="send"
                     className="bg-white font-bold text-black px-4 py-2 rounded-md"
+                    style={{ fontFamily: "Titillium-bold" }}
                   >
                     Submit
                   </button>

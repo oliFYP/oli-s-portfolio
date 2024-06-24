@@ -29,7 +29,7 @@ function Topbar3({ isSidePanelOpen, toggleSidePanel }) {
         <img src={logo} className="h-8 mt-1 sm:h-9 sm:mt-2" alt="Logo" />{" "}
         {/* Logo image */}
       </div>
-      <nav className="top-0 right-0 flex">
+      <nav className="top-0 right-0 flex" style={{ fontFamily: "Titillium" }}>
         {" "}
         {/* Navigation container */}
         {/* Button for Home navigation */}
