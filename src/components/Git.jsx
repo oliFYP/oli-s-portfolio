@@ -20,7 +20,10 @@ function Git() {
 
   // JSX structure for the Version Control section
   return (
-    <div className="bg-black h-auto p-6" style={{ overflow: "hidden" }}>
+    <div
+      className="bg-black h-auto p-6"
+      style={{ overflow: "hidden", fontFamily: "Titillium" }}
+    >
       {/* Container for content */}
       <div className="max-w-5xl mx-auto">
         {/* Section title */}

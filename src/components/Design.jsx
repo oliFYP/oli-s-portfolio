@@ -18,7 +18,10 @@ function Design() {
 
   return (
     // Section for Design & Prototyping tools
-    <section className="bg-black h-auto p-0 p-6" style={{ overflow: "hidden" }}>
+    <section
+      className="bg-black h-auto p-0 p-6"
+      style={{ overflow: "hidden", fontFamily: "Titillium" }}
+    >
       {/* Container to center content */}
       <div className="max-w-5xl mx-auto">
         {/* Section title */}

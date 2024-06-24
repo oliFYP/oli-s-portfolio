@@ -4,6 +4,7 @@ import logo2 from "../img/github.png";
 import oli from "../img/oli.jpg";
 import CV from "../CV/Olivier-Smith-CV-2023.pdf";
 import logo3 from "../img/linkedIn.png";
+import "../fonts/fonts.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -57,13 +58,15 @@ function Presentation() {
         <h1
           data-aos="fade-right"
           className="select-none text-white font-bold text-4xl md:text-6xl lg:text-6xl max-w-md pr-4 pl-4"
+          style={{ fontFamily: "Titillium" }}
         >
-          Hi there!
+          HI THERE!
         </h1>
         {/* Subtitle */}
         <div
           data-aos="fade-left"
           className="select-none text-white font-bold mt-3 text-lg lg:text-3xl lg:mt-10 max-w-md pr-4 pl-4"
+          style={{ fontFamily: "Titillium" }}
         >
           <p>
             I'm Olivier, a computer science graduate from Kingston University

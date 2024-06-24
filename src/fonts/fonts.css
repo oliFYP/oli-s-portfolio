@@ -2,3 +2,12 @@
   font-family: "Tactic";
   src: url("./TacticRound-UltIt.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Titillium";
+  src: url("./TitilliumWeb-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Titillium-bold";
+  src: url("./TitilliumWeb-Bold.ttf") format("truetype");
+}

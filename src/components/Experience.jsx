@@ -69,7 +69,7 @@ const Experience = React.forwardRef((props, ref) => {
       // Forwarded ref for scrolling
       ref={ref}
       className="bg-black h-auto p-6"
-      style={{ overflow: "hidden" }}
+      style={{ overflow: "hidden", fontFamily: "Titillium" }}
     >
       {/* Container to center content */}
       <div className="max-w-5xl mx-auto">

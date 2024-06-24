@@ -28,6 +28,7 @@ const Education = React.forwardRef((props, ref) => {
           // Animate title on fade right
           data-aos="fade-right"
           className="text-3xl font-bold mb-4 mt-10 mb-15 text-white "
+          style={{ fontFamily: "Titillium" }}
         >
           Education History
         </h1>
@@ -52,7 +53,7 @@ const Education = React.forwardRef((props, ref) => {
             <h3
               data-aos="fade-left"
               className="text-xl font-bold text-white"
-              style={{ maxWidth: "100%" }}
+              style={{ maxWidth: "100%", fontFamily: "Titillium" }}
             >
               BSc Computer Science with Honours
             </h3>
@@ -60,12 +61,15 @@ const Education = React.forwardRef((props, ref) => {
             <p
               className="text-xl font-semibold text-white"
               data-aos="fade-right"
-              style={{ maxWidth: "100%" }}
+              style={{ maxWidth: "100%", fontFamily: "Titillium" }}
             >
               Kingston University (2020 - 2023)
             </p>
             {/* List of modules */}
-            <ul className="list-disc pl-6 mt-2 list-none text-white">
+            <ul
+              className="list-disc pl-6 mt-2 list-none text-white"
+              style={{ fontFamily: "Titillium-bold" }}
+            >
               <li data-aos="fade-left">
                 2020-2021: Computer Fundamentals, Programming, Requirements
                 Analysis and Design, Professional Environments.
@@ -102,7 +106,7 @@ const Education = React.forwardRef((props, ref) => {
             <h3
               data-aos="fade-left"
               className="text-xl font-bold text-white"
-              style={{ maxWidth: "100%" }}
+              style={{ maxWidth: "100%", fontFamily: "Titillium" }}
             >
               Baccalaureat Technologique in Business Management (With
               Distinction)
@@ -111,7 +115,7 @@ const Education = React.forwardRef((props, ref) => {
             <p
               data-aos="fade-right"
               className="text-xl font-semibold text-white"
-              style={{ maxWidth: "100%" }}
+              style={{ maxWidth: "100%", fontFamily: "Titillium" }}
             >
               Lycee d'Altitude Briancon (2017 - 2020)
             </p>
@@ -119,6 +123,7 @@ const Education = React.forwardRef((props, ref) => {
             <ul
               data-aos="fade-left"
               className="list-none list-disc pl-6 mt-2 mb-10 text-white"
+              style={{ fontFamily: "Titillium-bold" }}
             >
               <li>
                 Modules: Law, Economics, Finances, Math, Italian, Management,

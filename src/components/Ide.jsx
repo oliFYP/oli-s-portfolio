@@ -20,7 +20,10 @@ function Ide() {
 
   return (
     // Container for IDE section
-    <div className="bg-black h-auto p-6" style={{ overflow: "hidden" }}>
+    <div
+      className="bg-black h-auto p-6"
+      style={{ overflow: "hidden", fontFamily: "Titillium" }}
+    >
       {/* Container to center content */}
       <div className="max-w-5xl mx-auto">
         {/* IDE section title */}

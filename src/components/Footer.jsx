@@ -38,8 +38,11 @@ const Footer = () => {
     <footer className="relative bg-gradient-to-r from-slate-900 to-slate-700 py-4 md:py-8">
       <div className="container mx-auto">
         {/* Footer content */}
-        <div className="flex items-center flex-col justify-center text-white">
-          <p className="font-bold">This website is made with:</p>
+        <div
+          className="flex items-center flex-col justify-center text-white"
+          style={{ fontFamily: "Titillium" }}
+        >
+          <p className="font-bold">This website is made with</p>
           <div className="flex items-center flex-row justify-center">
             {/* Icons for technologies */}
             <img src={ReactL} className="h-10 m-10 mt-5" alt="ReactL" />
