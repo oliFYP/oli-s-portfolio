@@ -149,6 +149,7 @@ function ProjectList() {
               value={selectedTech}
               onChange={(e) => setSelectedTech(e.target.value)}
               className="bg-black p-2 rounded-md shadow-md"
+              style={{ fontFamily: "Titillium" }}
             >
               <option value="All">All Technologies</option>
               {[
