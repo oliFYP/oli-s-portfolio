@@ -104,7 +104,7 @@ function Aofitness() {
             >
               About This Project
             </h1>
-            <p style={{ fontFamily: "Tactic-bold" }}>
+            <p className="text-white" style={{ fontFamily: "Tactic-bold" }}>
               AO fitness is a fitness platform that personalises your fitness
               journey by matching you with a coach tailored to your specific
               needs and goals. Whether you're interested in boxing, general
@@ -128,7 +128,7 @@ function Aofitness() {
             >
               Current Design
             </h1>
-            <p style={{ fontFamily: "Tactic-bold" }}>
+            <p className="text-white" style={{ fontFamily: "Tactic-bold" }}>
               The new design of AO Fitness incorporates a sleek and modern
               aesthetic with a sophisticated color palette. The primary colors,
               dark charcoal (27292B) and ebony (1B1C1E), provide a strong, bold
@@ -185,7 +185,7 @@ function Aofitness() {
             >
               Project Technology Stack Overview
             </h1>
-            <p style={{ fontFamily: "Tactic-bold" }}>
+            <p className="text-white" style={{ fontFamily: "Tactic-bold" }}>
               This project was developed using React for building a dynamic and
               responsive user interface, ensuring a seamless and engaging user
               experience. Figma was utilized for design collaboration, enabling
@@ -212,7 +212,7 @@ function Aofitness() {
             >
               Previous Prototypes
             </h1>
-            <p style={{ fontFamily: "Tactic-bold" }}>
+            <p className="text-white" style={{ fontFamily: "Tactic-bold" }}>
               The previous prototype of AO Fitness focused on matching users
               with coaches for specific fitness goals like boxing, strength
               training, and weight loss, emphasizing personalization and
