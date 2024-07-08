@@ -12,6 +12,7 @@ import v1 from "../img/v1.png";
 import v2 from "../img/v2.png";
 import dev from "../img/dev.png";
 import Footer from "../components/Footer1";
+import AOS from "aos";
 import "../fonts/fonts.css";
 
 function Aofitness() {
@@ -25,6 +26,9 @@ function Aofitness() {
     if (textContainerRef.current) {
       setContainerHeight(textContainerRef.current.offsetHeight);
     }
+    AOS.init({
+      duration: 1000,
+    });
   }, []);
 
   const toggleSidePanel = () => {
@@ -85,7 +89,10 @@ function Aofitness() {
       )}
       <div className="bg-[#1B1C1E]">
         <div className="flex flex-wrap items-center justify-center h-full">
-          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center">
+          <div
+            data-aos="fade"
+            className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center"
+          >
             <img
               src={aofitness}
               className="w-auto"
@@ -94,6 +101,7 @@ function Aofitness() {
             />
           </div>
           <div
+            data-aos="fade"
             ref={textContainerRef}
             className="max-w-md p-8 bg-[#27292B] mb-4 rounded-xl m-2"
             style={{ marginBottom: "20px" }}
@@ -119,6 +127,7 @@ function Aofitness() {
         </div>
         <div className="flex flex-wrap-reverse items-center justify-center h-full">
           <div
+            data-aos="fade"
             className="max-w-md p-8 bg-[#27292B] mb-4 rounded-xl m-2"
             style={{ marginBottom: "20px" }}
           >
@@ -141,7 +150,10 @@ function Aofitness() {
               to high-quality service.
             </p>
           </div>
-          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex flex-col justify-center items-center relative">
+          <div
+            data-aos="fade"
+            className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex flex-col justify-center items-center relative"
+          >
             <button
               onClick={prevImage}
               className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] select-none ml-2 p-2 rounded-full"
@@ -166,7 +178,10 @@ function Aofitness() {
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-center h-full">
-          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center">
+          <div
+            data-aos="fade"
+            className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center"
+          >
             <img
               src={dev}
               className="w-auto"
@@ -175,6 +190,7 @@ function Aofitness() {
             />
           </div>
           <div
+            data-aos="fade"
             ref={textContainerRef}
             className="max-w-md p-8 bg-[#27292B] mb-4 rounded-xl m-2"
             style={{ marginBottom: "20px" }}
@@ -203,6 +219,7 @@ function Aofitness() {
         </div>
         <div className="flex flex-wrap-reverse items-center justify-center h-full">
           <div
+            data-aos="fade"
             className="max-w-md p-8 bg-[#27292B] mb-4 rounded-xl m-2"
             style={{ marginBottom: "20px" }}
           >
@@ -222,7 +239,10 @@ function Aofitness() {
               platform more intuitive and engaging for our users.
             </p>
           </div>
-          <div className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex flex-col justify-center items-center relative">
+          <div
+            data-aos="fade"
+            className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex flex-col justify-center items-center relative"
+          >
             <button
               onClick={prevPrototype}
               className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#27292B] text-[#C4AE78] select-none ml-2 p-2 rounded-full"
