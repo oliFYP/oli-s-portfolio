@@ -7,9 +7,7 @@ import preview1 from "../img/kdev-preview1.png";
 import preview2 from "../img/kdev-preview2.png";
 import preview3 from "../img/kdev-preview3.png";
 import preview4 from "../img/kdev-preview4.png";
-import preview5 from "../img/preview5.png";
-import v1 from "../img/v1.png";
-import v2 from "../img/v2.png";
+
 import dev from "../icons/figma-icon.png";
 import Footer from "../components/Footer2";
 import AOS from "aos";
@@ -44,20 +42,6 @@ function Kdevs() {
 
     "Client Home",
   ];
-  const prototype = [v1, v2];
-  const prototypeTitles = ["Prototype 1", "Prototype 2"];
-
-  const prevPrototype = () => {
-    setCurrentIndexV((prevIndex) =>
-      prevIndex === 0 ? prototype.length - 1 : prevIndex - 1
-    );
-  };
-
-  const nextPrototype = () => {
-    setCurrentIndexV((prevIndex) =>
-      prevIndex === prototype.length - 1 ? 0 : prevIndex + 1
-    );
-  };
 
   const prevImage = () => {
     setCurrentIndex((prevIndex) =>
@@ -116,7 +100,7 @@ function Kdevs() {
               className="text-[#25466E]"
               style={{ fontFamily: "Rubik-semibold" }}
             >
-              The CKD Project is a web-based application developed as a
+              Kdevs "CKD Project" is a web-based application developed as a
               university group project aimed at assisting doctors in managing
               patients with Chronic Kidney Disease (CKD) and empowering patients
               to monitor their own health. As the Analyst Designer, I was
