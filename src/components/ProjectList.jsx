@@ -34,7 +34,7 @@ function ProjectList() {
       title: "K-devs CKD project",
       image: kdevs,
       technologies: ["Figma"],
-      route: "/Construction",
+      route: "/kdevs",
     },
     {
       id: 3,

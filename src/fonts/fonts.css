@@ -16,3 +16,12 @@
   font-family: "Titillium-bold";
   src: url("./TitilliumWeb-Bold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Rubik-extrabold";
+  src: url("./Rubik-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik-semibold";
+  src: url("./Rubik-SemiBold.ttf") format("truetype");
+}
