@@ -203,7 +203,7 @@ function Kdevs() {
               style={{ fontFamily: "Rubik-semibold" }}
             >
               Figma served as our primary design tool for developing the CKD
-              Tracker, offering a robust platform that facilitated collaborative
+              project, offering a robust platform that facilitated collaborative
               and efficient project workflows. Its cloud-based nature allowed
               our team to seamlessly work together in real-time, regardless of
               our physical locations, which was particularly advantageous for a
