@@ -41,7 +41,7 @@ function ProjectList() {
       title: "Kings Health and Fitness mobile app",
       image: khf,
       technologies: ["Figma", "Flutter", "Dart", "Firestore", "Android Studio"],
-      route: "/Construction",
+      route: "/Khf",
     },
     {
       id: 4,

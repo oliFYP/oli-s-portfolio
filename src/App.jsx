@@ -9,6 +9,7 @@ const Project = lazy(() => import("./Pages/Projects"));
 const AOFitness = lazy(() => import("./Pages/AOfitness"));
 const Construction = lazy(() => import("./Pages/construction"));
 const Kdevs = lazy(() => import("./Pages/Kdev"));
+const Khf = lazy(() => import("./Pages/khf"));
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/aofitness" element={<AOFitness />} />
             <Route path="/construction" element={<Construction />} />
             <Route path="/kdevs" element={<Kdevs />} />
+            <Route path="/khf" element={<Khf />} />
           </Routes>
         </Suspense>
       </Router>
