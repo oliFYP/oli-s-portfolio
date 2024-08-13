@@ -103,10 +103,13 @@ function Khf() {
             className="max-w-md p-8 bg-white mb-4 rounded-xl m-2"
             style={{ marginBottom: "20px" }}
           >
-            <h1 className="text-3xl font-bold italic text-[#666666] mb-4">
+            <h1
+              className="text-3xl font-extrabold italic text-[#666666] mb-4"
+              style={{ fontFamily: "Rubik-extrabold" }}
+            >
               About This Project
             </h1>
-            <p className="text-black" style={{ fontFamily: "Tactic-bold" }}>
+            <p className="text-black" style={{ fontFamily: "Rubik-semibold" }}>
               For my 3rd-year degree Final Year Project, I developed a
               boxing-focused app to enhance users self-confidence, health, and
               motivation. Unlike general fitness apps, this platform is tailored
@@ -124,10 +127,13 @@ function Khf() {
             className="max-w-md p-8 bg-[#FFFFFF] mb-4 rounded-xl m-2"
             style={{ marginBottom: "20px" }}
           >
-            <h1 className="text-3xl font-bold italic text-[#666666] mb-4">
+            <h1
+              className="text-3xl font-extrabold italic text-[#666666] mb-4"
+              style={{ fontFamily: "Rubik-extrabold" }}
+            >
               Current Design
             </h1>
-            <p className="text-black" style={{ fontFamily: "Tactic-bold" }}>
+            <p className="text-black" style={{ fontFamily: "Rubik-semibold" }}>
               I designed the app's interface with a sleek and modern look,
               featuring a prominent "KHF" (King's Health & Fitness) logo at the
               top. The overall design is set against a smooth black gradient
@@ -188,10 +194,13 @@ function Khf() {
             className="max-w-md p-8 bg-[#FFFFFF] mb-4 rounded-xl m-2"
             style={{ marginBottom: "20px" }}
           >
-            <h1 className="text-3xl font-bold italic text-[#666666] mb-4">
+            <h1
+              className="text-3xl font-extrabold italic text-[#666666] mb-4"
+              style={{ fontFamily: "Rubik-extrabold" }}
+            >
               Project Technology Stack Overview
             </h1>
-            <p className="text-black" style={{ fontFamily: "Tactic-bold" }}>
+            <p className="text-black" style={{ fontFamily: "Rubik-semibold" }}>
               For the project, I utilized a robust technology stack to ensure a
               high-quality app. The front-end was developed using Flutter and
               Dart, providing a smooth, cross-platform experience with a single
@@ -210,10 +219,13 @@ function Khf() {
             className="max-w-md p-8 bg-[#FFFFFF] mb-4 rounded-xl m-2"
             style={{ marginBottom: "20px" }}
           >
-            <h1 className="text-3xl font-bold italic text-[#666666] mb-4">
+            <h1
+              className="text-3xl font-extrabold italic text-[#666666] mb-4"
+              style={{ fontFamily: "Rubik-extrabold" }}
+            >
               Previous Prototypes
             </h1>
-            <p className="text-black" style={{ fontFamily: "Tactic-bold" }}>
+            <p className="text-black" style={{ fontFamily: "Rubik-semibold" }}>
               The previous prototype of AO Fitness focused on matching users
               with coaches for specific fitness goals like boxing, strength
               training, and weight loss, emphasizing personalization and
