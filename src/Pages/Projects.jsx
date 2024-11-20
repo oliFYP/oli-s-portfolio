@@ -12,16 +12,8 @@ function Project() {
   };
   return (
     <div>
-      <Topbar
-        isSidePanelOpen={isSidePanelOpen}
-        toggleSidePanel={toggleSidePanel}
-      />
-      {isSidePanelOpen && (
-        <SidePanel
-          isSidePanelOpen={isSidePanelOpen}
-          toggleSidePanel={toggleSidePanel}
-        />
-      )}
+      <Topbar />
+
       <ProjectList />
       <Footer />
     </div>

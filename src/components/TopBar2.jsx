@@ -14,9 +14,6 @@ function Topbar2({ isSidePanelOpen, toggleSidePanel }) {
   const navigateToContact = () => {
     navigate("/contact"); // Navigate to the Contact page
   };
-  const navigateToProjects = () => {
-    navigate("/project"); // Navigate to the Projects page
-  };
 
   return (
     <div
@@ -32,40 +29,23 @@ function Topbar2({ isSidePanelOpen, toggleSidePanel }) {
         {/* Navigation container */}
         {/* Button for Home navigation */}
         <button
-          className="focus:outline-none bg-transparent font-bold text-white group btn btn-border-underline hidden md:block mr-2 relative"
+          className="focus:outline-none bg-transparent font-bold text-white group btn btn-border-underline   mr-2 relative"
           onClick={navigateToHome}
         >
           Home
           <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>{" "}
           {/* Underline effect */}
         </button>
-        {/* Button for Projects navigation */}
-        <button
-          className="focus:outline-none bg-transparent font-bold text-white group btn btn-border-underline hidden md:block mr-2 relative"
-          onClick={navigateToProjects}
-        >
-          Projects
-          <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>{" "}
-          {/* Underline effect */}
-        </button>
+
         {/* Button for Contact navigation */}
         <button
-          className="focus:outline-none bg-transparent font-bold text-white group btn btn-border-underline hidden md:block mr-2 relative"
+          className="focus:outline-none bg-transparent font-bold text-white group btn btn-border-underline mr-2 relative"
           onClick={navigateToContact}
         >
           Contact
           <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>{" "}
           {/* Underline effect */}
         </button>
-        {/* Hamburger menu for mobile view */}
-        <div className="md:hidden z-[801] mr-4">
-          <Hamburger
-            size={30}
-            color="white"
-            toggled={isSidePanelOpen}
-            toggle={toggleSidePanel} // Toggle function for the side panel
-          />
-        </div>
       </nav>
     </div>
   );
