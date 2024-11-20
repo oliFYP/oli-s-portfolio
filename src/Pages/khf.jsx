@@ -85,7 +85,7 @@ function Khf() {
         />
       )}
       <div className="bg-gradient-to-r from-black to-gray-600">
-        <div className="flex flex-wrap items-center justify-center h-full">
+        <div className="flex flex-wrap items-center justify-center w-screen h-full">
           <div
             data-aos="fade"
             className="max-w-md p-8 bg-opacity-0 mb-4 md:mr-4 rounded-lg flex justify-center items-center"
@@ -226,37 +226,31 @@ function Khf() {
               Previous Prototypes
             </h1>
             <p className="text-black" style={{ fontFamily: "Rubik-semibold" }}>
-              The previous prototype of AO Fitness focused on matching users
-              with coaches for specific fitness goals like boxing, strength
-              training, and weight loss, emphasizing personalization and
-              dedication. However, we are transitioning to a new design to
-              enhance the overall user experience, improve navigation, and
-              create a more visually appealing and modern interface, making the
-              platform more intuitive and engaging for our users.
+              The login screen with the gradient background is an improvement
+              over the previous prototype for several reasons. First, it has a
+              more modern and visually appealing design, using gradient tones
+              and rounded input fields that enhance the user experience. The
+              icons next to the email and password fields improve usability by
+              clearly indicating the purpose of each input. Additionally, the
+              inclusion of "Remember Me" and "Forgot Password?" options makes
+              the interface more user-friendly and functional. The call to
+              action for creating a new account is also more prominent, guiding
+              new users smoothly through the onboarding process. Overall, this
+              design is more polished, intuitive, and engaging compared to the
+              previous, more basic prototype.
             </p>
           </div>
           <div
             data-aos="fade"
             className="max-w-md p-8 bg-opacity-0 mb-4 md:mr-4 rounded-lg flex flex-col justify-center items-center relative"
           >
-            <button
-              onClick={prevPrototype}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#FFFFFF] text-[#000000] select-none ml-2 p-2 rounded-full"
-            >
-              &lt;
-            </button>
             <img
               src={prototype[currentIndexV]}
               className="w-auto"
               alt="Preview img"
               style={{ maxHeight: "100%", maxWidth: "100%" }}
             />
-            <button
-              onClick={nextPrototype}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#FFFFFF] text-[#000000] select-none p-2 mr-2 rounded-full"
-            >
-              &gt;
-            </button>
+
             <p className="text-[#FFFFF] mt-4" style={{ fontFamily: "Tactic" }}>
               {prototypeTitles[currentIndexV]}
             </p>

@@ -25,3 +25,7 @@
   font-family: "Rubik-semibold";
   src: url("./Rubik-SemiBold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Rubik-variable";
+  src: url("./Rubik-Variable.ttf") format("truetype");
+}

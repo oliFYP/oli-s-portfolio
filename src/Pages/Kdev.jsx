@@ -72,7 +72,7 @@ function Kdevs() {
         />
       )}
       <div className="bg-gradient-to-b from-customBlueStart to-customBlueEnd">
-        <div className="flex flex-wrap items-center justify-center h-full">
+        <div className="flex flex-wrap items-center justify-center w-screen h-full">
           <div
             data-aos="fade"
             className="max-w-md p-8 bg-opacity-0 mb-4 md:mr-4 rounded-lg flex justify-center items-center"

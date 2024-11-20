@@ -14,7 +14,7 @@ function Matlab() {
   }, []);
   return (
     <section
-      className="relative min-h-screen bg-black"
+      className="relative  min-h-screen bg-black"
       style={{ overflow: "hidden", zIndex: 200 }}
     >
       <Topbar
@@ -27,7 +27,7 @@ function Matlab() {
           toggleSidePanel={toggleSidePanel}
         />
       )}
-      <div className="flex flex-col justify-center items-center min-h-screen bg-black px-4">
+      <div className="flex flex-col justify-center items-center w-screen min-h-screen bg-black px-4">
         <img
           src={worker}
           alt="Worker Icon"

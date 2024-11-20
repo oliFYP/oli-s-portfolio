@@ -68,7 +68,7 @@ function Contact() {
       ) : (
         <>
           <div
-            className="relative h-screen bg-black"
+            className="relative h-screen w-screen bg-black"
             style={{ overflow: "hidden", zIndex: 200 }}
           >
             ,

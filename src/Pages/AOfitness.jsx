@@ -75,7 +75,7 @@ function Aofitness() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section>
+    <div>
       <Topbar
         isSidePanelOpen={isSidePanelOpen}
         toggleSidePanel={toggleSidePanel}
@@ -87,8 +87,8 @@ function Aofitness() {
           toggleSidePanel={toggleSidePanel}
         />
       )}
-      <div className="bg-[#1B1C1E]">
-        <div className="flex flex-wrap items-center justify-center h-full">
+      <div className="bg-[#1B1C1E] ">
+        <div className="flex flex-wrap items-center justify-center w-screen h-full">
           <div
             data-aos="fade"
             className="max-w-md p-8 bg-[#1B1C1E] mb-4 md:mr-4 rounded-lg flex justify-center items-center"
@@ -268,7 +268,7 @@ function Aofitness() {
         </div>
       </div>
       <Footer />
-    </section>
+    </div>
   );
 }
 
