@@ -1,5 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import { ExternalLink, Github } from "lucide-react";
 import aofitness from "../Projects/ao-fitness.jpeg";
 import kdevs from "../Projects/k-devs.jpeg";
@@ -101,15 +102,16 @@ const projects = [
 ];
 
 export default function Projects() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
   return (
     <section id="projects" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div data-aos="fade-up" className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-100 mb-4">
             Featured Projects
           </h2>
@@ -118,7 +120,7 @@ export default function Projects() {
             software development, featuring real-world applications and design
             projects.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
@@ -132,11 +134,9 @@ export default function Projects() {
 
 function ProjectCard({ project, index }) {
   return (
-    <motion.div
-      initial={{ y: 20, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
+    <div
+      data-aos="fade-up"
+      data-aos-delay={index * 100}
       className="bg-gray-800 rounded-lg shadow-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-colors duration-300"
     >
       <div className="relative h-48 overflow-hidden group">
@@ -163,23 +163,24 @@ function ProjectCard({ project, index }) {
           ))}
         </div>
         <div className="flex space-x-4">
-          <motion.a
+          <a
             href={project.githubUrl}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
             className="flex items-center text-gray-300 hover:text-indigo-400"
           >
             <Github className="w-5 h-5 mr-2" />
             Code
-          </motion.a>
-          <motion.a
-            href={project.liveUrl}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center text-gray-300 hover:text-indigo-400"
-          ></motion.a>
+          </a>
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              className="flex items-center text-gray-300 hover:text-indigo-400"
+            >
+              <ExternalLink className="w-5 h-5 mr-2" />
+              Live
+            </a>
+          )}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
