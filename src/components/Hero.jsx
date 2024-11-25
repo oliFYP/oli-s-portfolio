@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, Code2, Palette } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, Code2, Palette } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -33,7 +33,10 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
             className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
           >
-            Software Developer with a passion for creating beautiful, responsive applications. Kingston University graduate transitioning from hospitality to tech, bringing fresh perspectives and innovative solutions.
+            Software Developer with a passion for creating responsive
+            applications. Kingston University graduate transitioning from
+            hospitality to tech, bringing fresh perspectives and innovative
+            solutions.
           </motion.p>
 
           <motion.div
