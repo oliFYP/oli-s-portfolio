@@ -1,15 +1,17 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
+import "aos/dist/aos.css"; // Import AOS CSS
+import AOS from "aos";
+
+AOS.init();
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-900">
+    <section id="contact" className="py-20 bg-gray-900 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-gray-100 mb-4">
@@ -19,13 +21,12 @@ export default function Contact() {
             Have a project in mind? Let's work together to create something
             amazing.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <motion.div
-            initial={{ x: -20, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
             className="bg-gray-800 p-8 rounded-lg border border-gray-700"
           >
             <h3 className="text-2xl font-bold text-gray-100 mb-6">
@@ -48,12 +49,11 @@ export default function Contact() {
                 content="London, UK"
               />
             </div>
-          </motion.div>
+          </div>
 
-          <motion.form
-            initial={{ x: 20, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
+          <form
+            data-aos="fade-left"
+            data-aos-duration="1000"
             className="space-y-6"
           >
             <div>
@@ -95,15 +95,15 @@ export default function Contact() {
                 className="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-gray-100 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               ></textarea>
             </div>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <button
+              data-aos="zoom-in"
+              data-aos-duration="1000"
               type="submit"
               className="w-full bg-indigo-600 text-white py-3 px-6 rounded-md hover:bg-indigo-500 transition-colors"
             >
               Send Message
-            </motion.button>
-          </motion.form>
+            </button>
+          </form>
         </div>
       </div>
     </section>
