@@ -2,6 +2,7 @@ import React from "react";
 import { Github, Linkedin, Mail, Code2 } from "lucide-react";
 import "aos/dist/aos.css"; // Import AOS CSS
 import AOS from "aos";
+import { scrollToTop } from "../utils/scroll";
 
 AOS.init();
 
@@ -15,10 +16,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div
-            className="flex items-center space-x-2"
             data-aos="zoom-in"
             data-aos-duration="1000"
-            data-aos-delay="200"
+            className="flex items-center space-x-2 cursor-pointer"
+            onClick={scrollToTop}
           >
             <Code2 className="w-8 h-8 text-indigo-400" />
             <span className="text-xl font-bold text-gray-100">Olivier</span>
@@ -32,15 +33,9 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <SocialLink href="https://github.com/oliFYP" icon={<Github />} />
-            <SocialLink
-              href="https://www.linkedin.com/in/olivier-smith-92a825300"
-              icon={<Linkedin />}
-            />
-            <SocialLink
-              href="mailto:oliviergsmith@outlook.com"
-              icon={<Mail />}
-            />
+            <SocialLink href="https://github.com" icon={<Github />} />
+            <SocialLink href="https://linkedin.com" icon={<Linkedin />} />
+            <SocialLink href="mailto:your.email@example.com" icon={<Mail />} />
           </div>
         </div>
       </div>
@@ -55,7 +50,6 @@ function NavLink({ href, children }) {
       className="text-gray-400 hover:text-indigo-400 transition-colors"
       data-aos="zoom-in"
       data-aos-duration="1000"
-      data-aos-delay="400"
     >
       {children}
     </a>
@@ -71,7 +65,6 @@ function SocialLink({ href, icon }) {
       className="text-gray-400 hover:text-indigo-400 transition-colors"
       data-aos="zoom-in"
       data-aos-duration="1000"
-      data-aos-delay="600"
     >
       {icon}
     </a>
