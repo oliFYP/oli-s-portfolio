@@ -28,7 +28,6 @@ const projects = [
     image: khf,
     tags: ["Flutter", "Dart", "Firestore", "Android Studio"],
     githubUrl: "#",
-    liveUrl: "#",
   },
   {
     title: "K-devs CKD Project",
@@ -37,7 +36,6 @@ const projects = [
     image: kdevs,
     tags: ["Figma", "UI/UX", "Healthcare", "Design System"],
     githubUrl: "#",
-    liveUrl: "#",
   },
   {
     title: "Victor Mellets Portfolio",
@@ -47,7 +45,6 @@ const projects = [
       "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800&h=500",
     tags: ["React", "CSS", "Responsive Design"],
     githubUrl: "#",
-    liveUrl: "#",
   },
   {
     title: "Francisco Portfolio",
@@ -57,7 +54,6 @@ const projects = [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=500",
     tags: ["HTML", "CSS", "Web Design"],
     githubUrl: "#",
-    liveUrl: "#",
   },
   {
     title: "Fit4U",
@@ -67,7 +63,6 @@ const projects = [
       "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&q=80&w=800&h=500",
     tags: ["Adobe XD", "UI/UX", "Prototyping"],
     githubUrl: "#",
-    liveUrl: "#",
   },
   {
     title: "Weather App",
@@ -77,7 +72,6 @@ const projects = [
       "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80&w=800&h=500",
     tags: ["Python", "API Integration", "Data Visualization"],
     githubUrl: "#",
-    liveUrl: "#",
   },
   {
     title: "Event Manager",
@@ -87,7 +81,6 @@ const projects = [
       "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800&h=500",
     tags: ["Java", "Swing", "NetBeans"],
     githubUrl: "#",
-    liveUrl: "#",
   },
   {
     title: "Java OO Projects",
@@ -97,7 +90,6 @@ const projects = [
       "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=800&h=500",
     tags: ["Java", "OOP", "Software Architecture"],
     githubUrl: "#",
-    liveUrl: "#",
   },
 ];
 
@@ -170,15 +162,6 @@ function ProjectCard({ project, index }) {
             <Github className="w-5 h-5 mr-2" />
             Code
           </a>
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              className="flex items-center text-gray-300 hover:text-indigo-400"
-            >
-              <ExternalLink className="w-5 h-5 mr-2" />
-              Live
-            </a>
-          )}
         </div>
       </div>
     </div>
