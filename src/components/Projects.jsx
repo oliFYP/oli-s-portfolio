@@ -2,22 +2,20 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { ExternalLink, Github } from "lucide-react";
-import aofitness from "../Projects/ao-fitness.jpeg";
+import ProjectModal from "./ProjectModal";
+import ProjectCard from "./ProjectCard";
+import aofitness from "../Projects/preview.jpeg";
 import kdevs from "../Projects/k-devs.jpeg";
-import khf from "../Projects/khf.jpeg";
-import vm from "../Projects/vm.png";
-import Fran from "../Projects/Fran.png";
-import Matlab from "../Projects/matlab.png";
-import Weather from "../Projects/weather.png";
-import Fit4U from "../Projects/Fit4U.png";
-import java from "../Projects/java-BankOO.png";
+import khf from "../Projects/khf-preview.jpeg";
+import kdevs1 from "../Projects/kdev-preview4.jpeg";
+import vm from "../Projects/vm.svg";
 
 const projects = [
   {
     title: "AO Fitness",
     description:
       "A comprehensive fitness platform built with React and Firebase, offering personalized workout plans and progress tracking.",
-    image: aofitness,
+    images: [aofitness],
     tags: ["React", "Tailwind CSS", "Firestore", "Authentication"],
     githubUrl: "#",
   },
@@ -25,7 +23,7 @@ const projects = [
     title: "Kings Health and Fitness",
     description:
       "A feature-rich mobile application for fitness enthusiasts, built with Flutter and integrated with Firestore for real-time data management.",
-    image: khf,
+    images: [khf],
     tags: ["Flutter", "Dart", "Firestore", "Android Studio"],
     githubUrl: "#",
   },
@@ -33,7 +31,7 @@ const projects = [
     title: "K-devs CKD Project",
     description:
       "A healthcare platform designed to support Chronic Kidney Disease patients, featuring an intuitive user interface created in Figma.",
-    image: kdevs,
+    images: [kdevs1],
     tags: ["Figma", "UI/UX", "Healthcare", "Design System"],
     githubUrl: "#",
   },
@@ -41,8 +39,7 @@ const projects = [
     title: "Victor Mellets Portfolio",
     description:
       "A modern, responsive portfolio website showcasing creative work through clean design and smooth animations.",
-    image:
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800&h=500",
+    images: [vm],
     tags: ["React", "CSS", "Responsive Design"],
     githubUrl: "#",
   },
@@ -50,8 +47,9 @@ const projects = [
     title: "Francisco Portfolio",
     description:
       "A sleek portfolio website built with pure HTML and CSS, demonstrating strong fundamentals in web development.",
-    image:
+    images: [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=500",
+    ],
     tags: ["HTML", "CSS", "Web Design"],
     githubUrl: "#",
   },
@@ -59,8 +57,9 @@ const projects = [
     title: "Fit4U",
     description:
       "A modern fitness application design created in Adobe XD, focusing on user experience and intuitive navigation.",
-    image:
+    images: [
       "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&q=80&w=800&h=500",
+    ],
     tags: ["Adobe XD", "UI/UX", "Prototyping"],
     githubUrl: "#",
   },
@@ -68,8 +67,9 @@ const projects = [
     title: "Weather App",
     description:
       "A Python-based weather application providing real-time weather updates and forecasts with a clean interface.",
-    image:
+    images: [
       "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80&w=800&h=500",
+    ],
     tags: ["Python", "API Integration", "Data Visualization"],
     githubUrl: "#",
   },
@@ -77,8 +77,9 @@ const projects = [
     title: "Event Manager",
     description:
       "A Java Swing application for managing events and schedules, built with NetBeans for a robust desktop experience.",
-    image:
+    images: [
       "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800&h=500",
+    ],
     tags: ["Java", "Swing", "NetBeans"],
     githubUrl: "#",
   },
@@ -86,14 +87,16 @@ const projects = [
     title: "Java OO Projects",
     description:
       "A collection of object-oriented models including Bank Account, Citizen Monitoring, and University systems.",
-    image:
+    images: [
       "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=800&h=500",
+    ],
     tags: ["Java", "OOP", "Software Architecture"],
     githubUrl: "#",
   },
 ];
 
 export default function Projects() {
+  const [selectedProject, setSelectedProject] = React.useState(null);
   useEffect(() => {
     AOS.init({
       duration: 1000, // whether animation should happen only once - while scrolling down
@@ -116,54 +119,20 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} index={index} />
+            <ProjectCard
+              key={index}
+              project={project}
+              index={index}
+              onOpenModal={setSelectedProject}
+            />
           ))}
         </div>
       </div>
+      <ProjectModal
+        project={selectedProject}
+        isOpen={!!selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
     </section>
-  );
-}
-
-function ProjectCard({ project, index }) {
-  return (
-    <div
-      data-aos="fade-up"
-      data-aos-delay={index * 100}
-      className="bg-gray-800 rounded-lg shadow-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-colors duration-300"
-    >
-      <div className="relative h-48 overflow-hidden group">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      </div>
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-100 mb-2">
-          {project.title}
-        </h3>
-        <p className="text-gray-300 mb-4 line-clamp-2">{project.description}</p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.tags.map((tag, tagIndex) => (
-            <span
-              key={tagIndex}
-              className="px-3 py-1 bg-indigo-900/50 text-indigo-300 rounded-full text-sm border border-indigo-700"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-        <div className="flex space-x-4">
-          <a
-            href={project.githubUrl}
-            className="flex items-center text-gray-300 hover:text-indigo-400"
-          >
-            <Github className="w-5 h-5 mr-2" />
-            Code
-          </a>
-        </div>
-      </div>
-    </div>
   );
 }
