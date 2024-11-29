@@ -7,7 +7,7 @@ export default function AboutHero() {
     <div
       data-aos="fade-right"
       data-aos-duration="1000"
-      className="lg:col-span-5 bg-gray-900 rounded-lg p-6 border border-gray-700 flex flex-col items-center justify-center"
+      className="lg:col-span-5 bg-gray-900 rounded-lg p-6 border border-gray-700 flex flex-col items-center justify-center overflow-x-hidden"
     >
       <div className="flex flex-col items-center">
         <div className="flex-shrink-0">

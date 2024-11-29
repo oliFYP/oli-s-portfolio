@@ -7,7 +7,7 @@ export default function AboutExperience() {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="lg:col-span-7 bg-gray-900 rounded-lg p-6 border border-gray-700"
+      className="lg:col-span-7 bg-gray-900 rounded-lg p-6 border border-gray-700 overflow-x-hidden"
     >
       <h3 className="text-xl font-bold text-gray-100 mb-4">
         Professional Journey
