@@ -5,7 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 import ProjectCard from "./ProjectCard";
 import aofitness from "../Projects/preview.jpeg";
-import kdevs from "../Projects/k-devs.jpeg";
+import covid from "../Projects/covid.svg";
 import khf from "../Projects/khf-preview.jpeg";
 import kdevs1 from "../Projects/kdev-preview4.jpeg";
 import vm from "../Projects/vm.svg";
@@ -33,7 +33,15 @@ const projects = [
     description:
       "A healthcare platform designed to support Chronic Kidney Disease patients, featuring an intuitive user interface created in Figma.",
     images: [kdevs1],
-    tags: ["Figma", "UI/UX", "Healthcare", "Design System"],
+    tags: ["Figma", "UI/UX", "Healthcare", "Design"],
+    githubUrl: "#",
+  },
+  {
+    title: "Covid Scanner Project",
+    description:
+      "A healthcare solution designed for efficient COVID-19 test result scanning, featuring an intuitive user interface crafted in Figma.",
+    images: [covid],
+    tags: ["Figma", "UI/UX", "Healthcare", "Design"],
     githubUrl: "#",
   },
   {
@@ -44,16 +52,7 @@ const projects = [
     tags: ["React", "CSS", "Responsive Design"],
     githubUrl: "#",
   },
-  {
-    title: "Francisco Portfolio",
-    description:
-      "A sleek portfolio website built with pure HTML and CSS, demonstrating strong fundamentals in web development.",
-    images: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=500",
-    ],
-    tags: ["HTML", "CSS", "Web Design"],
-    githubUrl: "#",
-  },
+
   {
     title: "Fit4U",
     description:
