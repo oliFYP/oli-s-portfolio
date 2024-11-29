@@ -6,7 +6,7 @@ export default function AboutPersonal() {
     <div
       data-aos="fade-left"
       data-aos-duration="1000"
-      className="lg:col-span-12 bg-gray-900 rounded-lg p-6 border border-gray-700 overflow-x-hidden"
+      className="lg:col-span-12 bg-gray-900 rounded-lg p-6 border border-gray-700 "
     >
       <h3 className="text-xl font-bold text-gray-100 mb-4">Beyond the Code</h3>
       <p className="text-gray-300 mb-6">
