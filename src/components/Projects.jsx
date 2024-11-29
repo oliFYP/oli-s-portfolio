@@ -9,6 +9,7 @@ import kdevs from "../Projects/k-devs.jpeg";
 import khf from "../Projects/khf-preview.jpeg";
 import kdevs1 from "../Projects/kdev-preview4.jpeg";
 import vm from "../Projects/vm.svg";
+import fit4u from "../Projects/Fit4U.svg";
 
 const projects = [
   {
@@ -57,9 +58,7 @@ const projects = [
     title: "Fit4U",
     description:
       "A modern fitness application design created in Adobe XD, focusing on user experience and intuitive navigation.",
-    images: [
-      "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&q=80&w=800&h=500",
-    ],
+    images: [fit4u],
     tags: ["Adobe XD", "UI/UX", "Prototyping"],
     githubUrl: "#",
   },
