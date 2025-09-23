@@ -5,6 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 import ProjectCard from "./ProjectCard";
 import aofitness from "../Projects/preview.jpeg";
+import consentia from "../Projects/consentia.png";
 import covid from "../Projects/covid.svg";
 import khf from "../Projects/khf-preview.jpeg";
 import kdevs1 from "../Projects/kdev-preview4.jpeg";
@@ -13,12 +14,28 @@ import fit4u from "../Projects/Fit4U.svg";
 
 const projects = [
   {
-    title: "AO Fitness",
+    title: "Consentia.uk",
+    description:
+      "Developed a responsive React-based website for a GDPR consulting service, featuring a clean UI, clear service presentation.",
+    images: [consentia],
+    tags: ["React", "Tailwind CSS", "Vercel"],
+    githubUrl: "https://consentia.uk",
+  },
+  {
+    title: "Website Portfolio",
+    description:
+      "A modern, responsive portfolio website showcasing creative work through clean design and smooth animations.",
+    images: [vm],
+    tags: ["React", "CSS", "Responsive Design"],
+    githubUrl: "https://olifyp.github.io/victor-mellet-portfolio",
+  },
+  {
+    title: "AO Fitness (in works)",
     description:
       "A comprehensive fitness platform built with React and Firebase, offering personalized workout plans and progress tracking.",
     images: [aofitness],
     tags: ["React", "Tailwind CSS", "Firestore", "Authentication"],
-    githubUrl: "#",
+    githubUrl: "https://olifyp.github.io/ao-fitness/",
   },
   {
     title: "Kings Health and Fitness",
@@ -42,14 +59,6 @@ const projects = [
       "A healthcare solution designed for efficient COVID-19 test result scanning, featuring an intuitive user interface crafted in Figma.",
     images: [covid],
     tags: ["Figma", "UI/UX", "Healthcare", "Design"],
-    githubUrl: "#",
-  },
-  {
-    title: "Victor Mellets Portfolio",
-    description:
-      "A modern, responsive portfolio website showcasing creative work through clean design and smooth animations.",
-    images: [vm],
-    tags: ["React", "CSS", "Responsive Design"],
     githubUrl: "#",
   },
 

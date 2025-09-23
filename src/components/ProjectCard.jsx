@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Code2 } from "lucide-react";
 
 export default function ProjectCard({ project, index, onOpenModal }) {
   useEffect(() => {
@@ -49,8 +49,8 @@ export default function ProjectCard({ project, index, onOpenModal }) {
             href={project.githubUrl}
             className="flex items-center text-gray-300 hover:text-indigo-400 transition-transform duration-300 transform hover:scale-105 active:scale-95"
           >
-            <Github className="w-5 h-5 mr-2" />
-            Code
+            <Code2 className="w-5 h-5 mr-2" />
+            url
           </a>
           <a
             href={project.liveUrl}
