@@ -35,7 +35,10 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <SocialLink href="https://github.com" icon={<Github />} />
             <SocialLink href="https://linkedin.com" icon={<Linkedin />} />
-            <SocialLink href="mailto:your.email@example.com" icon={<Mail />} />
+            <SocialLink
+              href="mailto:oliviergsmith@outlook.com"
+              icon={<Mail />}
+            />
           </div>
         </div>
       </div>
