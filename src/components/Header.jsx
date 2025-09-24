@@ -33,8 +33,11 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <SocialLink href="https://github.com" icon={<Github />} />
-            <SocialLink href="https://linkedin.com" icon={<Linkedin />} />
+            <SocialLink href="https://github.com/oliFYP" icon={<Github />} />
+            <SocialLink
+              href="https://linkedin.com/in/olivier-smith1"
+              icon={<Linkedin />}
+            />
             <SocialLink
               href="mailto:oliviergsmith@outlook.com"
               icon={<Mail />}
