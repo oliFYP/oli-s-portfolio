@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, Palette } from "lucide-react";
+import { ArrowRight, Code2, Server } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -14,7 +14,7 @@ export default function Hero() {
             className="flex justify-center space-x-4 mb-8"
           >
             <Code2 className="w-16 h-16 text-indigo-400" />
-            <Palette className="w-16 h-16 text-purple-400" />
+            <Server className="w-16 h-16 text-purple-400" />
           </motion.div>
 
           <motion.h1
@@ -33,10 +33,10 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
             className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
           >
-            Software Developer with a passion for creating responsive
-            applications. Kingston University graduate transitioning from
-            hospitality to tech, bringing fresh perspectives and innovative
-            solutions.
+            Full Stack Developer passionate about building complete solutions
+            from front-end to back-end. Kingston University graduate bringing
+            technical expertise, innovative thinking, and comprehensive
+            development skills.
           </motion.p>
 
           <motion.div

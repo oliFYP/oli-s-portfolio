@@ -13,27 +13,28 @@ export default function AboutExperience() {
         Professional Journey
       </h3>
       <p className="text-gray-300 mb-6">
-        Hey there! I'm a Computer Science enthusiast with three years of
-        UK-based academic experience in the tech realm. My passion lies in
-        software development, particularly Front-end development, where I
-        channel my creativity into crafting seamless digital experiences.
+        I'm a Computer Science enthusiast with three years of UK-based academic
+        experience in software development. I specialize in full stack
+        development, building complete applications from responsive front-end
+        interfaces to robust back-end systems. My expertise spans both
+        client-side and server-side technologies.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <ExperienceCard
           icon={<Monitor className="w-6 h-6" />}
-          title="Front-end Focus"
-          description="Specialized in creating responsive and intuitive user interfaces"
+          title="Full Stack Development"
+          description="Complete solutions from front-end UI to back-end architecture"
         />
         <ExperienceCard
           icon={<Globe className="w-6 h-6" />}
-          title="International Experience"
-          description="3 years of UK-based academic and practical experience"
+          title="Full Ecosystem Experience"
+          description="3 years across web, mobile, and server-side technologies"
         />
         <ExperienceCard
           icon={<Brain className="w-6 h-6" />}
           title="Continuous Learning"
-          description="Committed to staying current with latest technologies"
+          description="Committed to mastering new frameworks and best practices"
         />
       </div>
     </div>

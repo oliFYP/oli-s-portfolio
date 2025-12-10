@@ -25,7 +25,7 @@ export default function AboutHero() {
           </div>
           <div className="flex items-center justify-center text-gray-400 mt-2">
             <Code2 className="w-4 h-4 mr-2" />
-            <span>Front-end Developer</span>
+            <span>Full Stack Developer</span>
           </div>
           <div className="flex items-center justify-center text-gray-400 mt-2">
             <GraduationCap className="w-4 h-4 mr-2" />

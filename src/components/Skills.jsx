@@ -7,22 +7,22 @@ const skills = [
   {
     category: "Frontend Development",
     icon: <Layout className="w-6 h-6" />,
-    items: ["React", "HTML", "CSS", "JavaScript", "Tailwind CSS"],
+    items: ["React", "TypeScript", "HTML", "CSS", "JavaScript", "Tailwind CSS"],
+  },
+  {
+    category: "Backend Development",
+    icon: <Terminal className="w-6 h-6" />,
+    items: ["Node.js", "Express", "PHP", "Python", "PostgreSQL", "Supabase"],
   },
   {
     category: "Mobile Development",
     icon: <Code2 className="w-6 h-6" />,
-    items: ["Flutter", "Dart", "Firebase"],
+    items: ["Flutter", "Dart", "Firebase", "Mobile Architecture"],
   },
   {
-    category: "Programming Languages",
-    icon: <Terminal className="w-6 h-6" />,
-    items: ["Java", "Python", "PHP", "MATLAB"],
-  },
-  {
-    category: "Design Tools",
+    category: "Full Stack Tools",
     icon: <Palette className="w-6 h-6" />,
-    items: ["Figma", "Adobe XD", "UI/UX Design", "Responsive Design"],
+    items: ["REST APIs", "Git", "Docker", "Database Management", "Supabase"],
   },
 ];
 

@@ -11,8 +11,26 @@ import khf from "../Projects/khf-preview.jpeg";
 import kdevs1 from "../Projects/kdev-preview4.jpeg";
 import vm from "../Projects/vm.svg";
 import fit4u from "../Projects/Fit4U.svg";
+import ers from "../Projects/ERS.png";
+import mza from "../Projects/MZAmedia.png";
 
 const projects = [
+  {
+    title: "ERS Media Portal",
+    description:
+      "A comprehensive media management portal built with React, Tailwind CSS, Supabase, and PostgreSQL. Features user authentication, content management, and real-time database synchronization for seamless media organization and delivery.",
+    images: [ers],
+    tags: ["React", "Tailwind CSS", "Supabase", "PostgreSQL"],
+    githubUrl: "#",
+  },
+  {
+    title: "MZA Media",
+    description:
+      "A modern media platform developed with React and Tailwind CSS, delivering a responsive and visually appealing user interface for media content presentation and engagement.",
+    images: [mza],
+    tags: ["React", "Tailwind CSS"],
+    githubUrl: "https://olifyp.github.io/MZA-media/",
+  },
   {
     title: "Consentia.uk",
     description:
