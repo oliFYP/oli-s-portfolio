@@ -41,12 +41,12 @@ export default function Contact() {
               <ContactInfo
                 icon={<Phone className="w-6 h-6" />}
                 title="Phone"
-                content="+44 7760 573404"
+                content="+1 579 372 0590"
               />
               <ContactInfo
                 icon={<MapPin className="w-6 h-6" />}
                 title="Location"
-                content="London, UK"
+                content="Saint Jean Sur Richelieu, Quebec, Canada"
               />
             </div>
           </div>
