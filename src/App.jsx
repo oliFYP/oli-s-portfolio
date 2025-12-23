@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import Header from "./components/layout/Header";
+import Hero from "./components/home/Hero";
+import About from "./components/about/About";
+import Projects from "./components/projects/Projects";
+import Skills from "./components/skills/Skills";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (

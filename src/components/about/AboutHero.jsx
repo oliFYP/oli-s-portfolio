@@ -1,6 +1,6 @@
 import React from "react";
 import { MapPin, Code2, GraduationCap } from "lucide-react";
-import portfolio from "../portfolioimg/oli.jpg";
+import portfolio from "../../assets/images/oli.jpg";
 
 export default function AboutHero() {
   return (

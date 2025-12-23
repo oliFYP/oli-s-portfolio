@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AboutHero from "./about/AboutHero";
-import AboutExperience from "./about/AboutExperience";
-import AboutPersonal from "./about/AboutPersonal";
+import AboutHero from "./AboutHero";
+import AboutExperience from "./AboutExperience";
+import AboutPersonal from "./AboutPersonal";
 
 export default function About() {
   return (

@@ -4,15 +4,15 @@ import "aos/dist/aos.css"; // Import AOS styles
 import { ExternalLink, Github } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 import ProjectCard from "./ProjectCard";
-import aofitness from "../Projects/preview.jpeg";
-import consentia from "../Projects/consentia.png";
-import covid from "../Projects/covid.svg";
-import khf from "../Projects/khf-preview.jpeg";
-import kdevs1 from "../Projects/kdev-preview4.jpeg";
-import vm from "../Projects/vm.svg";
-import fit4u from "../Projects/Fit4U.svg";
-import ers from "../Projects/ERS.png";
-import mza from "../Projects/MZAmedia.png";
+import aofitness from "../../assets/images/preview.jpeg";
+import consentia from "../../assets/images/consentia.png";
+import covid from "../../assets/images/covid.svg";
+import khf from "../../assets/images/khf-preview.jpeg";
+import kdevs1 from "../../assets/images/kdev-preview4.jpeg";
+import vm from "../../assets/images/vm.svg";
+import fit4u from "../../assets/images/Fit4U.svg";
+import ers from "../../assets/images/ERS.png";
+import mza from "../../assets/images/MZAmedia.png";
 
 const projects = [
   {

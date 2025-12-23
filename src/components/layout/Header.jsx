@@ -2,7 +2,7 @@ import React from "react";
 import { Github, Linkedin, Mail, Code2 } from "lucide-react";
 import "aos/dist/aos.css"; // Import AOS CSS
 import AOS from "aos";
-import { scrollToTop } from "../utils/scroll";
+import { scrollToTop } from "../../utils/scroll";
 
 AOS.init();
 
