@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import {
@@ -9,6 +10,7 @@ import {
   Smartphone,
   Server,
   Wrench,
+  Zap,
 } from "lucide-react";
 
 const skillCategories = [
@@ -52,18 +54,45 @@ export default function Skills() {
   }, []);
 
   return (
-    <section id="skills" className="py-20 bg-gray-800 overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div data-aos="fade-up" className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-100 mb-4">
-            Skills & Expertise
+    <section
+      id="skills"
+      className="relative py-24 bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 overflow-hidden"
+    >
+      {/* Decorative gradient orbs */}
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-20"
+        >
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="inline-block mb-4"
+          >
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-sm font-semibold text-white shadow-lg">
+              Technical Arsenal
+            </span>
+          </motion.div>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            Skills &{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              Expertise
+            </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             A comprehensive overview of my technical skills and areas of
             expertise, developed through academic studies at Kingston University
             and personal projects.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
@@ -81,59 +110,89 @@ function SkillCategory({ category, index }) {
       bg: "bg-indigo-900/50",
       text: "text-indigo-400",
       border: "border-indigo-500/30",
+      gradient: "from-indigo-600 to-indigo-800",
+      glow: "indigo-500/20",
     },
     blue: {
       bg: "bg-blue-900/50",
       text: "text-blue-400",
       border: "border-blue-500/30",
+      gradient: "from-blue-600 to-blue-800",
+      glow: "blue-500/20",
     },
     purple: {
       bg: "bg-purple-900/50",
       text: "text-purple-400",
       border: "border-purple-500/30",
+      gradient: "from-purple-600 to-purple-800",
+      glow: "purple-500/20",
     },
     cyan: {
       bg: "bg-cyan-900/50",
       text: "text-cyan-400",
       border: "border-cyan-500/30",
+      gradient: "from-cyan-600 to-cyan-800",
+      glow: "cyan-500/20",
     },
     green: {
       bg: "bg-green-900/50",
       text: "text-green-400",
       border: "border-green-500/30",
+      gradient: "from-green-600 to-green-800",
+      glow: "green-500/20",
     },
   };
 
   const colors = colorClasses[category.color];
 
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-delay={index * 100}
-      className={`bg-gray-900 rounded-xl shadow-xl p-6 border ${colors.border} hover:border-${category.color}-500/50 transition-all duration-300 hover:shadow-2xl hover:scale-105`}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="group relative"
     >
-      {/* Header */}
-      <div className="flex items-center mb-6">
-        <div className={`p-3 ${colors.bg} rounded-lg ${colors.text} mr-3`}>
-          {category.icon}
-        </div>
-        <h3 className="text-xl font-bold text-gray-100">{category.title}</h3>
-      </div>
-
-      {/* Skills list */}
-      <ul className="space-y-3">
-        {category.skills.map((skill, skillIndex) => (
-          <li
-            key={skillIndex}
-            data-aos="fade-right"
-            data-aos-delay={index * 100 + skillIndex * 50}
-            className="flex items-center text-gray-300"
+      <div
+        className={`absolute inset-0 bg-gradient-to-r from-${category.color}-600 to-${category.color}-800 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500`}
+      />
+      <div
+        className={`relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 border ${colors.border} hover:border-${category.color}-500/50 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:shadow-${colors.glow}`}
+      >
+        {/* Header */}
+        <div className="flex items-center mb-6">
+          <div
+            className={`p-3 bg-gradient-to-r ${colors.gradient} rounded-xl text-white mr-3 shadow-lg group-hover:scale-110 transition-transform duration-300`}
           >
-            <Code2 className={`w-4 h-4 mr-3 ${colors.text} flex-shrink-0`} />
-            <span className="text-sm font-medium">{skill}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
+            {category.icon}
+          </div>
+          <h3
+            className={`text-xl font-bold text-white group-hover:${colors.text} transition-colors duration-300`}
+          >
+            {category.title}
+          </h3>
+        </div>
+
+        {/* Skills list */}
+        <ul className="space-y-3">
+          {category.skills.map((skill, skillIndex) => (
+            <motion.li
+              key={skillIndex}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.3,
+                delay: index * 0.1 + skillIndex * 0.05,
+              }}
+              className={`flex items-center text-gray-300 hover:${colors.text} transition-colors duration-200`}
+            >
+              <Code2 className={`w-4 h-4 mr-3 ${colors.text} flex-shrink-0`} />
+              <span className="text-sm font-medium">{skill}</span>
+            </motion.li>
+          ))}
+        </ul>
+      </div>
+    </motion.div>
   );
 }

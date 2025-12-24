@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { ExternalLink, Github } from "lucide-react";
@@ -136,18 +137,45 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="py-20 bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div data-aos="fade-up" className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-100 mb-4">
-            Featured Projects
+    <section
+      id="projects"
+      className="relative py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden"
+    >
+      {/* Decorative gradient orbs */}
+      <div className="absolute top-0 left-1/3 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/3 w-96 h-96 bg-fuchsia-600/10 rounded-full blur-3xl" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-20"
+        >
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="inline-block mb-4"
+          >
+            <span className="px-4 py-2 bg-gradient-to-r from-violet-600 to-fuchsia-600 rounded-full text-sm font-semibold text-white shadow-lg">
+              Portfolio Showcase
+            </span>
+          </motion.div>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            Featured{" "}
+            <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
+              Projects
+            </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             A showcase of my technical expertise across web, mobile, and
             software development, featuring real-world applications and design
             projects.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

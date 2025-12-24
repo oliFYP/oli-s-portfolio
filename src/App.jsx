@@ -12,9 +12,10 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <About />
+
         <Projects />
         <Skills />
+        <About />
         <Contact />
       </main>
       <footer className="bg-gray-950 text-gray-400 py-8">
