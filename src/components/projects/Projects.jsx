@@ -17,19 +17,20 @@ import mza from "../../assets/images/MZAmedia.png";
 
 const projects = [
   {
-    title: "ERS Media Portal",
+    title: "Planyfy.io",
     description:
       "A comprehensive media management portal built with React, Tailwind CSS, MongoDB Atlas and Fastapi. Features user authentication, content management, and real-time database synchronization for seamless media organization and delivery.",
     images: [ers],
     tags: [
-      "React",
+      "Typescript",
+      "Vite React",
       "Tailwind CSS",
       "Mongo DB",
       "FastAPI",
       "REST API",
       "JWT Authentication",
     ],
-    githubUrl: "https://ers-media-mongo-db-fast-a-pi.vercel.app/login",
+    githubUrl: "https://planyfy.io",
   },
   {
     title: "MZA Media",
